@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: "Nunito";
+    display: swap;
+    src: url("/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Domine";
+    display: swap;
+    src: url("/Domine/Domine-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Petrona";
+    display: swap;
+    src: url("/Petrona/Petrona-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    display: swap;
+    src: url("/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@theme {
+    --font-special: "Petrona", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans: "Noto Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --color-primary: var(--color-amber-600);
+    --color-primary-dark: var(--color-amber-700);
+    --color-primary-bright: var(--color-amber-400);
+  }
+
+
+h1 {
+@apply font-bold text-2xl font-special;
+}

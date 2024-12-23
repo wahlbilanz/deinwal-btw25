@@ -1,0 +1,37 @@
+<section
+    class="text-center md:text-left my-8 lg:text-left md:flex md:items-center md:justify-center md:my-10 md:gap-10">
+    <div class="relative group">
+        <img src="/DeinWal.svg" alt="DeinWal Logo"
+            class="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 mx-auto mb-4 lg:mb-0 lg:mr-8">
+        <div
+            class="absolute inset-0 flex items-end justify-start pb-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-black font-special text-lg">Du hast den Wal!</span>
+        </div>
+    </div>
+    <div class="flex items-center flex-col gap-4 md:items-start">
+        <h1>DeinWal zur Bundestagswahl 2021</h1>
+        <p class=" text-gray-700 max-w-2xl">
+            Mit deinem Wal kannst du prüfen, welche Partei wie du denkt.
+        </p>
+        <p class=" text-gray-700 max-w-2xl">
+
+            Du kannst hier die Abstimmungen der letzten Legislaturperiode von 2021 - 2025 nachspielen, als wärst du
+            selbst dabei gewesen! In der Auswertung siehst du, welche Parteien in deinem Sinne abgestimmt haben.
+        </p>
+        <p class=" text-gray-700 max-w-2xl">
+
+            Auch wenn DeinWal dem <a class="underline decoration-2 decoration-primary"
+                href="https://www.wahl-o-mat.de/">Wahl-O-Mat</a>
+            sehr
+            ähnelt,
+            steckt doch ein ganz
+            anderes Konzept dahinter. Hier sagen die
+            Parteien nicht, wie sie zu einem Thema abstimmen <em>würden</em> — hier zählt, wie sie zu einem Thema
+            tatsächlich
+            abgestimmt <em>haben!</em> </p>
+        <a [routerLink]="['/quiz']"
+            class="text-nowrap bg-primary text-white px-6 py-3 rounded  hover:bg-primary-dark transition duration-300 mt-4 lg:mt-0">
+            Quiz starten
+        </a>
+    </div>
+</section>
