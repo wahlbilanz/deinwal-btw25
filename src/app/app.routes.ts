@@ -20,4 +20,10 @@ export const routes: Routes = [{
 },{
     path: 'auswertung',
     component: AuswertungComponent
-}];
+}, {
+    path: '',
+    pathMatch: "full",
+  redirectTo: '/home'
+
+}
+];
