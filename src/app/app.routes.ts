@@ -7,23 +7,23 @@ import { FaqComponent } from './pages/faq/faq.component';
 
 export const routes: Routes = [{
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
 },{
     path: 'quiz',
-    component: QuizComponent
+    component: QuizComponent,
 },{
     path: 'faq',
-    component: FaqComponent
+    component: FaqComponent,
 },{
     path: 'imprint',
-    component: ImprintComponent
+    component: ImprintComponent,
 },{
     path: 'auswertung',
-    component: AuswertungComponent
+    component: AuswertungComponent,
 }, {
     path: '',
     pathMatch: "full",
-  redirectTo: '/home'
+  redirectTo: '/home',
 
-}
+},
 ];

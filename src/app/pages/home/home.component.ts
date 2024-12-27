@@ -3,15 +3,18 @@ import { RouterModule } from '@angular/router';
 import data from '../../data/ergebnisse.json';
 
 @Component({
-  selector: 'app-home',
+  selector: 'wal-home',
   imports: [RouterModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
 export class HomeComponent {
 
-  constructor() {
+  public constructor() {
     console.log(data);
   }
 
 }
+
+
+

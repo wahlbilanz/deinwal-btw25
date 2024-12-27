@@ -2,17 +2,6 @@
 @import "tailwindcss";
 
 
-@font-face {
-    font-family: "Nunito";
-    display: swap;
-    src: url("/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Domine";
-    display: swap;
-    src: url("/Domine/Domine-VariableFont_wght.ttf") format("truetype");
-}
 
 @font-face {
     font-family: "Petrona";
