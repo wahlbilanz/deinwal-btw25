@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../../data/data.sevice';
 
 @Component({
   selector: 'wal-quiz',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './quiz.component.css',
 })
 export class QuizComponent {
-
+public constructor(private readonly dataService: DataService) {
+    // console.log(this.dataService.getFragen());
+    // console.log(this.dataService.getErgebnisse());
+}
 }

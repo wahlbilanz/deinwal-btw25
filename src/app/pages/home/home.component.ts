@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import data from '../../data/ergebnisse.json';
 
 @Component({
   selector: 'wal-home',
@@ -10,11 +9,5 @@ import data from '../../data/ergebnisse.json';
 })
 export class HomeComponent {
 
-  public constructor() {
-    console.log(data);
-  }
-
+  public constructor() {}
 }
-
-
-
