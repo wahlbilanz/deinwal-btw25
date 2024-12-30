@@ -23,8 +23,9 @@ export class DataService {
         console.log(this.fraktionen);
     }
 
-    public getFragen(): DeinwalFrage[] {
-        return this.fragen;
+    public getFragen(kategorie: string): DeinwalFrage[] {
+        // console.log(kategorie, this.fragen);
+        return this.fragen.filter(frage => frage.kategorie === kategorie);
     }
 
     public getErgebnisse(): { [key: string]: { [key: string]: DeinwalErgebnis } } {
@@ -41,6 +42,15 @@ export class DataService {
             return null;
         }
         return this.kategorien[(index + 1) % this.kategorien.length];
+    }
+
+    public getPrevKategorie(kategorie: string): string | null {
+        const index = this.kategorien.indexOf(kategorie);
+        console.log(index);
+        if (index < 1) {
+            return null;
+        }
+        return this.kategorien[(index -1) % this.kategorien.length];
     }
 
 
