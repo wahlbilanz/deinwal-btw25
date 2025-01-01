@@ -4,6 +4,7 @@ import { DataService } from './data/data.sevice';
 
 import { LaIconLibrary } from 'angular-line-awesome';
 import {
+  lasAngleDown,
   lasAngleLeft,
   lasAngleRight,
   lasChartBar,
@@ -32,6 +33,7 @@ export class AppComponent {
       lasAngleLeft,
       lasAngleRight,
       lasChartBar,
+      lasAngleDown,
     ]);
   }
 }
