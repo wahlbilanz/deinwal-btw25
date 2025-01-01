@@ -3,7 +3,15 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { DataService } from './data/data.sevice';
 
 import { LaIconLibrary } from 'angular-line-awesome';
-import { lasTag, lasThumbsDown, lasThumbsUp, lasYinYang } from 'angular-line-awesome/icons';
+import {
+  lasAngleLeft,
+  lasAngleRight,
+  lasChartBar,
+  lasTag,
+  lasThumbsDown,
+  lasThumbsUp,
+  lasYinYang,
+} from 'angular-line-awesome/icons';
 
 @Component({
   selector: 'wal-root',
@@ -16,6 +24,14 @@ export class AppComponent {
   public readonly firstKategorie = this.dataService.getFirstKategorie();
 
   public constructor(library: LaIconLibrary) {
-    library.addIcons([lasYinYang, lasThumbsUp, lasThumbsDown, lasTag]);
+    library.addIcons([
+      lasYinYang,
+      lasThumbsUp,
+      lasThumbsDown,
+      lasTag,
+      lasAngleLeft,
+      lasAngleRight,
+      lasChartBar,
+    ]);
   }
 }

@@ -1,39 +1,46 @@
 <div class="min-h-screen flex flex-col bg-stone-50">
-  <header class="bg-zinc-600 text-white p-4 font-special">
+  <header class="bg-zinc-600 text-white font-special">
     <nav class="container mx-auto flex justify-between items-center">
-      <div class="text-lg font-bold">DeinWal</div>
-      <ul class="flex space-x-4">
+      <a href="/" class="text-lg font-bold font-sans flex items-center gap-3">
+        <img src="/DeinWal.svg" alt="DeinWal Logo" class="w-12 h-12" />
+        DeinWal
+      </a>
+      <ul class="flex space-x-4 m-4">
         <li>
           <a
             routerLink="/home"
             routerLinkActive="underline decoration-2 decoration-primary"
             class="hover:underline"
-            >Landing Page</a
           >
+            Startseite
+          </a>
         </li>
         <li>
           <a
             [routerLink]="['/quiz', firstKategorie]"
             routerLinkActive="underline decoration-2 decoration-primary"
             class="hover:underline"
-            >Start Quiz</a
           >
+            Quiz
+          </a>
         </li>
         <li>
           <a
             routerLink="/faq"
             routerLinkActive="underline decoration-2 decoration-primary"
             class="hover:underline"
-            >FAQ</a
           >
+            FAQ
+          </a>
         </li>
         <li>
           <a
             routerLink="/imprint"
             routerLinkActive="underline decoration-2 decoration-primary"
             class="hover:underline"
-            >Imprint</a
           >
+            Impressum
+          </a>
         </li>
       </ul>
     </nav>

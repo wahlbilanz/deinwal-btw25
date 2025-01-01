@@ -29,6 +29,6 @@ h1 {
 }
 
 .kategorie::before {
-    content: "# ";
+    content: "§ ";
     @apply font-bold;
 }

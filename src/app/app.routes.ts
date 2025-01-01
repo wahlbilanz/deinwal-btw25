@@ -15,6 +15,10 @@ export const routes: Routes = [
     component: QuizComponent,
   },
   {
+    path: 'quiz',
+    component: QuizComponent,
+  },
+  {
     path: 'faq',
     component: FaqComponent,
   },

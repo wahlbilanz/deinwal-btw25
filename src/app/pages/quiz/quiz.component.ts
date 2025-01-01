@@ -21,7 +21,17 @@ export class QuizComponent {
 
   public readonly ersteKategorie = this.dataService.getFirstKategorie();
   public kategorie = toSignal(
-    this.activatedRoute.paramMap.pipe(map(params => params.get('kategorie'))),
+    this.activatedRoute.paramMap.pipe(
+      map(params => {
+        const k = params.get('kategorie');
+        if (!k) {
+          this.router
+            .navigate(['/quiz', this.dataService.getFirstKategorie()])
+            .catch(console.error);
+        }
+        return k;
+      }),
+    ),
   );
   public fragen = computed(() => {
     const kategorie = this.kategorie();
