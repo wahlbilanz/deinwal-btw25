@@ -1,59 +1,88 @@
 <div class="p-4 bg-white shadow-lg drop-shadow-lg rounded">
-    <div class="mb-4 flex justify-end">
-        <a [routerLink]="['/quiz', kategorie()]" class="kategorie  text-2xl hover:underline text-zinc-500">{{kategorie()}}</a>
+  <div class="mb-4 flex justify-end">
+    <a
+      [routerLink]="['/quiz', kategorie()]"
+      class="kategorie text-2xl hover:underline text-zinc-500"
+      >{{kategorie()}}</a
+    >
+  </div>
+  @for (frage of fragen(); track frage.abstimmungs_id) {
+  <div class="mb-6 p-4 border border-stone-400 rounded bg-stone-50">
+    <div class="mb-2">{{frage.hintergrund}} <span class="font-bold">{{ frage.frage }}</span></div>
+    <div class="mb-4">
+      <ul class="list-disc list-inside">
+        @for (info of frage.weiterfuehrende_informationen; track $index) {
+        <li>
+          @if (info.link) {
+          <a href="{{info.link}}" target="_blank" class="text-blue-500 hover:underline"
+            >{{info.text || info.link}}</a
+          >
+          } @else { {{info.text}} }
+        </li>
+        }
+      </ul>
     </div>
-    @for (frage of fragen(); track frage.abstimmungs_id) {
-        <div class="mb-6 p-4 border border-stone-400 rounded bg-stone-50">
-            <div class="mb-2">{{frage.hintergrund}} <span class="font-bold">{{ frage.frage }}</span></div>
-            <div class="mb-4">
-                <ul class="list-disc list-inside">
-                    @for (info of frage.weiterfuehrende_informationen; track $index) {
-                        <li>
-                            @if (info.link) {
-                                <a href="{{info.link}}" target="_blank" class="text-blue-500 hover:underline">{{info.text || info.link}}</a>
-                            } @else {
-                                {{info.text}}
-                            }
-                        </li>
-                    }
-                </ul>
-            </div>
-            <div class="flex space-x-2 justify-end">
-                <button type="button" (click)="antwort(frage.abstimmungs_id, 1)" class="px-4 py-2 border-2 border-emerald-400 drop-shadow bg-emerald-100 text-black rounded hover:bg-emerald-400 hover:text-white"> <la-icon icon="thumbs-up"></la-icon> Ja</button>
-                <button type="button" (click)="antwort(frage.abstimmungs_id, -1)" class="px-4 py-2 border-2 border-purple-400 drop-shadow bg-purple-300 text-white rounded hover:bg-purple-400"> <la-icon icon="thumbs-down"></la-icon> Nein</button>
-                <button type="button" (click)="antwort(frage.abstimmungs_id, 0)" class="px-4 py-2 bg-gray-300 text-white rounded hover:bg-gray-400"> <la-icon icon="yin-yang"></la-icon>
-                    Enthalten</button>
-            </div>
-        </div>
+    <div class="flex space-x-2 justify-end">
+      <button
+        type="button"
+        (click)="antwort(frage.abstimmungs_id, 1)"
+        class="px-4 py-2 border-2 border-emerald-400 drop-shadow bg-emerald-100 text-black rounded hover:bg-emerald-400 hover:text-white"
+      >
+        <la-icon icon="thumbs-up"></la-icon> Ja
+      </button>
+      <button
+        type="button"
+        (click)="antwort(frage.abstimmungs_id, -1)"
+        class="px-4 py-2 border-2 border-purple-400 drop-shadow bg-purple-300 text-white rounded hover:bg-purple-400"
+      >
+        <la-icon icon="thumbs-down"></la-icon> Nein
+      </button>
+      <button
+        type="button"
+        (click)="antwort(frage.abstimmungs_id, 0)"
+        class="px-4 py-2 bg-gray-300 text-white rounded hover:bg-gray-400"
+      >
+        <la-icon icon="yin-yang"></la-icon> Enthalten
+      </button>
+    </div>
+  </div>
 
-    } @empty {
-        <div class="p-4 bg-yellow-100 border border-yellow-300 rounded-lg">
-            <p class="mb-2">
-                Ohje. In dieser Kategorie sind keine Fragen.. Und nu? 😬
-            </p>
-            <p>
-                Willst du vielleicht
-                <a [routerLink]="'/'" class="underline decoration-2 decoration-primary text-blue-500 hover:underline">zurück zum Start</a>
-                oder
-                <a [routerLink]="['/quiz', ersteKategorie]" class="underline decoration-2 decoration-primary text-blue-500 hover:underline">zur ersten Quiz Kategorie</a>
-                gehen?
-            </p>
-        </div>
+  } @empty {
+  <div class="p-4 bg-yellow-100 border border-yellow-300 rounded-lg">
+    <p class="mb-2">Ohje. In dieser Kategorie sind keine Fragen.. Und nu? 😬</p>
+    <p>
+      Willst du vielleicht
+      <a
+        [routerLink]="'/'"
+        class="underline decoration-2 decoration-primary text-blue-500 hover:underline"
+        >zurück zum Start</a
+      >
+      oder
+      <a
+        [routerLink]="['/quiz', ersteKategorie]"
+        class="underline decoration-2 decoration-primary text-blue-500 hover:underline"
+        >zur ersten Quiz Kategorie</a
+      >
+      gehen?
+    </p>
+  </div>
+  }
+
+  <div class="mb-6 p-4 border rounded-lg">
+    @if (prevKategorie()) {
+    <a [routerLink]="['/quiz/', prevKategorie()]" class="text-blue-500 hover:underline"
+      >{{prevKategorie()}}</a
+    >
+    } @else {
+    <a [routerLink]="['/home']" class="text-blue-500 hover:underline">Startseite</a>
     }
 
-    <div class="mb-6 p-4 border rounded-lg">
-        @if (prevKategorie()) {
-        <a [routerLink]="['/quiz/', prevKategorie()]" class="text-blue-500 hover:underline">{{prevKategorie()}}</a>
-        } @else {
-            <a [routerLink]="['/home']" class="text-blue-500 hover:underline">Startseite</a>
-        }
+    <a [routerLink]="['/auswertung']" class="text-blue-500 hover:underline">Auswertung</a>
 
-
-        <a [routerLink]="['/auswertung']" class="text-blue-500 hover:underline">Auswertung</a>
-
-        @if (nextKategorie()) {
-            <a [routerLink]="['/quiz/', nextKategorie()]" class="text-blue-500 hover:underline">{{nextKategorie()}}</a>
-            }
-        
-</div>
+    @if (nextKategorie()) {
+    <a [routerLink]="['/quiz/', nextKategorie()]" class="text-blue-500 hover:underline"
+      >{{nextKategorie()}}</a
+    >
+    }
+  </div>
 </div>

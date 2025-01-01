@@ -3,14 +3,38 @@
     <nav class="container mx-auto flex justify-between items-center">
       <div class="text-lg font-bold">DeinWal</div>
       <ul class="flex space-x-4">
-        <li><a routerLink="/home" routerLinkActive="underline decoration-2 decoration-primary"
-            class="hover:underline">Landing Page</a></li>
-        <li><a [routerLink]="['/quiz', firstKategorie]" routerLinkActive="underline decoration-2 decoration-primary"
-            class="hover:underline">Start Quiz</a></li>
-        <li><a routerLink="/faq" routerLinkActive="underline decoration-2 decoration-primary"
-            class="hover:underline">FAQ</a></li>
-        <li><a routerLink="/imprint" routerLinkActive="underline decoration-2 decoration-primary"
-            class="hover:underline">Imprint</a></li>
+        <li>
+          <a
+            routerLink="/home"
+            routerLinkActive="underline decoration-2 decoration-primary"
+            class="hover:underline"
+            >Landing Page</a
+          >
+        </li>
+        <li>
+          <a
+            [routerLink]="['/quiz', firstKategorie]"
+            routerLinkActive="underline decoration-2 decoration-primary"
+            class="hover:underline"
+            >Start Quiz</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/faq"
+            routerLinkActive="underline decoration-2 decoration-primary"
+            class="hover:underline"
+            >FAQ</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/imprint"
+            routerLinkActive="underline decoration-2 decoration-primary"
+            class="hover:underline"
+            >Imprint</a
+          >
+        </li>
       </ul>
     </nav>
   </header>

@@ -5,26 +5,30 @@ import { QuizComponent } from './pages/quiz/quiz.component';
 import { ImprintComponent } from './pages/imprint/imprint.component';
 import { FaqComponent } from './pages/faq/faq.component';
 
-export const routes: Routes = [{
+export const routes: Routes = [
+  {
     path: 'home',
     component: HomeComponent,
-},{
+  },
+  {
     path: 'quiz/:kategorie',
     component: QuizComponent,
-
-},{
+  },
+  {
     path: 'faq',
     component: FaqComponent,
-},{
+  },
+  {
     path: 'imprint',
     component: ImprintComponent,
-},{
+  },
+  {
     path: 'auswertung',
     component: AuswertungComponent,
-}, {
+  },
+  {
     path: '',
-    pathMatch: "full",
-  redirectTo: '/home',
-
-},
+    pathMatch: 'full',
+    redirectTo: '/home',
+  },
 ];

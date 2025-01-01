@@ -30,6 +30,7 @@ export default [{
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@angular-eslint/recommended",
+    "plugin:prettier/recommended",
     "plugin:@angular-eslint/template/process-inline-templates",
 ).map(config => ({
     ...config,
@@ -127,6 +128,7 @@ export default [{
 }, ...compat.extends(
     "plugin:@angular-eslint/template/recommended",
     "plugin:@angular-eslint/template/accessibility",
+  "plugin:prettier/recommended",
 ).map(config => ({
     ...config,
     files: ["**/*.html"],

@@ -1,20 +1,20 @@
 export interface DeinwalInfo {
-    text: string;
-    link?: string;
+  text: string;
+  link?: string;
 }
 
 export interface DeinwalFrage {
-    abstimmungs_id: string;
-    kategorie: string;
-    hintergrund: string;
-    frage: string;
-    weiterfuehrende_informationen: DeinwalInfo[];
+  abstimmungs_id: string;
+  kategorie: string;
+  hintergrund: string;
+  frage: string;
+  weiterfuehrende_informationen: DeinwalInfo[];
 }
 
 export interface DeinwalErgebnis {
-    abstimmungs_id: string;
-    fraktion: string;
-    ja: number;
-    nein: number;
-    enthalten: number;
+  abstimmungs_id: string;
+  fraktion: string;
+  ja: number;
+  nein: number;
+  enthalten: number;
 }

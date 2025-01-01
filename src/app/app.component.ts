@@ -2,7 +2,8 @@ import { Component, inject } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { DataService } from './data/data.sevice';
 
-import {  LaIconLibrary } from 'angular-line-awesome';import { lasHippo, lasTag, lasThumbsDown, lasThumbsUp, lasYinYang  } from 'angular-line-awesome/icons';
+import { LaIconLibrary } from 'angular-line-awesome';
+import { lasTag, lasThumbsDown, lasThumbsUp, lasYinYang } from 'angular-line-awesome/icons';
 
 @Component({
   selector: 'wal-root',
@@ -12,10 +13,9 @@ import {  LaIconLibrary } from 'angular-line-awesome';import { lasHippo, lasTag,
 })
 export class AppComponent {
   private readonly dataService = inject(DataService);
-public readonly firstKategorie = this.dataService.getFirstKategorie();
+  public readonly firstKategorie = this.dataService.getFirstKategorie();
 
-
-public constructor(library: LaIconLibrary) {
-  library.addIcons([lasYinYang, lasThumbsUp, lasThumbsDown, lasTag]);
-}
+  public constructor(library: LaIconLibrary) {
+    library.addIcons([lasYinYang, lasThumbsUp, lasThumbsDown, lasTag]);
+  }
 }
