@@ -11,6 +11,7 @@ import {
   lasTag,
   lasThumbsDown,
   lasThumbsUp,
+  lasTrashAlt,
   lasYinYang,
 } from 'angular-line-awesome/icons';
 
@@ -34,6 +35,7 @@ export class AppComponent {
       lasAngleRight,
       lasChartBar,
       lasAngleDown,
+      lasTrashAlt,
     ]);
   }
 }

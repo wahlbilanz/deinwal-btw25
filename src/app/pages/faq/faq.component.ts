@@ -1,5 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, effect, ElementRef, inject, OnInit, viewChildren } from '@angular/core';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { AntwortenService } from '../../state/antworten.service';
+
+interface FaqItem {
+  question: string;
+  answer: SafeHtml;
+  hidden: boolean;
+}
 
 @Component({
   selector: 'wal-faq',
@@ -7,16 +15,36 @@ import { AngularLineawesomeModule } from 'angular-line-awesome';
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.css',
 })
-export class FaqComponent {
-  public faqItems = [
-    {
-      question: 'Schon wieder ein neues Design?',
-      answer:
-        'Genau. Wie ihr wahrscheinlich ahnt sind wir keine UI/UX-Experten, versuchen uns natürlich stetig zu verbessern! Manchmal muss man dafür auch mal einen Schritt zurück treten. Hauptsache pixelimperfekt!',
-    },
-  ].map(i => ({ ...i, hidden: true }));
+export class FaqComponent implements OnInit {
+  private hash = (s: string): number =>
+    s.split('').reduce((a, b) => {
+      a = (a << 5) - a + b.charCodeAt(0);
+      return a & a;
+    }, 0);
 
-  public toggle(eintrag: { question: string; answer: string; hidden: boolean }): void {
-    eintrag.hidden = !eintrag.hidden;
+  private antwortenService = inject(AntwortenService);
+
+  public questions = viewChildren<ElementRef>('question');
+
+  public contents: { question: string; id: string }[] = [];
+
+  public constructor() {
+    effect(() => {
+      this.contents = this.questions().map(e => {
+        const question = e.nativeElement.textContent;
+        const id = `q-${this.hash(question)}`;
+        e.nativeElement.id = id;
+        return { question, id };
+      });
+    });
+  }
+
+  public ngOnInit(): void {
+    console.log('test');
+  }
+
+  public clearData(): void {
+    console.log('clear');
+    this.antwortenService.clearStore();
   }
 }

@@ -2,22 +2,22 @@ import { Component, computed, inject } from '@angular/core';
 import { DataService } from '../../data/data.sevice';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { map } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
+import { AntwortenService } from '../../state/antworten.service';
+import { Antwort } from '../../state/antworten.interface';
+import { AsyncPipe, NgClass } from '@angular/common';
 @Component({
   selector: 'wal-quiz',
-  imports: [RouterModule, AngularLineawesomeModule],
+  imports: [RouterModule, AngularLineawesomeModule, AsyncPipe, NgClass],
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css',
 })
 export class QuizComponent {
-  public antwort(fragen_id: string, antwort: number): void {
-    console.log('antwort', fragen_id, antwort);
-  }
-
   private readonly activatedRoute = inject(ActivatedRoute);
   private readonly dataService = inject(DataService);
   private readonly router = inject(Router);
+  private readonly antwortenService = inject(AntwortenService);
 
   public readonly ersteKategorie = this.dataService.getFirstKategorie();
   public kategorie = toSignal(
@@ -60,4 +60,13 @@ export class QuizComponent {
     }
     return null;
   });
+
+  public setAntwort(fragen_id: string, antwort: number, bisher?: Antwort | null): void {
+    console.log('antwort', fragen_id, antwort);
+    this.antwortenService.updateAntwort(fragen_id, antwort === bisher?.antwort ? null : antwort);
+  }
+
+  public getAntwort(abstimmungs_id: string): Observable<Antwort | undefined> {
+    return this.antwortenService.selectAntwort(abstimmungs_id);
+  }
 }
