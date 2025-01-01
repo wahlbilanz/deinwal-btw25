@@ -5,7 +5,7 @@
       <ul class="flex space-x-4">
         <li><a routerLink="/home" routerLinkActive="underline decoration-2 decoration-primary"
             class="hover:underline">Landing Page</a></li>
-        <li><a routerLink="/quiz" routerLinkActive="underline decoration-2 decoration-primary"
+        <li><a [routerLink]="['/quiz', firstKategorie]" routerLinkActive="underline decoration-2 decoration-primary"
             class="hover:underline">Start Quiz</a></li>
         <li><a routerLink="/faq" routerLinkActive="underline decoration-2 decoration-primary"
             class="hover:underline">FAQ</a></li>

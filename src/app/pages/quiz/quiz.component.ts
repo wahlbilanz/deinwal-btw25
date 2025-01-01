@@ -3,9 +3,10 @@ import { DataService } from '../../data/data.sevice';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
+import { AngularLineawesomeModule } from 'angular-line-awesome';
 @Component({
   selector: 'wal-quiz',
-  imports: [RouterModule],
+  imports: [RouterModule, AngularLineawesomeModule],
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css',
 })

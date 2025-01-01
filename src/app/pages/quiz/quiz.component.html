@@ -1,10 +1,10 @@
-<div class="p-4 bg-white shadow-md rounded-lg">
-    <div class="mb-4">
-        <a [routerLink]="['/quiz', kategorie()]" class="text-blue-500 hover:underline">{{kategorie()}}</a>
+<div class="p-4 bg-white shadow-lg drop-shadow-lg rounded">
+    <div class="mb-4 flex justify-end">
+        <a [routerLink]="['/quiz', kategorie()]" class="kategorie  text-2xl hover:underline text-zinc-500">{{kategorie()}}</a>
     </div>
     @for (frage of fragen(); track frage.abstimmungs_id) {
-        <div class="mb-6 p-4 border rounded-lg">
-            <div class="mb-2 text-lg font-semibold">{{frage.hintergrund}} <span>{{ frage.frage }}</span></div>
+        <div class="mb-6 p-4 border border-stone-400 rounded bg-stone-50">
+            <div class="mb-2">{{frage.hintergrund}} <span class="font-bold">{{ frage.frage }}</span></div>
             <div class="mb-4">
                 <ul class="list-disc list-inside">
                     @for (info of frage.weiterfuehrende_informationen; track $index) {
@@ -18,10 +18,11 @@
                     }
                 </ul>
             </div>
-            <div class="flex space-x-2">
-                <button type="button" (click)="antwort(frage.abstimmungs_id, 1)" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Ja</button>
-                <button type="button" (click)="antwort(frage.abstimmungs_id, -1)" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Nein</button>
-                <button type="button" (click)="antwort(frage.abstimmungs_id, 0)" class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">Enthalten</button>
+            <div class="flex space-x-2 justify-end">
+                <button type="button" (click)="antwort(frage.abstimmungs_id, 1)" class="px-4 py-2 border-2 border-emerald-400 drop-shadow bg-emerald-100 text-black rounded hover:bg-emerald-400 hover:text-white"> <la-icon icon="thumbs-up"></la-icon> Ja</button>
+                <button type="button" (click)="antwort(frage.abstimmungs_id, -1)" class="px-4 py-2 border-2 border-purple-400 drop-shadow bg-purple-300 text-white rounded hover:bg-purple-400"> <la-icon icon="thumbs-down"></la-icon> Nein</button>
+                <button type="button" (click)="antwort(frage.abstimmungs_id, 0)" class="px-4 py-2 bg-gray-300 text-white rounded hover:bg-gray-400"> <la-icon icon="yin-yang"></la-icon>
+                    Enthalten</button>
             </div>
         </div>
 

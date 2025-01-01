@@ -21,9 +21,14 @@
     --color-primary: var(--color-amber-600);
     --color-primary-dark: var(--color-amber-700);
     --color-primary-bright: var(--color-amber-400);
-  }
+}
 
 
 h1 {
-@apply font-bold text-2xl font-special;
+    @apply font-bold text-2xl font-special;
+}
+
+.kategorie::before {
+    content: "# ";
+    @apply font-bold;
 }
