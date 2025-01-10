@@ -1,0 +1,53 @@
+@if (frage(); as f) { @let a = antwort();
+<div class="mb-6 p-4 border border-stone-400 rounded bg-stone-50">
+  <div class="mb-2">{{f.hintergrund}} <span class="font-bold">{{ f.frage }}</span></div>
+  <div class="mb-4">
+    <ul class="list-disc list-inside">
+      @for (info of f.weiterfuehrende_informationen; track $index) {
+      <li>
+        @if (info.link) {
+        <a href="{{info.link}}" target="_blank" class="text-blue-500 hover:underline"
+          >{{info.text || info.link}}</a
+        >
+        } @else { {{info.text}} }
+      </li>
+      }
+    </ul>
+  </div>
+  <div class="flex space-x-2 justify-end">
+    <button
+      type="button"
+      (click)="setAntwort(1, a?.antwort)"
+      class="px-4 py-2 border-2 border-emerald-500 drop-shadow rounded flex items-center gap-1"
+      [ngClass]="{
+        'text-black bg-emerald-100 hover:bg-emerald-500 hover:text-white': a?.antwort !== 1,
+        'text-white bg-emerald-500 hover:bg-emerald-100 hover:text-black': a?.antwort === 1,
+        }"
+    >
+      <la-icon icon="thumbs-up" class="text-xl"></la-icon> Ja
+    </button>
+    <button
+      type="button"
+      (click)="setAntwort(-1, a?.antwort)"
+      class="px-4 py-2 border-2 border-purple-500 drop-shadow rounded flex items-center gap-1"
+      [ngClass]="{
+        'text-black bg-purple-100 hover:bg-purple-500 hover:text-white': a?.antwort !== -1,
+        'text-white bg-purple-500 hover:bg-purple-100 hover:text-black': a?.antwort === -1,
+        }"
+    >
+      <la-icon icon="thumbs-down" class="text-xl"></la-icon> Nein
+    </button>
+    <button
+      type="button"
+      (click)="setAntwort(0, a?.antwort)"
+      class="px-4 py-2 border-2 border-gray-500 drop-shadow rounded flex items-center gap-1"
+      [ngClass]="{
+        'text-black bg-gray-100 hover:bg-gray-500 hover:text-white': a?.antwort !== 0,
+        'text-white bg-gray-500 hover:bg-gray-100 hover:text-black': a?.antwort === 0,
+        }"
+    >
+      <la-icon icon="yin-yang" class="text-xl"></la-icon> Enthalten
+    </button>
+  </div>
+</div>
+}

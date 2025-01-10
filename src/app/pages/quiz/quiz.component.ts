@@ -6,10 +6,11 @@ import { map, Observable } from 'rxjs';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
 import { AntwortenService } from '../../state/antworten.service';
 import { Antwort } from '../../state/antworten.interface';
-import { AsyncPipe, NgClass } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
+import { QuizQuestionComponent } from '../../components/quiz-question/quiz-question.component';
 @Component({
   selector: 'wal-quiz',
-  imports: [RouterModule, AngularLineawesomeModule, AsyncPipe, NgClass],
+  imports: [RouterModule, AngularLineawesomeModule, AsyncPipe, QuizQuestionComponent],
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css',
 })
@@ -20,6 +21,7 @@ export class QuizComponent {
   private readonly antwortenService = inject(AntwortenService);
 
   public readonly ersteKategorie = this.dataService.getFirstKategorie();
+
   public kategorie = toSignal(
     this.activatedRoute.paramMap.pipe(
       map(params => {
@@ -33,37 +35,23 @@ export class QuizComponent {
       }),
     ),
   );
+
   public fragen = computed(() => {
     const kategorie = this.kategorie();
-    // console.log(kategorie);
-    if (kategorie) {
-      const fragen = this.dataService.getFragen(kategorie);
-      // console.log(fragen);
-      return fragen;
-    }
-    // console.error('no kategorie');
-    return [];
+    return kategorie ? this.dataService.getFragen(kategorie) : [];
   });
 
   public prevKategorie = computed(() => {
     const kategorie = this.kategorie();
-    console.log('prev', kategorie);
-    if (kategorie) {
-      return this.dataService.getPrevKategorie(kategorie);
-    }
-    return null;
+    return kategorie ? this.dataService.getPrevKategorie(kategorie) : null;
   });
   public nextKategorie = computed(() => {
     const kategorie = this.kategorie();
-    if (kategorie) {
-      return this.dataService.getNextKategorie(kategorie);
-    }
-    return null;
+    return kategorie ? this.dataService.getNextKategorie(kategorie) : null;
   });
 
-  public setAntwort(fragen_id: string, antwort: number, bisher?: Antwort | null): void {
-    console.log('antwort', fragen_id, antwort);
-    this.antwortenService.updateAntwort(fragen_id, antwort === bisher?.antwort ? null : antwort);
+  public setAntwort(fragen_id: string, antwort: number | null): void {
+    this.antwortenService.updateAntwort(fragen_id, antwort);
   }
 
   public getAntwort(abstimmungs_id: string): Observable<Antwort | undefined> {

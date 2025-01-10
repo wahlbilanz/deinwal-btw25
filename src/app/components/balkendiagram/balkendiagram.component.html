@@ -1,0 +1,29 @@
+<div
+  class="bg-[size:10%]"
+  [style.background-image]="'linear-gradient(to right, #eee 1px, transparent 1px)'"
+>
+  @for (match of partyMatchSorted(); track match.party) {
+  <div class="relative h-7 mt-3">
+    <div
+      class="absolute shadow-sm shadow-black h-7"
+      [style.background-color]="match.color"
+      [style.width]="match.match + '%'"
+    ></div>
+    <div class="absolute bg-stone-50 font-medium ml-0.5 -mt-2 py-0 px-1.5 h-6">
+      @if (match.match) {<span class="text-xs pr-1"> {{match.match | number: '1.1-1' }}% </span>}
+      <span> {{ match.party }} </span>
+    </div>
+  </div>
+  }
+  <div class="flex justify-between mt-2 text-xs">
+    @for (t of axeAnnotations; track $index) {
+    <div class="w-1/10 text-right">
+      <span class="bg-stone-50 p-0.5 -mr-2">{{ t }}%</span>
+    </div>
+    }
+  </div>
+</div>
+
+<p class="text-xs text-right mt-2">
+  Die Reihenfolge der Parteien entspricht der Übereinstimmung mit deinen Antworten.
+</p>
