@@ -3,12 +3,12 @@ import { PartyMatch } from '../../state/match.interface';
 import { DecimalPipe } from '@angular/common';
 
 @Component({
-  selector: 'wal-balkendiagram',
+  selector: 'wal-auswertung-balkendiagram',
   imports: [DecimalPipe],
-  templateUrl: './balkendiagram.component.html',
-  styleUrl: './balkendiagram.component.css',
+  templateUrl: './auswertung-balkendiagram.component.html',
+  styleUrl: './auswertung-balkendiagram.component.css',
 })
-export class BalkendiagramComponent {
+export class AuswertungBalkendiagramComponent {
   public partyMatch = input.required<PartyMatch[]>();
   public partyMatchSorted = computed(() => {
     const partyMatch = [...this.partyMatch()];

@@ -1,15 +1,25 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { AntwortenService } from '../../state/antworten.service';
-import { BalkendiagramComponent } from '../../components/balkendiagram/balkendiagram.component';
+import { AuswertungBalkendiagramComponent } from '../../components/auswertung-balkendiagram/auswertung-balkendiagram.component';
 import { PartyMatch } from '../../state/match.interface';
+import { AuswertungA11yComponent } from '../../components/auswertung-a11y/auswertung-a11y.component';
+import { AuswertungTabelleComponent } from '../../components/auswertung-tabelle/auswertung-tabelle.component';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'wal-auswertung',
-  imports: [BalkendiagramComponent],
+  imports: [
+    AuswertungBalkendiagramComponent,
+    AuswertungA11yComponent,
+    AuswertungTabelleComponent,
+    NgClass,
+  ],
   templateUrl: './auswertung.component.html',
   styleUrl: './auswertung.component.css',
 })
 export class AuswertungComponent {
+  public balkendiagram = signal<boolean>(true);
+
   private antwortenService = inject(AntwortenService);
   public partyMatch = computed<PartyMatch[]>(() => {
     return [
@@ -30,4 +40,8 @@ export class AuswertungComponent {
       },
     ];
   });
+
+  public setBalkendiagramm(b: boolean): void {
+    this.balkendiagram.set(b);
+  }
 }
