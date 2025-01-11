@@ -18,3 +18,7 @@ export interface DeinwalErgebnis {
   nein: number;
   enthalten: number;
 }
+
+export type DeinwalFragenErgebnis = { [fraktion: string]: DeinwalErgebnis };
+
+export type DeinwalFragenErgebnisse = { [abstimmungs_id: string]: DeinwalFragenErgebnis };

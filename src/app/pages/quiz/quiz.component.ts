@@ -5,7 +5,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { map, Observable } from 'rxjs';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
 import { AntwortenService } from '../../state/antworten.service';
-import { Antwort } from '../../state/antworten.interface';
+import { Antwort } from '../../interfaces/antworten.interface';
 import { AsyncPipe } from '@angular/common';
 import { QuizQuestionComponent } from '../../components/quiz-question/quiz-question.component';
 @Component({

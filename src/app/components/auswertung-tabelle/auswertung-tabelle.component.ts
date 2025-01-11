@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { PartyMatch } from '../../state/match.interface';
+import { PartyMatch } from '../../interfaces/match.interface';
 
 @Component({
   selector: 'wal-auswertung-tabelle',

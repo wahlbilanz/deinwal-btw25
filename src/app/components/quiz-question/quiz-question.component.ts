@@ -1,7 +1,7 @@
 import { Component, computed, input, output } from '@angular/core';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
-import { DeinwalFrage } from '../../data/data.model';
-import { Antwort } from '../../state/antworten.interface';
+import { DeinwalFrage } from '../../interfaces/data.interface';
+import { Antwort } from '../../interfaces/antworten.interface';
 import { NgClass } from '@angular/common';
 
 @Component({

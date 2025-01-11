@@ -1,7 +1,14 @@
 import { Injectable } from '@angular/core';
 import ergebnisse from './deinwal_ergebnisse.json';
 import fragen from './deinwal_fragen.json';
-import { DeinwalErgebnis, DeinwalFrage } from './data.model';
+import {
+  DeinwalErgebnis,
+  DeinwalFrage,
+  DeinwalFragenErgebnisse,
+} from '../interfaces/data.interface';
+import { Antwort } from '../interfaces/antworten.interface';
+import { AGREEMENT } from '../enums/agreement.enum';
+import { PartyDecisionThreshold } from '../consts/threshold.const';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +16,7 @@ import { DeinwalErgebnis, DeinwalFrage } from './data.model';
 export class DataService {
   // proper typing for the data
   private readonly fragen: DeinwalFrage[] = fragen;
-  private readonly ergebnisse: { [key: string]: { [key: string]: DeinwalErgebnis } } = ergebnisse;
+  private readonly ergebnisse: DeinwalFragenErgebnisse = ergebnisse;
 
   // precompute a couple things
   private readonly kategorien: string[] = Array.from(
@@ -58,5 +65,19 @@ export class DataService {
       return null;
     }
     return this.kategorien[(index - 1) % this.kategorien.length];
+  }
+
+  public matchAntworten(antworten: Antwort[] | undefined): void {
+    for (let i = 0; i < (antworten?.length || 0); i++) {}
+    // return undefined;
+  }
+
+  public matchQuestion(abstimmungs_id: string, antwort: number): void {
+    const fraktionsErgebnisse = this.ergebnisse[abstimmungs_id];
+    return Object.values(fraktionsErgebnisse).map(fraktion => ({
+      fraktion: fraktion.fraktion,
+      abstimmungs_id: fraktion.abstimmungs_id,
+      agreement: this.computeAgreement(),
+    }));
   }
 }

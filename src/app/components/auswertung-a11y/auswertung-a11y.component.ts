@@ -1,5 +1,5 @@
 import { Component, computed, input } from '@angular/core';
-import { PartyMatch } from '../../state/match.interface';
+import { PartyMatch } from '../../interfaces/match.interface';
 import { DecimalPipe } from '@angular/common';
 
 @Component({
