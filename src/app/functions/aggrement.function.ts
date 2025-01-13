@@ -1,5 +1,5 @@
-import { AGREEMENT } from '../../enums/agreement.enum';
-import { PartyDecisionThreshold } from '../../consts/threshold.const';
+import { AGREEMENT } from '../enums/agreement.enum';
+import { PartyDecisionThreshold } from '../consts/threshold.const';
 
 export function computeAgreement(party?: number | null, user?: number | null): AGREEMENT {
   if (user === undefined || user === null) {

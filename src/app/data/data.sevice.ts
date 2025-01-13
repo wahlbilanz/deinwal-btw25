@@ -4,11 +4,22 @@ import fragen from './deinwal_fragen.json';
 import {
   DeinwalErgebnis,
   DeinwalFrage,
+  DeinwalFragenErgebnis,
   DeinwalFragenErgebnisse,
 } from '../interfaces/data.interface';
 import { Antwort } from '../interfaces/antworten.interface';
 import { AGREEMENT } from '../enums/agreement.enum';
 import { PartyDecisionThreshold } from '../consts/threshold.const';
+import { computeAgreement } from '../functions/aggrement.function';
+import { partyDecision } from '../functions/party-decision.function';
+import {
+  generateDeinwalErgebnis,
+  generateDeinwalFragenErgebnis,
+  generateDeinwalFragenErgebnisse,
+  generateMap,
+} from '../functions/data-massage.function';
+import { Agreement, AgreementMap } from '../interfaces/agreement.interface';
+import { QuestionMatchMap } from '../interfaces/match.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +27,8 @@ import { PartyDecisionThreshold } from '../consts/threshold.const';
 export class DataService {
   // proper typing for the data
   private readonly fragen: DeinwalFrage[] = fragen;
-  private readonly ergebnisse: DeinwalFragenErgebnisse = ergebnisse;
+  private readonly ergebnisse: DeinwalFragenErgebnisse =
+    generateDeinwalFragenErgebnisse(ergebnisse);
 
   // precompute a couple things
   private readonly kategorien: string[] = Array.from(
@@ -67,17 +79,22 @@ export class DataService {
     return this.kategorien[(index - 1) % this.kategorien.length];
   }
 
-  public matchAntworten(antworten: Antwort[] | undefined): void {
+  public matchAntworten(antworten: Antwort[] | undefined): QuestionMatchMap {
     for (let i = 0; i < (antworten?.length || 0); i++) {}
     // return undefined;
   }
 
-  public matchQuestion(abstimmungs_id: string, antwort: number): void {
+  public matchQuestion(abstimmungs_id: string, antwort: number): AgreementMap {
     const fraktionsErgebnisse = this.ergebnisse[abstimmungs_id];
-    return Object.values(fraktionsErgebnisse).map(fraktion => ({
-      fraktion: fraktion.fraktion,
-      abstimmungs_id: fraktion.abstimmungs_id,
-      agreement: this.computeAgreement(),
-    }));
+    return generateMap(
+      Object.values(fraktionsErgebnisse).map(fraktion => [
+        fraktion.fraktion,
+        {
+          fraktion: fraktion.fraktion,
+          abstimmungs_id: fraktion.abstimmungs_id,
+          agreement: computeAgreement(partyDecision(fraktion), antwort),
+        },
+      ]),
+    );
   }
 }

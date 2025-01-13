@@ -1,5 +1,5 @@
 import {computeAgreement} from './aggrement.function';
-import {AGREEMENT} from '../../enums/agreement.enum';
+import {AGREEMENT} from '../enums/agreement.enum';
 
 
 describe('computeAgreement', () => {
