@@ -1,13 +1,12 @@
 export interface PartyMatch {
+  abstimmungs_id: string;
   party: string;
-  color: string;
   match: number;
-  matchByQuestion: { [key: string]: number };
 }
 
 export interface QuestionMatch {
-  question: string;
+  abstimmungs_id: string;
   partyMatches: { [key: string]: number };
 }
 
-export type QuestionMatchMap = { [abstimmung: string]: QuestionMatch };
+export type QuestionMatchMap = { [abstimmungs_id: string]: QuestionMatch };

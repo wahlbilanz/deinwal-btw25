@@ -1,4 +1,4 @@
-import { Abstimmungsergebnis, DeinwalErgebnis } from '../interfaces/data.interface';
+import { Abstimmungsergebnis } from '../interfaces/data.interface';
 
 export function partyDecision(fraktion: Abstimmungsergebnis): number {
   if (fraktion.ja < 0 || fraktion.nein < 0 || fraktion.enthalten < 0) {

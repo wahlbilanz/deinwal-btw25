@@ -79,8 +79,20 @@ export class DataService {
     return this.kategorien[(index - 1) % this.kategorien.length];
   }
 
-  public matchAntworten(antworten: Antwort[] | undefined): QuestionMatchMap {
-    for (let i = 0; i < (antworten?.length || 0); i++) {}
+  public computeUebereinstimmung(antworten: Antwort[] | undefined): QuestionMatchMap {
+    if (!antworten?.length) {
+      return {}
+    }
+    const uebereinstimmungen: QuestionMatchMap = {};
+    for (const antwort of antworten) {
+      const results = this.ergebnisse[antwort.id];
+      uebereinstimmungen[antwort.id] = {abstimmungs_id: antwort.id, partyMatches: generateMap(Object.entries(results).map(([party, decision]) => {
+        return [party, {abstimmungs_id: antwort.id, party, match:  }]
+      }))};
+      // for (([party, result]) of Object.entries(results)) {
+      //   // partyResult
+      // }
+    }
     // return undefined;
   }
 
