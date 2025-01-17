@@ -76,7 +76,10 @@ export class DataService {
   }
 
   public matchAntworten(antworten: Antwort[] | undefined): QuestionMatchMap {
-    if (!antworten?.length) return {};
+    if (!antworten?.length) {
+      return {};
+    }
+
     return generateMap(
       antworten.map(antwort => [
         antwort.abstimmungs_id,
