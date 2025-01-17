@@ -1,4 +1,4 @@
 export interface Antwort {
-  id: string;
+  abstimmungs_id: string;
   antwort: number | null;
 }

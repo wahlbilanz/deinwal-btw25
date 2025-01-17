@@ -12,14 +12,10 @@ import { AGREEMENT } from '../enums/agreement.enum';
 import { PartyDecisionThreshold } from '../consts/threshold.const';
 import { computeAgreement } from '../functions/aggrement.function';
 import { partyDecision } from '../functions/party-decision.function';
-import {
-  generateDeinwalErgebnis,
-  generateDeinwalFragenErgebnis,
-  generateDeinwalFragenErgebnisse,
-  generateMap,
-} from '../functions/data-massage.function';
+import { generateDeinwalFragenErgebnisse, generateMap } from '../functions/data-massage.function';
 import { Agreement, AgreementMap } from '../interfaces/agreement.interface';
-import { QuestionMatchMap } from '../interfaces/match.interface';
+import { QuestionMatch, QuestionMatchMap } from '../interfaces/match.interface';
+import { partyMatcher } from '../functions/party-matcher.functino';
 
 @Injectable({
   providedIn: 'root',
@@ -80,8 +76,13 @@ export class DataService {
   }
 
   public matchAntworten(antworten: Antwort[] | undefined): QuestionMatchMap {
-    for (let i = 0; i < (antworten?.length || 0); i++) {}
-    // return undefined;
+    if (!antworten?.length) return {};
+    return generateMap(
+      antworten.map(antwort => [
+        antwort.abstimmungs_id,
+        partyMatcher(antwort, this.ergebnisse[antwort.abstimmungs_id]),
+      ]),
+    );
   }
 
   public matchQuestion(abstimmungs_id: string, antwort: number): AgreementMap {
