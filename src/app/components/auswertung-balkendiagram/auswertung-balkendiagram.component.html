@@ -6,11 +6,13 @@
   <div class="relative h-7 mt-3">
     <div
       class="absolute shadow-sm shadow-black h-7"
-      [style.background-color]="match.color"
-      [style.width]="match.match + '%'"
+      [style.background-color]="match.party | memoize: partyColorFn"
+      [style.width]="match.match * 100 + '%'"
     ></div>
-    <div class="absolute bg-stone-50 font-medium ml-0.5 -mt-2 py-0 px-1.5 h-6">
-      @if (match.match) {<span class="text-xs pr-1"> {{match.match | number: '1.1-1' }}% </span>}
+    <div class="absolute bg-stone-50/97 font-medium ml-1 -mt-2 py-0 px-1.5 h-6 rounded-xs">
+      <span class="text-xs text-right pr-1 inline-block min-w-10">
+        {{match.match * 100 | number: '1.1-1' }}%
+      </span>
       <span> {{ match.party }} </span>
     </div>
   </div>

@@ -24,8 +24,14 @@ export function partyMatcher(
   antwort: Antwort,
   fraktionsErgebnisse: DeinwalFragenErgebnis,
 ): QuestionMatch {
+  console.log(antwort, fraktionsErgebnisse);
+  if (!fraktionsErgebnisse) {
+    console.error(`missing fraktionsergebnmisse fuer abstimmung ${antwort.abstimmungs_id}... :/`);
+
+    return { abstimmungs_id: antwort.abstimmungs_id, partyMatches: {} };
+  }
   return {
-    question: antwort.abstimmungs_id,
+    abstimmungs_id: antwort.abstimmungs_id,
     partyMatches: generateMap(
       Object.entries(fraktionsErgebnisse).map(([fraktion, ergebnis]) => [
         fraktion,

@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { PartyMatch } from '../../interfaces/match.interface';
+import { QuestionMatchMap } from '../../interfaces/match.interface';
 
 @Component({
   selector: 'wal-auswertung-tabelle',
@@ -8,5 +8,5 @@ import { PartyMatch } from '../../interfaces/match.interface';
   styleUrl: './auswertung-tabelle.component.css',
 })
 export class AuswertungTabelleComponent {
-  public partyMatch = input.required<PartyMatch[]>();
+  public partyMatch = input.required<QuestionMatchMap>();
 }

@@ -1,4 +1,4 @@
-import { Component, computed, input, output } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
 import { DeinwalFrage } from '../../interfaces/data.interface';
 import { Antwort } from '../../interfaces/antworten.interface';
@@ -16,6 +16,7 @@ export class QuizQuestionComponent {
   public antwortChange = output<number | null>();
 
   public setAntwort(a: number, bisher: number | undefined | null): void {
+    console.log(a, bisher);
     if (a !== bisher) {
       this.antwortChange.emit(a);
     } else {

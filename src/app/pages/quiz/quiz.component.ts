@@ -2,7 +2,7 @@ import { Component, computed, inject } from '@angular/core';
 import { DataService } from '../../data/data.sevice';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { map, Observable } from 'rxjs';
+import { map, Observable, tap } from 'rxjs';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
 import { AntwortenService } from '../../state/antworten.service';
 import { Antwort } from '../../interfaces/antworten.interface';
@@ -55,6 +55,8 @@ export class QuizComponent {
   }
 
   public getAntwort(abstimmungs_id: string): Observable<Antwort | undefined> {
-    return this.antwortenService.selectAntwort(abstimmungs_id);
+    return this.antwortenService
+      .selectAntwort(abstimmungs_id)
+      .pipe(tap(x => console.log(`antwort auf ${abstimmungs_id} ist ${x}`)));
   }
 }

@@ -1,3 +1,8 @@
+export interface PartyMatchAcc {
+  party: string;
+  match: number;
+}
+
 export interface PartyMatch {
   abstimmungs_id: string;
   party: string;

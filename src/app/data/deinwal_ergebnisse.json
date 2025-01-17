@@ -1,1 +1,111 @@
-{"020-120-02": {"AfD": {"abstimmungs_id": "020-120-02", "fraktion": "AfD", "ja": 66, "nein": 0, "enthalten": 0}, "Die Linke": {"abstimmungs_id": "020-120-02", "fraktion": "Die Linke", "ja": 0, "nein": 33, "enthalten": 0}, "CDU/CSU": {"abstimmungs_id": "020-120-02", "fraktion": "CDU/CSU", "ja": 166, "nein": 0, "enthalten": 0}, "B\u00fcndnis 90/Die Gr\u00fcnen": {"abstimmungs_id": "020-120-02", "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen", "ja": 112, "nein": 0, "enthalten": 1}, "SPD": {"abstimmungs_id": "020-120-02", "fraktion": "SPD", "ja": 200, "nein": 0, "enthalten": 0}, "FDP": {"abstimmungs_id": "020-120-02", "fraktion": "FDP", "ja": 84, "nein": 1, "enthalten": 0}, "Fraktionslos": {"abstimmungs_id": "020-120-02", "fraktion": "Fraktionslos", "ja": 4, "nein": 0, "enthalten": 1}}, "020-195-08": {"CDU/CSU": {"abstimmungs_id": "020-195-08", "fraktion": "CDU/CSU", "ja": 173, "nein": 0, "enthalten": 0}, "AfD": {"abstimmungs_id": "020-195-08", "fraktion": "AfD", "ja": 0, "nein": 55, "enthalten": 0}, "Die Linke": {"abstimmungs_id": "020-195-08", "fraktion": "Die Linke", "ja": 15, "nein": 1, "enthalten": 0}, "B\u00fcndnis 90/Die Gr\u00fcnen": {"abstimmungs_id": "020-195-08", "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen", "ja": 107, "nein": 1, "enthalten": 0}, "SPD": {"abstimmungs_id": "020-195-08", "fraktion": "SPD", "ja": 183, "nein": 0, "enthalten": 0}, "Fraktionslos": {"abstimmungs_id": "020-195-08", "fraktion": "Fraktionslos", "ja": 1, "nein": 5, "enthalten": 0}, "FDP": {"abstimmungs_id": "020-195-08", "fraktion": "FDP", "ja": 88, "nein": 0, "enthalten": 0}, "BSW": {"abstimmungs_id": "020-195-08", "fraktion": "BSW", "ja": 0, "nein": 0, "enthalten": 7}}}
+{
+  "020-120-02": {
+    "AfD": {
+      "abstimmungs_id": "020-120-02",
+      "fraktion": "AfD",
+      "ja": 66,
+      "nein": 0,
+      "enthalten": 0
+    },
+    "Die Linke": {
+      "abstimmungs_id": "020-120-02",
+      "fraktion": "Die Linke",
+      "ja": 0,
+      "nein": 33,
+      "enthalten": 0
+    },
+    "CDU/CSU": {
+      "abstimmungs_id": "020-120-02",
+      "fraktion": "CDU/CSU",
+      "ja": 166,
+      "nein": 0,
+      "enthalten": 0
+    },
+    "B\u00fcndnis 90/Die Gr\u00fcnen": {
+      "abstimmungs_id": "020-120-02",
+      "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+      "ja": 112,
+      "nein": 0,
+      "enthalten": 1
+    },
+    "SPD": {
+      "abstimmungs_id": "020-120-02",
+      "fraktion": "SPD",
+      "ja": 200,
+      "nein": 0,
+      "enthalten": 0
+    },
+    "FDP": {
+      "abstimmungs_id": "020-120-02",
+      "fraktion": "FDP",
+      "ja": 84,
+      "nein": 1,
+      "enthalten": 0
+    },
+    "Fraktionslos": {
+      "abstimmungs_id": "020-120-02",
+      "fraktion": "Fraktionslos",
+      "ja": 4,
+      "nein": 0,
+      "enthalten": 1
+    }
+  },
+  "020-195-08": {
+    "CDU/CSU": {
+      "abstimmungs_id": "020-195-08",
+      "fraktion": "CDU/CSU",
+      "ja": 173,
+      "nein": 0,
+      "enthalten": 0
+    },
+    "AfD": {
+      "abstimmungs_id": "020-195-08",
+      "fraktion": "AfD",
+      "ja": 0,
+      "nein": 55,
+      "enthalten": 0
+    },
+    "Die Linke": {
+      "abstimmungs_id": "020-195-08",
+      "fraktion": "Die Linke",
+      "ja": 15,
+      "nein": 1,
+      "enthalten": 0
+    },
+    "B\u00fcndnis 90/Die Gr\u00fcnen": {
+      "abstimmungs_id": "020-195-08",
+      "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+      "ja": 107,
+      "nein": 1,
+      "enthalten": 0
+    },
+    "SPD": {
+      "abstimmungs_id": "020-195-08",
+      "fraktion": "SPD",
+      "ja": 183,
+      "nein": 0,
+      "enthalten": 0
+    },
+    "Fraktionslos": {
+      "abstimmungs_id": "020-195-08",
+      "fraktion": "Fraktionslos",
+      "ja": 1,
+      "nein": 5,
+      "enthalten": 0
+    },
+    "FDP": {
+      "abstimmungs_id": "020-195-08",
+      "fraktion": "FDP",
+      "ja": 88,
+      "nein": 0,
+      "enthalten": 0
+    },
+    "BSW": {
+      "abstimmungs_id": "020-195-08",
+      "fraktion": "BSW",
+      "ja": 0,
+      "nein": 0,
+      "enthalten": 7
+    }
+  }
+}

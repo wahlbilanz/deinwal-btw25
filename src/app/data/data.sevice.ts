@@ -76,15 +76,18 @@ export class DataService {
   }
 
   public matchAntworten(antworten: Antwort[] | undefined): QuestionMatchMap {
+    console.log('matching antworten:', antworten);
     if (!antworten?.length) {
       return {};
     }
 
     return generateMap(
-      antworten.map(antwort => [
-        antwort.abstimmungs_id,
-        partyMatcher(antwort, this.ergebnisse[antwort.abstimmungs_id]),
-      ]),
+      antworten
+        .filter(antwort => !!antwort)
+        .map(antwort => [
+          antwort.abstimmungs_id,
+          partyMatcher(antwort, this.ergebnisse[antwort.abstimmungs_id]),
+        ]),
     );
   }
 

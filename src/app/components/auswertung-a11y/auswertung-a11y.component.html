@@ -1,8 +1,14 @@
 <div>
   @for (match of partyMatchSorted(); track match.party) {
   <div class="m-3">
-    <span class="font-bold"> {{ match.party }} </span> hat eine übereinstimmung von {{match.match}}
-    mit dir...
+    <span
+      class="inline-block w-3 h-3"
+      [style.background-color]="match.party | memoize: partyColorFn"
+    ></span>
+    <span class="font-bold border-b-4" [style.border-color]="match.party | memoize: partyColorFn">
+      {{ match.party }}
+    </span>
+    hat eine übereinstimmung von {{match.match * 100 | number: '1.1-1'}}% mit dir...
   </div>
   }
 </div>

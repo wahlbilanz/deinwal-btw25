@@ -1,7 +1,7 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { AntwortenService } from '../../state/antworten.service';
 import { AuswertungBalkendiagramComponent } from '../../components/auswertung-balkendiagram/auswertung-balkendiagram.component';
-import { PartyMatch } from '../../interfaces/match.interface';
+import { PartyMatch, PartyMatchAcc } from '../../interfaces/match.interface';
 import { AuswertungA11yComponent } from '../../components/auswertung-a11y/auswertung-a11y.component';
 import { AuswertungTabelleComponent } from '../../components/auswertung-tabelle/auswertung-tabelle.component';
 import { NgClass } from '@angular/common';
@@ -24,32 +24,32 @@ export class AuswertungComponent {
   private datenService = inject(DataService);
   private antwortenService = inject(AntwortenService);
 
-  public balkendiagram = signal<boolean>(true);
+  public balkenTab = toSignal(this.antwortenService.balkenDiagramm$);
   public antworten = toSignal(this.antwortenService.selectAntworten());
-  public partyMatch = computed(() => {
+  public partyDetailMatch = computed(() => {
     return this.datenService.matchAntworten(this.antworten());
   });
-  // public partyMatch = computed<PartyMatch[]>(() => {
-  //   return [
-  //     {
-  //       party: 'Eine Partei',
-  //       match: 10.5,
-  //       color: '#220066',
-  //     },
-  //     {
-  //       party: 'Und noch eine Partei',
-  //       match: 48.7,
-  //       color: '#ff0000',
-  //     },
-  //     {
-  //       party: 'keine Partei',
-  //       match: 33.3,
-  //       color: '#f0ff88',
-  //     },
-  //   ];
-  // });
+  public partyMatch = computed(() => {
+    const matches = this.partyDetailMatch();
+    console.log(matches);
+    const numAbstimmungen = Object.entries(matches).length;
+    const fraktionsMatches: { [fraktion: string]: PartyMatchAcc } = {};
+    for (const match of Object.values(matches)) {
+      console.log('match', match);
+      for (const [fraktion, m] of Object.entries(match.partyMatches)) {
+        console.log('fraktion', fraktion, m);
+        if (!fraktionsMatches[fraktion]) {
+          fraktionsMatches[fraktion] = { party: fraktion, match: 0 };
+        }
+        fraktionsMatches[fraktion].match += m / numAbstimmungen;
+        console.log(fraktionsMatches);
+      }
+    }
+    console.log(fraktionsMatches);
+    return Object.values(fraktionsMatches);
+  });
 
-  public setBalkendiagramm(b: boolean): void {
-    this.balkendiagram.set(b);
+  public setBalkenTab(b: boolean): void {
+    this.antwortenService.setBalkenDiagramm(b);
   }
 }
