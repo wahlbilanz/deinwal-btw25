@@ -20,7 +20,8 @@
     --font-sans: "Noto Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --color-primary: var(--color-amber-600);
     --color-primary-dark: var(--color-amber-700);
-    --color-primary-bright: var(--color-amber-400);
+  --color-primary-bright: var(--color-amber-400);
+  --color-primary-brightest: var(--color-amber-100);
 }
 
 

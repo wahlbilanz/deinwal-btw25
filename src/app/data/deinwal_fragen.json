@@ -7,7 +7,7 @@
     "frage": "Soll die Stadt eine neue Stra\u00dfenbahnlinie bauen?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Information 1",
+        "text": "Information 1 mit langem text...",
         "link": "https://example.com/info1"
       },
       {
