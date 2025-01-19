@@ -1,0 +1,11 @@
+@if (antwort(); as a) { Stimmten wie du:
+<ul class="inline">
+  @for (uebereinstimmung of uebereinstimmungen() | keyvalue ; track uebereinstimmung.key) {
+  <li class="inline">
+    <wal-fraktion-badge [fraktion]="uebereinstimmung.key"></wal-fraktion-badge>
+  </li>
+  } @empty {
+  <li class="inline">niemand...</li>
+  }
+</ul>
+}

@@ -1,0 +1,11 @@
+@if (fraktion(); as f) {
+<span>
+  <img
+    class="inline m-1"
+    src="/media/fraktionsbadges/{{f | alphanum | lowercase}}.svg"
+    [title]="f"
+    [alt]="f"
+  />
+</span>
+
+}

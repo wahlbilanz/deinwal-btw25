@@ -17,7 +17,7 @@ import { partyDecision } from '../functions/party-decision.function';
 import { generateDeinwalFragenErgebnisse, generateMap } from '../functions/data-massage.function';
 import { Agreement, AgreementMap } from '../interfaces/agreement.interface';
 import { QuestionMatch, QuestionMatchMap } from '../interfaces/match.interface';
-import { partyMatcher } from '../functions/party-matcher.functino';
+import { partyMatcher } from '../functions/party-matcher.function';
 
 @Injectable({
   providedIn: 'root',
@@ -94,6 +94,10 @@ export class DataService {
       a.find(abst => abst.abstimmungs_id === abstimmungs_id);
   }
 
+  public getErgebnisseOfAbstimmung(abstimmungs_id: string): DeinwalFragenErgebnis {
+    return this.ergebnisse[abstimmungs_id];
+  }
+
   public matchAntworten(antworten: Antwort[] | undefined): QuestionMatchMap {
     if (!antworten?.length) {
       return {};
@@ -104,7 +108,7 @@ export class DataService {
         .filter(antwort => !!antwort)
         .map(antwort => [
           antwort.abstimmungs_id,
-          partyMatcher(antwort, this.ergebnisse[antwort.abstimmungs_id]),
+          partyMatcher(antwort, this.getErgebnisseOfAbstimmung(antwort.abstimmungs_id)),
         ]),
     );
   }

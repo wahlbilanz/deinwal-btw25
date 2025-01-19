@@ -37,6 +37,18 @@ function findMatch(nutzer: number | null | undefined, fraktion: DeinwalErgebnis)
   };
 }
 
+export function computeUebereinstimmungen(
+  nutzer: number | null,
+  fraktionsErgebnisse: DeinwalFragenErgebnis,
+): { [key: string]: Match } {
+  return generateMap(
+    Object.entries(fraktionsErgebnisse).map(([fraktion, ergebnis]) => [
+      fraktion,
+      findMatch(nutzer, ergebnis),
+    ]),
+  );
+}
+
 export function partyMatcher(
   antwort: Antwort,
   fraktionsErgebnisse: DeinwalFragenErgebnis,
@@ -48,12 +60,7 @@ export function partyMatcher(
   }
   return {
     abstimmungs_id: antwort.abstimmungs_id,
-    partyMatches: generateMap(
-      Object.entries(fraktionsErgebnisse).map(([fraktion, ergebnis]) => [
-        fraktion,
-        findMatch(antwort.antwort, ergebnis),
-      ]),
-    ),
+    partyMatches: computeUebereinstimmungen(antwort.antwort, fraktionsErgebnisse),
     antwort: antwort.antwort,
   };
 }

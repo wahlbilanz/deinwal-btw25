@@ -3,10 +3,11 @@ import { AngularLineawesomeModule } from 'angular-line-awesome';
 import { DeinwalFrage } from '../../interfaces/data.interface';
 import { Antwort } from '../../interfaces/antworten.interface';
 import { NgClass } from '@angular/common';
+import { QuizUebereinstimmungsVorschauComponent } from '../quiz-uebereinstimmungs-vorschau/quiz-uebereinstimmungs-vorschau.component';
 
 @Component({
   selector: 'wal-quiz-question',
-  imports: [AngularLineawesomeModule, NgClass],
+  imports: [AngularLineawesomeModule, NgClass, QuizUebereinstimmungsVorschauComponent],
   templateUrl: './quiz-question.component.html',
   styleUrl: './quiz-question.component.css',
 })

@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import {
   deleteEntities,
   selectAllEntities,
@@ -11,11 +11,16 @@ import { createStore, select, setProp, withProps } from '@ngneat/elf';
 import { Observable } from 'rxjs';
 import { localStorageStrategy, persistState } from '@ngneat/elf-persist-state';
 import { StateProps } from '../interfaces/state-properties.interface';
+import { DeinwalFragenErgebnis } from '../interfaces/data.interface';
+import { computeUebereinstimmungen } from '../functions/party-matcher.function';
+import { DataService } from '../data/data.sevice';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AntwortenService {
+  private dataService = inject(DataService);
+
   private readonly STORE_NAME = 'antworten';
   private readonly antwortenStore = createStore(
     { name: this.STORE_NAME },
@@ -45,7 +50,14 @@ export class AntwortenService {
     if (antwort === null) {
       this.antwortenStore.update(deleteEntities(abstimmungs_id));
     } else {
-      this.antwortenStore.update(upsertEntities({ abstimmungs_id, antwort }));
+      const fraktionsergebnisste: DeinwalFragenErgebnis =
+        this.dataService.getErgebnisseOfAbstimmung(abstimmungs_id);
+      const a: Antwort = {
+        abstimmungs_id,
+        antwort,
+        uebereinstimmungen: computeUebereinstimmungen(antwort, fraktionsergebnisste),
+      };
+      this.antwortenStore.update(upsertEntities(a));
     }
   }
 

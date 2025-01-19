@@ -19,6 +19,7 @@ export interface Match {
   agreement?: AGREEMENT | undefined;
   fraktionsEntscheidung?: Abstimmungsergebnis;
   uebereinstimmung: number;
+  // fraktion: string;
 }
 
 export interface QuestionMatch {
