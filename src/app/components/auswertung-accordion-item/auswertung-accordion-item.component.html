@@ -1,0 +1,19 @@
+<details class="group">
+  <summary
+    class="flex items-baseline gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer"
+  >
+    <la-icon
+      class="w-5 h-5 text-gray-500 transition group-open:rotate-90"
+      icon="angle-right"
+    ></la-icon>
+    <wal-antwort-icon [antwort]="result()?.antwort"></wal-antwort-icon>
+    <span>{{ abstimmung()?.stichwort }}</span>
+  </summary>
+
+  <article class="px-12 pb-4">
+    <wal-auswertung-accordion-details
+      [abstimmungsErgebnis]="result()"
+      [abstimmung]="abstimmung()"
+    ></wal-auswertung-accordion-details>
+  </article>
+</details>

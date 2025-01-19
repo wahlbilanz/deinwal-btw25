@@ -1,50 +1,53 @@
 [
-    {
-        "abstimmungs_id": "020-120-02",
-        "kategorie": "Politik",
-        "hintergrund": "Hintergrundinformationen zur Frage",
-        "frage": "Soll die Stadt eine neue Stra\u00dfenbahnlinie bauen?",
-        "weiterfuehrende_informationen": [
-            {
-                "text": "Information 1",
-                "link": "https://example.com/info1"
-            },
-            {
-                "text": "Information 2",
-                "link": "https://example.com/info2"
-            }
-        ]
-    },
-    {
-        "abstimmungs_id": "020-195-08",
-        "kategorie": "Politik",
-        "hintergrund": "Andere hintergrundinformationen zur Frage",
-        "frage": "Soll die Stadt eine alte Stra\u00dfenbahnlinie für den Schlittschuhverkehr freigeben?",
-        "weiterfuehrende_informationen": [
-            {
-                "text": "Information 44",
-                "link": "https://example.com/info44"
-            },
-            {
-                "text": "Information 43",
-                "link": "https://example.com/info43"
-            }
-        ]
-    },
-    {
-        "abstimmungs_id": "020-195-08",
-        "kategorie": "Wirtschaft",
-        "hintergrund": "Auch hier gibt es Hintergrundinformationen",
-        "frage": "Soll die Stadt ein neues Gewerbegebiet ausweisen?",
-        "weiterfuehrende_informationen": [
-            {
-                "text": "Information 1",
-                "link": "https://example.com/info1"
-            },
-            {
-                "text": "Information 2",
-                "link": "https://example.com/info2"
-            }
-        ]
-    }
+  {
+    "abstimmungs_id": "020-120-02",
+    "kategorie": "Politik",
+    "stichwort": "Straßenbahnlinie",
+    "hintergrund": "Hintergrundinformationen zur Frage",
+    "frage": "Soll die Stadt eine neue Stra\u00dfenbahnlinie bauen?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Information 1",
+        "link": "https://example.com/info1"
+      },
+      {
+        "text": "Information 2",
+        "link": "https://example.com/info2"
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-120-03",
+    "kategorie": "Politik",
+    "stichwort": "Schlittschuhlinie",
+    "hintergrund": "Andere hintergrundinformationen zur Frage",
+    "frage": "Soll die Stadt eine alte Stra\u00dfenbahnlinie für den Schlittschuhverkehr freigeben?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Information 44",
+        "link": "https://example.com/info44"
+      },
+      {
+        "text": "Information 43",
+        "link": "https://example.com/info43"
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-195-08",
+    "kategorie": "Wirtschaft",
+    "stichwort": "Gewerbegebiet",
+    "hintergrund": "Auch hier gibt es Hintergrundinformationen",
+    "frage": "Soll die Stadt ein neues Gewerbegebiet ausweisen?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Information 1",
+        "link": "https://example.com/info1"
+      },
+      {
+        "text": "Information 2",
+        "link": "https://example.com/info2"
+      }
+    ]
+  }
 ]

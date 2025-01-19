@@ -1,0 +1,54 @@
+@let a = antwort();
+<div class="relative inline-block text-left">
+  <button
+    type="button"
+    class="inline-flex items-center drop-shadow rounded text-white px-1 text-xl"
+    [ngClass]="{'ja-color': a && a > threshold, 'nein-color': a && a < -threshold, 'enthalten-color': a !== null && a!== undefined && a <= threshold && a >= - threshold}"
+    (click)="click()"
+    [class.cursor-pointer]="aenderbar()"
+  >
+    @if (a === undefined || a === null) {
+    <la-icon icon="circle"></la-icon>
+    } @else if (a > threshold) {
+    <la-icon icon="thumbs-up"></la-icon>
+    } @else if (a < -threshold) {
+    <la-icon icon="thumbs-down"></la-icon>
+    } @else {
+    <la-icon icon="yin-yang"></la-icon>
+    }
+    <!-- -->
+    @if (mitText()) {
+    <span class="px-2 text-base"> {{a | memoize: toText}} </span>
+    }
+  </button>
+
+  @if (aenderbar()) {
+  <div
+    class="absolute z-10 mt-2 origin-top-left rounded-md shadow-lg focus:outline-none flex gap-2 p-2 bg-gradient-to-br from-amber-200 to-red-200"
+    role="menu"
+    [class.hidden]="!showDropDown"
+  >
+    <wal-antwort-icon
+      [antwort]="1"
+      [aenderbar]="false"
+      [mitText]="true"
+      (clicked)="aktualisiereAntwort(1)"
+      class="block"
+    ></wal-antwort-icon>
+    <wal-antwort-icon
+      [antwort]="0"
+      [aenderbar]="false"
+      [mitText]="true"
+      (clicked)="aktualisiereAntwort(0)"
+      class="block"
+    ></wal-antwort-icon>
+    <wal-antwort-icon
+      [antwort]="-1"
+      [aenderbar]="false"
+      [mitText]="true"
+      (clicked)="aktualisiereAntwort(-1)"
+      class="block"
+    ></wal-antwort-icon>
+  </div>
+  }
+</div>

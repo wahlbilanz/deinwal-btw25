@@ -15,7 +15,7 @@ interface FaqItem {
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.css',
 })
-export class FaqComponent implements OnInit {
+export class FaqComponent {
   private hash = (s: string): number =>
     s.split('').reduce((a, b) => {
       a = (a << 5) - a + b.charCodeAt(0);
@@ -39,12 +39,7 @@ export class FaqComponent implements OnInit {
     });
   }
 
-  public ngOnInit(): void {
-    console.log('test');
-  }
-
   public clearData(): void {
-    console.log('clear');
     this.antwortenService.clearStore();
   }
 }

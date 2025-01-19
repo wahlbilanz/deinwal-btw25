@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import ergebnisse from './deinwal_ergebnisse.json';
 import fragen from './deinwal_fragen.json';
+import fraktionen from './deinwal_fraktionen.json';
 import {
   DeinwalErgebnis,
   DeinwalFrage,
   DeinwalFragenErgebnis,
   DeinwalFragenErgebnisse,
+  DeinwalFraktionenMap,
 } from '../interfaces/data.interface';
 import { Antwort } from '../interfaces/antworten.interface';
 import { AGREEMENT } from '../enums/agreement.enum';
@@ -25,20 +27,21 @@ export class DataService {
   private readonly fragen: DeinwalFrage[] = fragen;
   private readonly ergebnisse: DeinwalFragenErgebnisse =
     generateDeinwalFragenErgebnisse(ergebnisse);
+  private readonly fraktionen: DeinwalFraktionenMap = fraktionen;
 
   // precompute a couple things
   private readonly kategorien: string[] = Array.from(
     new Set(this.fragen.map(frage => frage.kategorie)),
   ).sort();
-  private readonly fraktionen: string[] = Array.from(
-    new Set(
-      Object.values(this.ergebnisse)
-        .map(ergebnis => Object.values(ergebnis).map(e => e.fraktion))
-        .flat(),
-    ),
-  )
-    .filter(fraktion => fraktion !== 'Fraktionslos')
-    .sort();
+  // private readonly fraktionen: string[] = Array.from(
+  //   new Set(
+  //     Object.values(this.ergebnisse)
+  //       .map(ergebnis => Object.values(ergebnis).map(e => e.fraktion))
+  //       .flat(),
+  //   ),
+  // )
+  //   .filter(fraktion => fraktion !== 'Fraktionslos')
+  //   .sort();
 
   public constructor() {
     console.log(this.kategorien);
@@ -46,12 +49,14 @@ export class DataService {
   }
 
   public getFragen(kategorie: string): DeinwalFrage[] {
-    // console.log(kategorie, this.fragen);
     return this.fragen.filter(frage => frage.kategorie === kategorie);
   }
 
   public getErgebnisse(): { [key: string]: { [key: string]: DeinwalErgebnis } } {
     return this.ergebnisse;
+  }
+  public getKategorie(abstimmungs_id: string): string | undefined {
+    return this.fragen.find(f => f.abstimmungs_id === abstimmungs_id)?.kategorie;
   }
 
   public getFirstKategorie(): string {
@@ -68,15 +73,28 @@ export class DataService {
 
   public getPrevKategorie(kategorie: string): string | null {
     const index = this.kategorien.indexOf(kategorie);
-    console.log(index);
     if (index < 1) {
       return null;
     }
     return this.kategorien[(index - 1) % this.kategorien.length];
   }
 
+  public getFraktionsFarbe(fraktion: string): string {
+    return this.fraktionen[fraktion]?.color || '#3cc9a7';
+  }
+
+  public getFraktionsColorizerFn(): (fraktion: string) => string {
+    const f = this.fraktionen;
+    return (fraktion: string): string => f[fraktion]?.color || '#3cc9a7';
+  }
+
+  public getAbstimmungsResolverFn(): (abstimmungs_id: string) => DeinwalFrage | undefined {
+    const a = this.fragen;
+    return (abstimmungs_id: string): DeinwalFrage | undefined =>
+      a.find(abst => abst.abstimmungs_id === abstimmungs_id);
+  }
+
   public matchAntworten(antworten: Antwort[] | undefined): QuestionMatchMap {
-    console.log('matching antworten:', antworten);
     if (!antworten?.length) {
       return {};
     }

@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {
   deleteEntities,
   selectAllEntities,
-  selectEntities,
   selectEntity,
   upsertEntities,
   withEntities,
@@ -33,7 +32,7 @@ export class AntwortenService {
     });
   }
 
-  public setBalkenDiagramm(balkenDiagramm: boolean) {
+  public setBalkenDiagramm(balkenDiagramm: boolean): void {
     this.antwortenStore.update(setProp('balkenDiagramm', balkenDiagramm));
   }
 

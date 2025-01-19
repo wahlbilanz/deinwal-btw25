@@ -1,0 +1,36 @@
+<div class="mb-2">
+  {{abstimmung()?.hintergrund}} <span class="font-bold">{{ abstimmung()?.frage }}</span>
+</div>
+<p>
+  Deine Antwort:
+  <wal-antwort-icon
+    [antwort]="abstimmungsErgebnis().antwort"
+    [abstimmungs_id]="abstimmungsErgebnis().abstimmungs_id"
+    [mitText]="true"
+    [aenderbar]="true"
+  ></wal-antwort-icon>
+</p>
+<h3 class="mt-2">Ergebnisse der Fraktionen</h3>
+<table class="border-spacing-1 border-separate">
+  @for (party of abstimmungsErgebnis().partyMatches | keyvalue; track party.key) {
+  <tr>
+    <th class="font-normal text-xs my-1">{{party.key}}</th>
+    <td class="w-full">
+      <div class="w-full p-0" [title]="party.value.fraktionsEntscheidung | memoize: titleize">
+        <div
+          class="h-5 float-left ja-color m-0 p-0 ja-background"
+          [style.width.%]="party.value.fraktionsEntscheidung?.ja | memoize: barsize: party.value.fraktionsEntscheidung?.gesamt"
+        ></div>
+        <div
+          class="h-5 float-left nein-color m-0 p-0 nein-background"
+          [style.width.%]="party.value.fraktionsEntscheidung?.nein | memoize: barsize: party.value.fraktionsEntscheidung?.gesamt"
+        ></div>
+        <div
+          class="h-5 float-left enthalten-color m-0 p-0 enthalten-background"
+          [style.width.%]="party.value.fraktionsEntscheidung?.enthalten | memoize: barsize: party.value.fraktionsEntscheidung?.gesamt"
+        ></div>
+      </div>
+    </td>
+  </tr>
+  }
+</table>

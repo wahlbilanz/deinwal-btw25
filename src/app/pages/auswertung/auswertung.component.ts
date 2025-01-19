@@ -31,21 +31,16 @@ export class AuswertungComponent {
   });
   public partyMatch = computed(() => {
     const matches = this.partyDetailMatch();
-    console.log(matches);
     const numAbstimmungen = Object.entries(matches).length;
     const fraktionsMatches: { [fraktion: string]: PartyMatchAcc } = {};
     for (const match of Object.values(matches)) {
-      console.log('match', match);
       for (const [fraktion, m] of Object.entries(match.partyMatches)) {
-        console.log('fraktion', fraktion, m);
         if (!fraktionsMatches[fraktion]) {
           fraktionsMatches[fraktion] = { party: fraktion, match: 0 };
         }
-        fraktionsMatches[fraktion].match += m / numAbstimmungen;
-        console.log(fraktionsMatches);
+        fraktionsMatches[fraktion].match += m.uebereinstimmung / numAbstimmungen;
       }
     }
-    console.log(fraktionsMatches);
     return Object.values(fraktionsMatches);
   });
 

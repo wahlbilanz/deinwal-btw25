@@ -1,37 +1,38 @@
-@let balken = balkenTab();
-<div class="text-sm font-medium text-center text-gray-500 border-b border-gray-300">
-  <ul class="flex flex-wrap -mb-px">
-    <li class="me-2">
-      <a
-        class="cursor-pointer inline-block p-4 rounded-t-lg hover:text-primary-dark hover:border-primary-dark border-b-2"
-        [ngClass]="{'border-b-3 border-primary text-primary': balken, 'border-none':!balken}"
-        (click)="setBalkenTab(true)"
-      >
-        Balkendiagramm
-      </a>
-    </li>
-    <li class="me-2">
-      <a
-        class="cursor-pointer inline-block p-4 rounded-t-lg hover:text-primary-dark hover:border-primary-dark border-b-2"
-        [ngClass]="{'border-b-3 border-primary text-primary': !balken, 'border-none': balken}"
-        aria-current="page"
-        (click)="setBalkenTab(false)"
-      >
-        Barrierefreie Auswertung
-      </a>
-    </li>
-  </ul>
+<div class="rounded shadow-sm px-6 py-2">
+  @let balken = balkenTab();
+  <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-300">
+    <ul class="flex flex-wrap -mb-px">
+      <li class="me-2">
+        <a
+          class="cursor-pointer inline-block p-4 rounded-t-lg hover:text-primary-dark hover:border-primary-dark border-b-2"
+          [ngClass]="{'border-b-3 border-primary text-primary': balken, 'border-none':!balken}"
+          (click)="setBalkenTab(true)"
+        >
+          Balkendiagramm
+        </a>
+      </li>
+      <li class="me-2">
+        <a
+          class="cursor-pointer inline-block p-4 rounded-t-lg hover:text-primary-dark hover:border-primary-dark border-b-2"
+          [ngClass]="{'border-b-3 border-primary text-primary': !balken, 'border-none': balken}"
+          aria-current="page"
+          (click)="setBalkenTab(false)"
+        >
+          Barrierefreie Auswertung
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="my-8">
+    @if (balkenTab()) {
+    <wal-auswertung-balkendiagram [partyMatch]="partyMatch()"></wal-auswertung-balkendiagram>
+    }@else{
+    <wal-auswertung-a11y [partyMatch]="partyMatch()"></wal-auswertung-a11y>
+    }
+  </div>
 </div>
 
-<div class="my-8">
-  @if (balkenTab()) {
-  <wal-auswertung-balkendiagram [partyMatch]="partyMatch()"></wal-auswertung-balkendiagram>
-  }@else{
-  <wal-auswertung-a11y [partyMatch]="partyMatch()"></wal-auswertung-a11y>
-  }
-  <p class="text-xs text-right mt-2">
-    Die Reihenfolge der Parteien entspricht der Übereinstimmung mit deinen Antworten.
-  </p>
+<div class="rounded shadow-sm px-6 py-6 my-6">
+  <wal-auswertung-tabelle [partyMatch]="partyDetailMatch()"></wal-auswertung-tabelle>
 </div>
-
-<wal-auswertung-tabelle [partyMatch]="partyDetailMatch()"></wal-auswertung-tabelle>

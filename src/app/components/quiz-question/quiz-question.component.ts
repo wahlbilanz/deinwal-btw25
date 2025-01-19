@@ -16,7 +16,6 @@ export class QuizQuestionComponent {
   public antwortChange = output<number | null>();
 
   public setAntwort(a: number, bisher: number | undefined | null): void {
-    console.log(a, bisher);
     if (a !== bisher) {
       this.antwortChange.emit(a);
     } else {

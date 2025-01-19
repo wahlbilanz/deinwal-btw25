@@ -3,7 +3,6 @@ import { PartyMatch, PartyMatchAcc } from '../../interfaces/match.interface';
 import { DecimalPipe } from '@angular/common';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
 import { DataService } from '../../data/data.sevice';
-import { partyColors } from '../../functions/part-colors.function';
 
 @Component({
   selector: 'wal-auswertung-balkendiagram',
@@ -12,6 +11,8 @@ import { partyColors } from '../../functions/part-colors.function';
   styleUrl: './auswertung-balkendiagram.component.css',
 })
 export class AuswertungBalkendiagramComponent {
+  private dataService = inject(DataService);
+
   public partyMatch = input.required<PartyMatchAcc[]>();
   public partyMatchSorted = computed(() => {
     const partyMatch = [...this.partyMatch()];
@@ -20,5 +21,5 @@ export class AuswertungBalkendiagramComponent {
   });
 
   public readonly axeAnnotations: number[] = [...Array(10).keys()].map(x => (x + 1) * 10);
-  public readonly partyColorFn = partyColors;
+  public readonly partyColorFn = this.dataService.getFraktionsColorizerFn();
 }

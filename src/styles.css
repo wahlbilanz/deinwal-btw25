@@ -25,10 +25,42 @@
 
 
 h1 {
-    @apply font-bold text-2xl font-special;
+  @apply font-bold text-2xl font-special;
+}
+h2 {
+  @apply font-bold text-xl font-special;
+}
+h3 {
+  @apply font-bold text-lg font-special;
 }
 
 .kategorie::before {
     content: "§ ";
     @apply font-bold;
+}
+
+.ja-color {
+  @apply bg-emerald-500;
+}
+.nein-color {
+  @apply bg-purple-500;
+}
+.enthalten-color{
+  @apply bg-gray-500;
+}
+.ja-background {
+  background-image: url('/ja-hintergrund.png');
+  background-repeat: repeat-x;
+  background-position: center;
+}
+.nein-background {
+  background-image: url('/nein-hintergrund.png');
+  background-repeat: repeat-x;
+  background-position: center;
+}
+.enthalten-background {
+  background-image: url('/enthalten-hintergrund.png');
+  background-repeat: repeat-x;
+  background-position: center;
+
 }

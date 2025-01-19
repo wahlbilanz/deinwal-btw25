@@ -8,6 +8,7 @@ import {
   lasAngleLeft,
   lasAngleRight,
   lasChartBar,
+  lasCircle,
   lasTag,
   lasThumbsDown,
   lasThumbsUp,
@@ -36,6 +37,7 @@ export class AppComponent {
       lasChartBar,
       lasAngleDown,
       lasTrashAlt,
+      lasCircle,
     ]);
   }
 }

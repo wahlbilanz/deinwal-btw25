@@ -5,7 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
   standalone: true,
 })
 export class MemoizePipe implements PipeTransform {
-  public transform<A, B>(value: A, handler: (v: A) => B): B {
-    return handler(value);
+  public transform<A, B, C extends unknown[]>(
+    value: A,
+    handler: (v: A, ...args: C) => B,
+    ...args: C
+  ): B {
+    return handler(value, ...args);
   }
 }
