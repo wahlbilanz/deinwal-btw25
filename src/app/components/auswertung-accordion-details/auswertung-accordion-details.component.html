@@ -14,7 +14,9 @@
 <table class="border-spacing-1 border-separate">
   @for (party of abstimmungsErgebnis().partyMatches | keyvalue; track party.key) {
   <tr>
-    <th class="font-normal text-xs my-1">{{party.key}}</th>
+    <th class="font-normal text-xs my-1">
+      <wal-fraktion-badge [fraktion]="party.key"></wal-fraktion-badge>
+    </th>
     <td class="w-full">
       <div class="w-full p-0" [title]="party.value.fraktionsEntscheidung | memoize: titleize">
         <div

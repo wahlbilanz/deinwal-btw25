@@ -6,9 +6,10 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:svg="http://www.w3.org/2000/svg"
     xmlns="http://www.w3.org/2000/svg"
-    width="46"
-    height="28"
+    width="60"
+    height="21"
     viewBox="0 0 20 7"
+    style="height: 1.3em"
   >
     <defs id="font-defs">
       <style type="text/css">
@@ -64,15 +65,10 @@
         writing-mode: lr-tb;
         direction: ltr;
         text-anchor: middle;
-        fill: none;
-        stroke-width: 0.15;
-        stroke: {{fontColor()}};
+        fill: {{fontColor()}};
       "
-      x="10"
-      y="4.5"
-      id="text2"
     >
-      <tspan style="stroke-width: 0.25" x="10" y="4.5">
+      <tspan style="stroke-width: 0.25" x="10" y="4.8">
         {{f | memoize: shortenFraktionForBadge}}
       </tspan>
     </text>

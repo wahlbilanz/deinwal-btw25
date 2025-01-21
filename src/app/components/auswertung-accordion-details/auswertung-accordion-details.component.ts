@@ -1,13 +1,14 @@
-import { Component, input, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { KeyValuePipe } from '@angular/common';
 import { QuestionMatch } from '../../interfaces/match.interface';
 import { Abstimmungsergebnis, DeinwalFrage } from '../../interfaces/data.interface';
 import { AntwortIconComponent } from '../antwort-icon/antwort-icon.component';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
+import { FraktionBadgeComponent } from '../fraktion-badge/fraktion-badge.component';
 
 @Component({
   selector: 'wal-auswertung-accordion-details',
-  imports: [KeyValuePipe, AntwortIconComponent, MemoizePipe],
+  imports: [KeyValuePipe, AntwortIconComponent, MemoizePipe, FraktionBadgeComponent],
   templateUrl: './auswertung-accordion-details.component.html',
   styleUrl: './auswertung-accordion-details.component.css',
 })
