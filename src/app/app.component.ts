@@ -7,8 +7,10 @@ import {
   lasAngleDown,
   lasAngleLeft,
   lasAngleRight,
+  lasArchive,
   lasChartBar,
   lasCircle,
+  lasPuzzlePiece,
   lasTag,
   lasThumbsDown,
   lasThumbsUp,
@@ -38,6 +40,8 @@ export class AppComponent {
       lasAngleDown,
       lasTrashAlt,
       lasCircle,
+      lasArchive,
+      lasPuzzlePiece,
     ]);
   }
 }

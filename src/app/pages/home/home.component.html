@@ -1,5 +1,5 @@
 <section
-  class="text-center md:text-left my-8 lg:text-left md:flex md:items-center md:justify-center md:my-10 md:gap-10"
+  class="px-4 py-10 bg-white rounded shadow-lg text-left my-8 md:flex md:items-center md:justify-center md:my-10 md:gap-10"
 >
   <div class="relative group">
     <img
@@ -8,7 +8,7 @@
       class="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 mx-auto mb-4 lg:mb-0 lg:mr-8"
     />
     <div
-      class="absolute inset-0 flex items-end justify-start pb-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      class="absolute inset-0 flex items-end justify-start pb-8 opacity-0 lg:hover:opacity-100 transition-opacity duration-300"
     >
       <span class="text-black font-special text-lg">Du hast den Wal!</span>
     </div>
@@ -40,3 +40,59 @@
     </a>
   </div>
 </section>
+
+<div class="flex flex-col sm:flex-row justify-items-start gap-8">
+  <section class="px-4 py-10 bg-white rounded shadow-lg text-left">
+    <h1 class="mb-6"><la-icon icon="archive"></la-icon> DeinWal Archiv</h1>
+    <div>
+      <p>
+        DeinWal gibt es inzwischen seit 2017! Hier ist eine Auswahl an (unserer Meinung nach) gut
+        gelungenen Walen für vergangene Wahlen:
+      </p>
+      <ul class="px-6 list-disc list-outside">
+        <li class="my-2">
+          <a class="underline decoration-2 decoration-primary" href="https://btw21.deinwal.de/">
+            <img src="/DeinWal.svg" alt="DeinWal Logo" class="w-8 h-8 inline mr-3" />DeinWal zur
+            Bundestagswahl 2021
+          </a>
+        </li>
+        <li class="my-2">
+          <a
+            class="underline decoration-2 decoration-primary"
+            href="https://erster.deinwal.de/europawal2019/0"
+          >
+            <img src="/DeinWal.svg" alt="DeinWal Logo" class="w-8 h-8 inline mr-3" />DeinWal zur
+            Europawahl 2019
+          </a>
+        </li>
+        <li class="my-2">
+          <a
+            class="underline decoration-2 decoration-primary"
+            href="https://erster.deinwal.de/bundestagswal2017/0"
+          >
+            <img src="/DeinWal.svg" alt="DeinWal Logo" class="w-8 h-8 inline mr-3" />DeinWal zur
+            Bundestagswahl 2017
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="px-4 py-10 bg-white rounded shadow-lg text-left">
+    <h1 class="mb-6"><la-icon icon="puzzle-piece"></la-icon> DeinWal Alternativen</h1>
+    <div>
+      <p>
+        So viel Mühe wir uns auch mit deinem Wal gegeben haben solltet ihr trotzdem unbedingt auch
+        einen Blick in die Alternativen werfen:
+      </p>
+      <ul class="px-6 list-disc list-outside">
+        @for (alternative of alternativen; track alternative.link) {
+        <li class="my-2">
+          <a class="underline decoration-2 decoration-primary" [href]="alternative.link">
+            {{alternative.name}}
+          </a>
+        </li>
+        }
+      </ul>
+    </div>
+  </section>
+</div>
