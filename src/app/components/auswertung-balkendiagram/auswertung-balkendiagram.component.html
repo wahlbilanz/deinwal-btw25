@@ -1,5 +1,5 @@
 <div
-  class="bg-[size:10%]"
+  class="bg-[size:9.99%]"
   [style.background-image]="'linear-gradient(to right, #eee 1px, transparent 1px)'"
 >
   @for (match of partyMatchSorted(); track match.party) {
@@ -9,7 +9,7 @@
       [style.background-color]="match.party | memoize: partyColorFn"
       [style.width]="match.match * 100 + '%'"
     ></div>
-    <div class="absolute bg-stone-50/97 font-medium ml-1 -mt-2 py-0 px-1.5 h-6 rounded-xs">
+    <div class="absolute bg-white/90 font-medium ml-1 -mt-2 py-0 px-1.5 h-6 rounded-xs">
       <span class="text-xs text-right pr-1 inline-block min-w-10">
         {{match.match * 100 | number: '1.1-1' }}%
       </span>
@@ -20,7 +20,9 @@
   <div class="flex justify-between mt-2 text-xs">
     @for (t of axeAnnotations; track $index) {
     <div class="w-1/10 text-right">
-      <span class="bg-stone-50 p-0.5 -mr-2">{{ t }}%</span>
+      <span class="bg-white p-0.5 -mr-2" [ngClass]="{'hidden sm:inline': $index %2 === 0}"
+        >{{ t }}%</span
+      >
     </div>
     }
   </div>

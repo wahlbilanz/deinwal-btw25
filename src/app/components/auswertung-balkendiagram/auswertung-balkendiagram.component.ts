@@ -1,12 +1,12 @@
 import { Component, computed, inject, input } from '@angular/core';
-import { PartyMatch, PartyMatchAcc } from '../../interfaces/match.interface';
-import { DecimalPipe } from '@angular/common';
+import { PartyMatchAcc } from '../../interfaces/match.interface';
+import { DecimalPipe, NgClass } from '@angular/common';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
 import { DataService } from '../../data/data.sevice';
 
 @Component({
   selector: 'wal-auswertung-balkendiagram',
-  imports: [DecimalPipe, MemoizePipe],
+  imports: [DecimalPipe, MemoizePipe, NgClass],
   templateUrl: './auswertung-balkendiagram.component.html',
   styleUrl: './auswertung-balkendiagram.component.css',
 })

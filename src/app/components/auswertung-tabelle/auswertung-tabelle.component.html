@@ -1,7 +1,7 @@
 <h1>Detaillierte Auswertung der Thesen</h1>
 
 @for ( kategorie of partyMatchTable() | keyvalue; track kategorie.key) {
-<div class="p-6 pt-2 border-l-2 border-l-primary my-6">
+<div class="sm:p-6 pt-2 sm:border-l-2 sm:border-l-primary my-6">
   <h2>{{kategorie.key}}</h2>
   <ul class="mt-6 divide-y divide-gray-200 shadow shadow-sm rounded-xs">
     @for (abstimmung of kategorie.value | keyvalue; track abstimmung.key) {

@@ -16,7 +16,7 @@ export class QuizUebereinstimmungsVorschauComponent {
   public antwort = input.required<Antwort | undefined | null>();
   public uebereinstimmungen = computed<{ [p: string]: Match }>(() => {
     const a = this.antwort();
-    if (!a) {
+    if (!a?.uebereinstimmungen) {
       return {};
     }
     return generateMap(

@@ -1,4 +1,4 @@
-<div class="p-4 bg-white shadow-lg drop-shadow-lg rounded">
+<div class="p-4 bg-white shadow-lg rounded">
   <div class="mb-4 flex justify-end">
     <a
       [routerLink]="['/quiz', kategorie()]"
@@ -37,18 +37,18 @@
   </div>
   }
 
-  <div class="mb-6 p-4 flex justify-between">
+  <div class="mb-6 sm:p-4 gap-2 flex sm:justify-between flex-col sm:flex-row">
     @if (prevKategorie()) {
     <a
       [routerLink]="['/quiz/', prevKategorie()]"
-      class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+      class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex justify-center gap-1"
     >
       <la-icon icon="angle-left"></la-icon> {{prevKategorie()}}
     </a>
     } @else {
     <a
       [routerLink]="['/home']"
-      class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+      class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex justify-center gap-1"
     >
       <la-icon icon="angle-left"></la-icon> Startseite
     </a>
@@ -56,7 +56,7 @@
 
     <a
       [routerLink]="['/auswertung']"
-      class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+      class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex justify-center gap-1"
     >
       <la-icon icon="chart-bar"></la-icon> Auswertung
     </a>
@@ -64,9 +64,11 @@
     @if (nextKategorie()) {
     <a
       [routerLink]="['/quiz/', nextKategorie()]"
-      class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+      class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex justify-center gap-1"
     >
-      {{nextKategorie()}} <la-icon icon="angle-right"></la-icon>
+      <la-icon icon="angle-right" class="block sm:hidden"></la-icon>
+      {{nextKategorie()}}
+      <la-icon icon="angle-right" class="hidden sm:block"></la-icon>
     </a>
     }
   </div>
