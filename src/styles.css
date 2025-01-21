@@ -6,13 +6,13 @@
 @font-face {
     font-family: "Petrona";
     display: swap;
-    src: url("/Petrona/Petrona-VariableFont_wght.ttf") format("truetype");
+    src: url("/fonts/Petrona/Petrona-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Noto Sans";
     display: swap;
-    src: url("/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
+    src: url("/fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
 }
 
 @theme {

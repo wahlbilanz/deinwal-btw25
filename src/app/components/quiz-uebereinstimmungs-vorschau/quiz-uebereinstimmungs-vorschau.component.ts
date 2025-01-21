@@ -23,5 +23,4 @@ export class QuizUebereinstimmungsVorschauComponent {
       Object.entries(a?.uebereinstimmungen).filter(x => x[1].agreement === AGREEMENT.AGREE),
     );
   });
-  public AGREEING = AGREEMENT.AGREE;
 }
