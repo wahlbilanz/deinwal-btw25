@@ -1,7 +1,14 @@
-import { Component, inject, input, output } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  inject,
+  input,
+  output,
+  ViewChild,
+} from '@angular/core';
 import { PartyDecisionThreshold } from '../../consts/threshold.const';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
-import bootstrap from '../../../main.server';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
 import { NgClass } from '@angular/common';
 import { AntwortenService } from '../../state/antworten.service';
@@ -14,6 +21,9 @@ import { AntwortenService } from '../../state/antworten.service';
 })
 export class AntwortIconComponent {
   private antwortService = inject(AntwortenService);
+
+  @ViewChild('antwortIcon')
+  public divElement: ElementRef | undefined;
 
   public antwort = input.required<number | undefined | null>();
   public abstimmungs_id = input<string>();
@@ -51,5 +61,17 @@ export class AntwortIconComponent {
       return;
     }
     this.antwortService.updateAntwort(abstimmungs_id, number);
+  }
+
+  @HostListener('document:mousedown', ['$event'])
+  public onGlobalClick(event: MouseEvent): void {
+    if (!this.showDropDown || !this.divElement || !this.aenderbar() || !event?.target) {
+      return;
+    }
+    // check if the click targeted this element
+    if (!this.divElement.nativeElement.contains(event.target)) {
+      // otherwise close the "dropdown"
+      this.showDropDown = false;
+    }
   }
 }
