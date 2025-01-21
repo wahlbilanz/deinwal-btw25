@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.css',
 })
-export class ImprintComponent {}
+export class ImprintComponent {
+  public domain = 'deinwal';
+  public mto = 'mailto:';
+}
