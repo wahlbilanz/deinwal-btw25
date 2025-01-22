@@ -50,17 +50,17 @@ h3 {
   @apply bg-gray-500;
 }
 .ja-background {
-  background-image: url('/ja-hintergrund.png');
+  background-image: url('/media/ja-hintergrund.png');
   background-repeat: repeat-x;
   background-position: center;
 }
 .nein-background {
-  background-image: url('/nein-hintergrund.png');
+  background-image: url('/media/nein-hintergrund.png');
   background-repeat: repeat-x;
   background-position: center;
 }
 .enthalten-background {
-  background-image: url('/enthalten-hintergrund.png');
+  background-image: url('/media/enthalten-hintergrund.png');
   background-repeat: repeat-x;
   background-position: center;
 
