@@ -1,32 +1,38 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { DataService } from './data/data.sevice';
 
-import { LaIconLibrary } from 'angular-line-awesome';
+import { AngularLineawesomeModule, LaIconLibrary } from 'angular-line-awesome';
 import {
   lasAngleDown,
   lasAngleLeft,
   lasAngleRight,
   lasArchive,
+  lasBars,
   lasChartBar,
   lasCircle,
+  lasHamburger,
   lasPuzzlePiece,
   lasTag,
   lasThumbsDown,
   lasThumbsUp,
+  lasTimes,
+  lasTimesCircle,
   lasTrashAlt,
   lasYinYang,
 } from 'angular-line-awesome/icons';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'wal-root',
-  imports: [RouterOutlet, RouterModule],
+  imports: [RouterOutlet, RouterModule, AngularLineawesomeModule, NgClass],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   private readonly dataService = inject(DataService);
   public readonly firstKategorie = this.dataService.getFirstKategorie();
+  public hideMobileMenu = true;
 
   public constructor(library: LaIconLibrary) {
     library.addIcons([
@@ -42,6 +48,22 @@ export class AppComponent {
       lasCircle,
       lasArchive,
       lasPuzzlePiece,
+      lasHamburger,
+      lasBars,
+      lasTimesCircle,
     ]);
+  }
+
+  public toggleMenu(): void {
+    this.hideMobileMenu = !this.hideMobileMenu;
+  }
+
+  @HostListener('document:mouseup', ['$event'])
+  public onGlobalClick(): void {
+    if (!this.hideMobileMenu) {
+      setTimeout(() => {
+        this.hideMobileMenu = true;
+      }, 100);
+    }
   }
 }

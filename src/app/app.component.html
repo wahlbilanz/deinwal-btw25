@@ -1,11 +1,24 @@
 <div class="min-h-screen flex flex-col bg-stone-50">
   <header class="bg-zinc-600 text-white font-special">
     <nav class="container mx-auto flex justify-between items-center max-w-7xl mx-auto">
-      <a href="/" class="text-lg font-bold font-sans flex items-center gap-3">
+      <a href="/" class="text-lg font-bold font-sans flex items-center gap-3 mx-2">
         <img src="/DeinWal.svg" alt="DeinWal Logo" class="w-12 h-12" />
         DeinWal
       </a>
-      <ul class="flex space-x-4 m-4">
+
+      <!-- Hamburger Icon for Small Screens -->
+      <button
+        class="sm:hidden text-white focus:outline-none mx-2 cursor-pointer"
+        (click)="toggleMenu()"
+      >
+        @if (hideMobileMenu) {
+        <la-icon icon="bars"></la-icon>
+        } @else {
+        <la-icon icon="times-circle"></la-icon>
+        }
+      </button>
+
+      <ul class="hidden sm:flex space-x-4 mx-4">
         <li>
           <a
             routerLink="/home"
@@ -44,6 +57,56 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div
+      class="lg:hidden transition-all duration-300 ease-in-out transform"
+      [ngClass]="{
+      'h-0 opacity-0': hideMobileMenu,
+      'opacity-100 ': !hideMobileMenu,
+      }"
+    >
+      <ul
+        class="flex flex-col items-center space-y-4 bg-zinc-600 p-4 transition-all duration-500 ease-in-out transform"
+      >
+        <li>
+          <a
+            routerLink="/home"
+            routerLinkActive="underline decoration-2 decoration-primary"
+            class="hover:underline"
+          >
+            Startseite
+          </a>
+        </li>
+        <li>
+          <a
+            [routerLink]="['/quiz', firstKategorie]"
+            routerLinkActive="underline decoration-2 decoration-primary"
+            class="hover:underline"
+          >
+            Quiz
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="/faq"
+            routerLinkActive="underline decoration-2 decoration-primary"
+            class="hover:underline"
+          >
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="/imprint"
+            routerLinkActive="underline decoration-2 decoration-primary"
+            class="hover:underline"
+          >
+            Impressum
+          </a>
+        </li>
+      </ul>
+    </div>
   </header>
   <main class="flex-grow container mx-auto sm:p-4 xl:pt-10 max-w-6xl mx-auto">
     <router-outlet></router-outlet>
