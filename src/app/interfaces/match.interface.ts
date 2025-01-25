@@ -6,12 +6,6 @@ export interface PartyMatchAcc {
   match: number;
 }
 
-export interface PartyMatch {
-  abstimmungs_id: string;
-  party: string;
-  match: number;
-}
-
 export interface Match {
   agreement?: AGREEMENT | undefined;
   fraktionsEntscheidung?: Abstimmungsergebnis;

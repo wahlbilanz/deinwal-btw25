@@ -12,7 +12,7 @@ import { map, Observable } from 'rxjs';
 import { localStorageStrategy, persistState } from '@ngneat/elf-persist-state';
 import { StateProps } from '../interfaces/state-properties.interface';
 import { DeinwalFragenErgebnis } from '../interfaces/data.interface';
-import { computeUebereinstimmungen } from '../functions/party-matcher.function';
+import { berechneUebereinstimmungen } from '../functions/party-matcher.function';
 import { DataService } from '../data/data.sevice';
 
 @Injectable({
@@ -58,7 +58,7 @@ export class AntwortenService {
       const a: Antwort = {
         abstimmungs_id,
         antwort,
-        uebereinstimmungen: computeUebereinstimmungen(antwort, fraktionsergebnisste),
+        uebereinstimmungen: berechneUebereinstimmungen(antwort, fraktionsergebnisste),
       };
       this.antwortenStore.update(upsertEntities(a));
     }

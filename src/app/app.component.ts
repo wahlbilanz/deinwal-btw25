@@ -26,7 +26,6 @@ import { NgClass } from '@angular/common';
   selector: 'wal-root',
   imports: [RouterOutlet, RouterModule, AngularLineawesomeModule, NgClass],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
 })
 export class AppComponent {
   private readonly dataService = inject(DataService);

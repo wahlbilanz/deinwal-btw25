@@ -1,30 +1,24 @@
 {
   "CDU/CSU": {
     "color": "#000",
-    "logo": "union.svg"
   },
   "SPD": {
     "color": "#ff481f",
-    "logo": "spd.svg"
   },
   "AfD": {
     "color": "#268fbe",
-    "logo": "afd.svg"
   },
   "Die Linke": {
     "color": "#e0001a",
-    "logo": "linke.svg"
   },
   "B\u00fcndnis 90/Die Gr\u00fcnen": {
+    "short": "Die Grünen",
     "color": "#19a329",
-    "logo": "gruene.svg"
   },
   "FDP": {
     "color": "#f4e30a",
-    "logo": "fdp.svg"
   },
   "BSW": {
     "color": "#671a3f",
-    "logo": "bsw.svg"
   }
 }

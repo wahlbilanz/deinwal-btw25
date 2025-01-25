@@ -8,14 +8,14 @@ import { MemoizePipe } from '../../pipes/memoize.pipe';
   selector: 'wal-fraktion-badge',
   imports: [MemoizePipe],
   templateUrl: './fraktion-badge.component.html',
-  styleUrl: './fraktion-badge.component.css',
 })
 export class FraktionBadgeComponent {
   private dataService = inject(DataService);
 
   public fraktion = input.required<string>();
   public backgroundColor = computed(() => {
-    return this.dataService.getFraktionsFarbe(this.fraktion());
+    const fraktionsColorizer = this.dataService.getFraktionsColorizerFn();
+    return fraktionsColorizer(this.fraktion());
   });
   public fontColor = computed(() => {
     const background = this.backgroundColor();

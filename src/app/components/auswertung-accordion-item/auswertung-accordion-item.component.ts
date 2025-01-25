@@ -9,7 +9,6 @@ import { AntwortIconComponent } from '../antwort-icon/antwort-icon.component';
   selector: 'wal-auswertung-accordion-item',
   imports: [AuswertungAccordionDetailsComponent, AngularLineawesomeModule, AntwortIconComponent],
   templateUrl: './auswertung-accordion-item.component.html',
-  styleUrl: './auswertung-accordion-item.component.css',
 })
 export class AuswertungAccordionItemComponent {
   public abstimmung = input.required<DeinwalFrage | undefined>();

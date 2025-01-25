@@ -17,7 +17,6 @@ import { DataService } from '../../data/data.sevice';
     NgClass,
   ],
   templateUrl: './auswertung.component.html',
-  styleUrl: './auswertung.component.css',
 })
 export class AuswertungComponent {
   private datenService = inject(DataService);

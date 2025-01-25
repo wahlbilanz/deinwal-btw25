@@ -8,7 +8,6 @@ import { DataService } from '../../data/data.sevice';
   selector: 'wal-auswertung-balkendiagram',
   imports: [DecimalPipe, MemoizePipe, NgClass],
   templateUrl: './auswertung-balkendiagram.component.html',
-  styleUrl: './auswertung-balkendiagram.component.css',
 })
 export class AuswertungBalkendiagramComponent {
   private dataService = inject(DataService);

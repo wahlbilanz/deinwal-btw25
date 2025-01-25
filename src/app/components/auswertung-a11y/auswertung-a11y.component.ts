@@ -8,7 +8,6 @@ import { DataService } from '../../data/data.sevice';
   selector: 'wal-auswertung-a11y',
   imports: [DecimalPipe, MemoizePipe],
   templateUrl: './auswertung-a11y.component.html',
-  styleUrl: './auswertung-a11y.component.css',
 })
 export class AuswertungA11yComponent {
   private dataService = inject(DataService);

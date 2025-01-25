@@ -8,11 +8,11 @@ import { AntwortenService } from '../../state/antworten.service';
 import { Antwort } from '../../interfaces/antworten.interface';
 import { AsyncPipe } from '@angular/common';
 import { QuizQuestionComponent } from '../../components/quiz-question/quiz-question.component';
+
 @Component({
   selector: 'wal-quiz',
   imports: [RouterModule, AngularLineawesomeModule, AsyncPipe, QuizQuestionComponent],
   templateUrl: './quiz.component.html',
-  styleUrl: './quiz.component.css',
 })
 export class QuizComponent {
   private readonly activatedRoute = inject(ActivatedRoute);
@@ -43,11 +43,11 @@ export class QuizComponent {
 
   public prevKategorie = computed(() => {
     const kategorie = this.kategorie();
-    return kategorie ? this.dataService.getPrevKategorie(kategorie) : null;
+    return kategorie ? this.dataService.vorherigeKategorie(kategorie) : null;
   });
   public nextKategorie = computed(() => {
     const kategorie = this.kategorie();
-    return kategorie ? this.dataService.getNextKategorie(kategorie) : null;
+    return kategorie ? this.dataService.naechsteKategorie(kategorie) : null;
   });
 
   public setAntwort(fragen_id: string, antwort: number | null): void {

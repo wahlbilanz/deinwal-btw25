@@ -35,6 +35,7 @@ export type DeinwalFragenErgebnisse = { [abstimmungs_id: string]: DeinwalFragenE
 
 export interface DeinwalFraktion {
   color: string;
+  short?: string;
 }
 
 export type DeinwalFraktionenMap = { [fraktion: string]: DeinwalFraktion };
