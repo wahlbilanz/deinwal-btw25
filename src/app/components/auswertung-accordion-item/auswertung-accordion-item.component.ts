@@ -8,7 +8,7 @@ import { AntwortIconComponent } from '../antwort-icon/antwort-icon.component';
 @Component({
   selector: 'wal-auswertung-accordion-item',
   imports: [AuswertungAccordionDetailsComponent, AngularLineawesomeModule, AntwortIconComponent],
-  templateUrl: './auswertung-accordion-item.component.html',
+  templateUrl: './auswertung-accordion-item.component.html'
 })
 export class AuswertungAccordionItemComponent {
   public abstimmung = input.required<DeinwalFrage | undefined>();
