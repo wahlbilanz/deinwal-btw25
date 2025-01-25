@@ -8,7 +8,7 @@ import {
 } from '@ngneat/elf-entities';
 import { Antwort } from '../interfaces/antworten.interface';
 import { createStore, select, setProp, withProps } from '@ngneat/elf';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { localStorageStrategy, persistState } from '@ngneat/elf-persist-state';
 import { StateProps } from '../interfaces/state-properties.interface';
 import { DeinwalFragenErgebnis } from '../interfaces/data.interface';
@@ -45,8 +45,11 @@ export class AntwortenService {
     this.antwortenStore.destroy();
   }
 
+  public hasAntworten(): Observable<boolean> {
+    return this.selectAntworten().pipe(map(antworten => antworten.length > 0));
+  }
+
   public updateAntwort(abstimmungs_id: string, antwort: number | null): void {
-    console.log('updateAntwort ', abstimmungs_id, antwort);
     if (antwort === null) {
       this.antwortenStore.update(deleteEntities(abstimmungs_id));
     } else {

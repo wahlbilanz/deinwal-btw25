@@ -37,13 +37,13 @@
   </div>
   }
 
-  <div class="mb-6 sm:p-4 gap-2 flex sm:justify-between flex-col sm:flex-row">
+  <div class="mb-6 sm:p-4 gap-2 flex sm:justify-between flex-col-reverse sm:flex-col sm:flex-row">
     @if (prevKategorie()) {
     <a
       [routerLink]="['/quiz/', prevKategorie()]"
       class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex justify-center gap-1"
     >
-      <la-icon icon="angle-left"></la-icon> {{prevKategorie()}}
+      <la-icon icon="angle-left"></la-icon> Zurück
     </a>
     } @else {
     <a
@@ -67,7 +67,7 @@
       class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex justify-center gap-1"
     >
       <la-icon icon="angle-right" class="block sm:hidden"></la-icon>
-      {{nextKategorie()}}
+      Weiter
       <la-icon icon="angle-right" class="hidden sm:block"></la-icon>
     </a>
     }
