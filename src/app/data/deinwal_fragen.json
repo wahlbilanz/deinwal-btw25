@@ -155,9 +155,111 @@
     ]
   },
   {
-    "abstimmungs_id": "020-028-02",
-    "kategorie": "Gesellschaft1",
-    "stichwort": "Impfpflicht",
+    "abstimmungs_id": "020-031-01",
+    "kategorie": "Verteidigung",
+    "stichwort": "Ukraine Unterstützen",
+    "hintergrund": "",
+    "frage": "Sollte Deutschland die Ukraine umfassend humanitär und militärisch unterstützen?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "",
+        "link": ""
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-000-00",
+    "kategorie": "Bildung",
+    "stichwort": "Gendern Verbieten",
+    "hintergrund": "",
+    "frage": "Sollte in Wissenschaft und Kultur das Gendern verboten werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Mit Gendern ist gemeint, dass u.a. Anreden und Berufsbezeichnungen Geschlechtsneutral formuliert werden.", 
+        "link": ""
+      },
+      {
+        "text": "Antrag der AfD",
+        "link": "https://dserver.bundestag.de/btd/20/088/2008862.pdf"
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "",
+    "kategorie": "Bildung",
+    "stichwort": "100 Mrd. Bildung",
+    "hintergrund": "",
+    "frage": "Sollte ein Sondervermögen von 100 Milliarden Euro allein für die Bildung erstellt werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Debatte im Bundestag",
+        "link": "https://www.bundestag.de/dokumente/textarchiv/2023/kw39-de-ausbildungsoffensive-967380"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "",
+    "kategorie": "Bildung",
+    "stichwort": "Deutschunterricht trennen",
+    "hintergrund": "",
+    "frage": "Sollten Kinder ohne ausreichende Deutschkenntnisse vom Deutschunterricht in der Schule ausgeschlossen werden und stattdessen in Volkshochschulen unterrichtet werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Bericht von Bundestag.de",
+        "link": "https://www.bundestag.de/dokumente/textarchiv/2024/kw08-de-deutschkenntnisse-kinder-988652"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "",
+    "kategorie": "Bildung",
+    "stichwort": "Fusionsforschung fördern",
+    "hintergrund": "",
+    "frage": "Sollte die Fusionsforschung besonders gefördert werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Informationen vom Bundestag",
+        "link": "https://www.bundestag.de/dokumente/textarchiv/2024/kw08-de-fusionsforschung-988602"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "",
+    "kategorie": "",
+    "stichwort": "",
+    "hintergrund": "",
+    "frage": "",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "",
+        "link": ""
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "",
+    "kategorie": "",
+    "stichwort": "",
     "hintergrund": "",
     "frage": "",
     "weiterfuehrende_informationen": [
