@@ -340,5 +340,56 @@
         "link": ""
       }
     ]
+  },
+  {
+    "abstimmungs_id": "020-073-01",
+    "kategorie": "Wirtschaft",
+    "stichwort": "CETA Handelsabkommen",
+    "hintergrund": "",
+    "frage": "Sollte das Wirtschafts- und Handelsabkommen mit Kanada (CETA) von Deutschland unterschrieben werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Das umfassende Wirtschafts- und Handelsabkommen (CETA) zwischen der EU und Kanada wurde 2016 unterzeichnet, aber seine vollständige Umsetzung erfordert die Zustimmung des deutschen Bundestags.",
+        "link": ""
+      },
+      {
+        "text": "CETA führt zu gemeinsamen Standards und Abbau von Zöllen",
+        "link": "Nachteile?"
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-194-01",
+    "kategorie": "Wirtschaft",
+    "stichwort": "Lieferkettengesetz abschaffen",
+    "hintergrund": "Das deutsche Lieferkettensorgfaltspflichtengesetz (LkSG) verpflichtet größere Unternehmen, Menschenrechte und Umweltstandards in ihren Lieferketten zu beachten.",
+    "frage": "Sollten wir das LkSG aufheben?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Abstimmung und Debatte im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=926"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-066-04",
+    "kategorie": "Wirtschaft",
+    "stichwort": "Inflationsausgleich",
+    "hintergrund": "Aufgrund der hohen Inflation sollen verschiedene steuerliche Regelungen angepasst werden, um die Bürger*innen finanziell zu entlasten.",
+    "frage": "Sollen diese Anpassungen, die unter anderem den Einkommensteuertarif und den Kinderfreibetrag betreffen, beschlossen werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Abstimmung und Debatte im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=812"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
   }
 ]
