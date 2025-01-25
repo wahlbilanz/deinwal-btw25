@@ -1,7 +1,4 @@
-import { Agreement } from './agreement.interface';
 import { AGREEMENT } from '../enums/agreement.enum';
-import { computeAgreement } from '../functions/aggrement.function';
-import { partyDecision } from '../functions/party-decision.function';
 import { Abstimmungsergebnis } from './data.interface';
 
 export interface PartyMatchAcc {

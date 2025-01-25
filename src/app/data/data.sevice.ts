@@ -10,13 +10,11 @@ import {
   DeinwalFraktionenMap,
 } from '../interfaces/data.interface';
 import { Antwort } from '../interfaces/antworten.interface';
-import { AGREEMENT } from '../enums/agreement.enum';
-import { PartyDecisionThreshold } from '../consts/threshold.const';
 import { computeAgreement } from '../functions/aggrement.function';
 import { partyDecision } from '../functions/party-decision.function';
 import { generateDeinwalFragenErgebnisse, generateMap } from '../functions/data-massage.function';
-import { Agreement, AgreementMap } from '../interfaces/agreement.interface';
-import { QuestionMatch, QuestionMatchMap } from '../interfaces/match.interface';
+import { AgreementMap } from '../interfaces/agreement.interface';
+import { QuestionMatchMap } from '../interfaces/match.interface';
 import { partyMatcher } from '../functions/party-matcher.function';
 
 @Injectable({
@@ -57,6 +55,10 @@ export class DataService {
   }
   public getKategorie(abstimmungs_id: string): string | undefined {
     return this.fragen.find(f => f.abstimmungs_id === abstimmungs_id)?.kategorie;
+  }
+
+  public getAlleKategorien(): string[] {
+    return this.kategorien;
   }
 
   public getFirstKategorie(): string {

@@ -1,12 +1,11 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { AntwortenService } from '../../state/antworten.service';
 import { AuswertungBalkendiagramComponent } from '../../components/auswertung-balkendiagram/auswertung-balkendiagram.component';
-import { PartyMatch, PartyMatchAcc } from '../../interfaces/match.interface';
+import { PartyMatchAcc } from '../../interfaces/match.interface';
 import { AuswertungA11yComponent } from '../../components/auswertung-a11y/auswertung-a11y.component';
 import { AuswertungTabelleComponent } from '../../components/auswertung-tabelle/auswertung-tabelle.component';
 import { NgClass } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { map } from 'rxjs';
 import { DataService } from '../../data/data.sevice';
 
 @Component({

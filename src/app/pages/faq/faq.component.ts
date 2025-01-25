@@ -1,15 +1,8 @@
 import { Component, effect, ElementRef, inject, viewChildren } from '@angular/core';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
-import { SafeHtml } from '@angular/platform-browser';
 import { AntwortenService } from '../../state/antworten.service';
 import { getDeinwalAlternativen } from '../../functions/alternativen.function';
 import { AsyncPipe } from '@angular/common';
-
-interface FaqItem {
-  question: string;
-  answer: SafeHtml;
-  hidden: boolean;
-}
 
 @Component({
   selector: 'wal-faq',

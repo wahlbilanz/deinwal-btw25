@@ -16,7 +16,6 @@ import {
   lasTag,
   lasThumbsDown,
   lasThumbsUp,
-  lasTimes,
   lasTimesCircle,
   lasTrashAlt,
   lasYinYang,

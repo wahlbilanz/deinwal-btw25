@@ -1,14 +1,12 @@
 import { Component, computed, inject, input } from '@angular/core';
-import { AlphanumPipe } from '../../pipes/alphanum.pipe';
-import { LowerCasePipe } from '@angular/common';
 import { DataService } from '../../data/data.sevice';
-import { calculateLuminance, colorHash } from '@hochleistungslabor/color-hasher';
+import { calculateLuminance } from '@hochleistungslabor/color-hasher';
 import { getContrastRatio, hexToRgb } from '../../functions/color.function';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
 
 @Component({
   selector: 'wal-fraktion-badge',
-  imports: [AlphanumPipe, LowerCasePipe, MemoizePipe],
+  imports: [MemoizePipe],
   templateUrl: './fraktion-badge.component.html',
   styleUrl: './fraktion-badge.component.css',
 })
