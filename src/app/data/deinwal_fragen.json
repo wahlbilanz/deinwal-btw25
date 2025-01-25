@@ -38,19 +38,136 @@
     ]
   },
   {
-    "abstimmungs_id": "020-195-08",
-    "kategorie": "Wirtschaft",
-    "stichwort": "Gewerbegebiet",
-    "hintergrund": "Auch hier gibt es Hintergrundinformationen",
-    "frage": "Soll die Stadt ein neues Gewerbegebiet ausweisen?",
+    "abstimmungs_id": "020-028-02",
+    "kategorie": "Gesellschaft1",
+    "stichwort": "Impfpflicht",
+    "hintergrund": "Sehr ansteckende Coronavarianten steigerten im Jahr 2022 die Angst vor einer Überlastung des Gesundheitssystems, da die Impfquote mit ca. 75% noch nicht hoch genug war um die Verbreitung komplett einzudämmen.",
+    "frage": "Sollte daher eine allgemeine Impfpflicht eingeführt werden, die für fast alle Volljährigen gilt?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Information 1",
-        "link": "https://example.com/info1"
+        "text": "Die Impfquote lag damals bei etwa 76 %. Die Coronavariante hieß Omikron. Für Mitarbeiter von Pflegeeinrichtungen galt bereits eine Impfpflicht.",
+        "link": ""
       },
       {
-        "text": "Information 2",
-        "link": "https://example.com/info2"
+        "text": "",
+        "link": ""
+      }
+    ],
+    "kommentar": "todo: mehr weiterfuehrende Infos, Links"
+  },
+  {
+    "abstimmungs_id": "020-115-02",
+    "kategorie": "Gesellschaft1",
+    "stichwort": "Sterbehilfe",
+    "hintergrund": "",
+    "frage": "Sollte Sterbehilfe erlaubt sein?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Debatte im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=864"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ],
+    "kommentar": "todo: mehr weiterfuehrende Infos, Links"
+  },
+  {
+    "abstimmungs_id": "020-148-01",
+    "kategorie": "Gesellschaft2",
+    "stichwort": "Einbürgerung vereinfachen",
+    "hintergrund": "",
+    "frage": "Sollten Einbürgerungen zukünftig schon nach 5 statt 8 Jahren Aufenthalt in Deutschland möglich sein und mehrfache Staatsbürgerschaften erleichtert werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Abstimmung im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=893"
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-138-01",
+    "kategorie": "Gesellschaft2",
+    "stichwort": "Videokonferenzen in Gerichten",
+    "hintergrund": "",
+    "frage": "Sollten manche Gerichtsverfahren auch per Videokonferenz abgehalten werden können?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Dieses Gesetz gilt nur für Zivil- und Fachgerichtsverfahren, nicht für Strafprozesse. Es sollen damit Kosten gesenkt und Verfahren vereinfacht werden.",
+        "link": ""
+      },
+      {
+        "text": "Abstimmung im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=881"
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "019-118-02",
+    "kategorie": "Gesellschaft2",
+    "stichwort": "Tempolimit 130",
+    "hintergrund": "Diese Abstimmung fand 2019 im vorherigen Bundestag statt.",
+    "frage": "Sollte auf den Autobahnen eine allgemeine Höchstgeschwindigkeit von 130 km/h gelten?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "2019 regierten CDU, SPD und CSU in einer Koalition.",
+        "link": ""
+      },
+      {
+        "text": "Debatte im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=612#debatte"
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-042-06",
+    "kategorie": "Verteidigung",
+    "stichwort": "100 Mrd. Bundeswehr",
+    "hintergrund": "Vor dem Hintergund des Angriffskrieges von Russland auf die Ukraine soll 2022 die Verteidigungsfähigkeit der Bundeswehr gestärkt werden",
+    "frage": "Sollte ein schuldenfinanziertes Sondervermögen in Höhe von 100 Milliarden Euro für die Bundeswehr eingerichtet werden?",  
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Das Sondervermögen solle die Finanzierung von Großvorhaben zur Stärkung der Bundeswehr und der Bündnisfähigkeit gewährleisten.",
+        "link": "https://dserver.bundestag.de/btd/20/014/2001409.pdf"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-157-01",
+    "kategorie": "Verteidigung",
+    "stichwort": "Marschflugkörper Ukraine",
+    "hintergrund": "Taurus Marschflugkörper fliegen mehr als 500 km weit und damit könnten auch Ziele weit innerhalb Russlands getroffen werden.",
+    "frage": "Sollten der Ukraine Taurus Marschflugkörper geliefert werden? ",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Antrag",
+        "link": "https://dserver.bundestag.de/btd/20/091/2009143.pdf"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-028-02",
+    "kategorie": "Gesellschaft1",
+    "stichwort": "Impfpflicht",
+    "hintergrund": "",
+    "frage": "",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "",
+        "link": ""
+      },
+      {
+        "text": "",
+        "link": ""
       }
     ]
   }
