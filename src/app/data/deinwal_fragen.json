@@ -255,5 +255,90 @@
         "link": "https://de.wikipedia.org/wiki/Verm%C3%B6gensverteilung_in_Deutschland"
       }
     ]
+  },
+  {
+    "abstimmungs_id": "020-122-02",
+    "kategorie": "Steuern und Sozialausgaben",
+    "stichwort": "Gastronomiesteuersenkung",
+    "hintergrund": "In der Coronakrise wurde der Mehrwertsteuersatz für Restaurants von 19% auf 7% gekürzt.", 
+    "frage": "Sollte dieser Steuervorteil dauerhaft beibehalten werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Debatte und Abstimmung im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=871"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-047-03",
+    "kategorie": "Energie",
+    "stichwort": "Windenergieausbau",
+    "hintergrund": "Deutschland strebt eine schnellere und größere Ausweitung der Windenergie an Land an, um Klimaziele zu erreichen.",
+    "frage": "Sollten die Bundesländer verpflichtet werden, mindestens 2% ihrer Fläche für Windenergieanlagen bereitzustellen?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Debatte und Abstimmung im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=788"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-120-01",
+    "kategorie": "Energie",
+    "stichwort": "Heizungsgesetz",
+    "hintergrund": "",
+    "frage": "Sollten ab 2024 neue Heizungen in Gebäuden mit mindestens 6 Wohneinheiten auch erneuerbare Energiequellen nutzen müssen?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Abstimmung und Debatte im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=868"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-116-01",
+    "kategorie": "Energie",
+    "stichwort": "LNG ausbauen",
+    "hintergrund": "Die Versorgung mit Gas und Energie aus Russland ist seit 2022 stark reduziert. Mit LNG Terminals kann Flüssiggas mit Schiffen aus anderen Ländern importiert werden.",  
+    "frage": "Sollte der Ausbau der Infrastruktur fuer Flüssiggas (LNG) beschleunigt werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Abstimmung und Debatte im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=867"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "abstimmungs_id": "020-135-02",
+    "kategorie": "Energie",
+    "stichwort": "Atomkraft ausbauen",
+    "hintergrund": "",
+    "frage": "Sollten stillgelegte Atomkraftwerke schnellstmöglich wieder ans Netz gebracht werden?",
+    "weiterfuehrende_informationen": [
+      {
+        "text": "Abstimmung und Debatte im Bundestag",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=877"
+      },
+      {
+        "text": "",
+        "link": ""
+      }
+    ]
   }
 ]
