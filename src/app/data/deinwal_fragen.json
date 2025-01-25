@@ -240,36 +240,19 @@
     ]
   },
   {
-    "abstimmungs_id": "",
-    "kategorie": "",
-    "stichwort": "",
+    "abstimmungs_id": "020-066-05",
+    "kategorie": "Steuern und Sozialausgaben",
+    "stichwort": "Reichensteuer",
     "hintergrund": "",
-    "frage": "",
+    "frage": "Sollte eine einmalige Vermögensabgabe von Superreichen erhoben werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "",
-        "link": ""
+        "text": "Mit den Einnahmen sollen die durch die Corona- und Energiekrise entstandenen finanziellen Belastungen der Bevölkerung abgemildert werden",
+        "link": "https://dserver.bundestag.de/btd/20/043/2004307.pdf"
       },
       {
-        "text": "",
-        "link": ""
-      }
-    ]
-  },
-  {
-    "abstimmungs_id": "",
-    "kategorie": "",
-    "stichwort": "",
-    "hintergrund": "",
-    "frage": "",
-    "weiterfuehrende_informationen": [
-      {
-        "text": "",
-        "link": ""
-      },
-      {
-        "text": "",
-        "link": ""
+        "text": "Vermögensverteilung in Deutschland",
+        "link": "https://de.wikipedia.org/wiki/Verm%C3%B6gensverteilung_in_Deutschland"
       }
     ]
   }
