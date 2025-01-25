@@ -7,7 +7,7 @@ import {
   output,
   ViewChild,
 } from '@angular/core';
-import { PartyDecisionThreshold } from '../../consts/threshold.const';
+import { Fraktionsentscheidungsschwellwert } from '../../consts/schwellwert.const';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
 import { NgClass } from '@angular/common';
@@ -17,7 +17,6 @@ import { AntwortenService } from '../../state/antworten.service';
   selector: 'wal-antwort-icon',
   imports: [AngularLineawesomeModule, MemoizePipe, NgClass],
   templateUrl: './antwort-icon.component.html',
-  styleUrl: './antwort-icon.component.css',
 })
 export class AntwortIconComponent {
   private antwortService = inject(AntwortenService);
@@ -32,17 +31,17 @@ export class AntwortIconComponent {
 
   public clicked = output<void>();
 
-  public threshold = PartyDecisionThreshold;
+  public threshold = Fraktionsentscheidungsschwellwert;
   public showDropDown = false;
 
   public toText(i: number | undefined | null): string {
     if (i === null || i === undefined) {
       return '???';
     }
-    if (i > PartyDecisionThreshold) {
+    if (i > Fraktionsentscheidungsschwellwert) {
       return 'Ja';
     }
-    if (i < -PartyDecisionThreshold) {
+    if (i < -Fraktionsentscheidungsschwellwert) {
       return 'Nein';
     }
     return 'Enthalten';

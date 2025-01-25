@@ -10,7 +10,6 @@ import { FraktionBadgeComponent } from '../fraktion-badge/fraktion-badge.compone
   selector: 'wal-auswertung-accordion-details',
   imports: [KeyValuePipe, AntwortIconComponent, MemoizePipe, FraktionBadgeComponent],
   templateUrl: './auswertung-accordion-details.component.html',
-  styleUrl: './auswertung-accordion-details.component.css',
 })
 export class AuswertungAccordionDetailsComponent {
   public abstimmungsErgebnis = input.required<QuestionMatch>();

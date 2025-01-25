@@ -1,5 +1,5 @@
 import { AGREEMENT } from '../enums/agreement.enum';
-import { PartyDecisionThreshold } from '../consts/threshold.const';
+import { Fraktionsentscheidungsschwellwert } from '../consts/schwellwert.const';
 
 export function computeAgreement(party?: number | null, user?: number | null): AGREEMENT {
   if (user === undefined || user === null) {
@@ -9,13 +9,13 @@ export function computeAgreement(party?: number | null, user?: number | null): A
     return AGREEMENT.NONE;
   }
 
-  if (party < -PartyDecisionThreshold && user < -0.1) {
+  if (party < -Fraktionsentscheidungsschwellwert && user < -0.1) {
     return AGREEMENT.AGREE;
   }
-  if (party > PartyDecisionThreshold && user > 0.1) {
+  if (party > Fraktionsentscheidungsschwellwert && user > 0.1) {
     return AGREEMENT.AGREE;
   }
-  if (Math.abs(party) < PartyDecisionThreshold && Math.abs(user) < 0.1) {
+  if (Math.abs(party) < Fraktionsentscheidungsschwellwert && Math.abs(user) < 0.1) {
     return AGREEMENT.AGREE;
   }
 
@@ -32,7 +32,7 @@ export function computeAgreementNumeric(party?: number | null, user?: number | n
 
   // user hat enthalten
   if (user === 0) {
-    if (party < PartyDecisionThreshold && party > -PartyDecisionThreshold) {
+    if (party < Fraktionsentscheidungsschwellwert && party > -Fraktionsentscheidungsschwellwert) {
       return 1;
     }
     return 0.5;
@@ -40,20 +40,20 @@ export function computeAgreementNumeric(party?: number | null, user?: number | n
 
   // user war dafuer
   if (user === 1) {
-    if (party > PartyDecisionThreshold) {
+    if (party > Fraktionsentscheidungsschwellwert) {
       return 1;
     }
-    if (party > -PartyDecisionThreshold) {
+    if (party > -Fraktionsentscheidungsschwellwert) {
       return 0.5;
     }
   }
 
   // user war dagegen
   if (user === -1) {
-    if (party < -PartyDecisionThreshold) {
+    if (party < -Fraktionsentscheidungsschwellwert) {
       return 1;
     }
-    if (party < PartyDecisionThreshold) {
+    if (party < Fraktionsentscheidungsschwellwert) {
       return 0.5;
     }
   }

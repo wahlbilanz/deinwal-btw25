@@ -9,7 +9,6 @@ import { QuizUebereinstimmungsVorschauComponent } from '../quiz-uebereinstimmung
   selector: 'wal-quiz-question',
   imports: [AngularLineawesomeModule, NgClass, QuizUebereinstimmungsVorschauComponent],
   templateUrl: './quiz-question.component.html',
-  styleUrl: './quiz-question.component.css',
 })
 export class QuizQuestionComponent {
   public frage = input.required<DeinwalFrage>();

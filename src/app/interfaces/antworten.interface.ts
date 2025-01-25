@@ -1,4 +1,3 @@
-import { AgreementMap } from './agreement.interface';
 import { Match } from './match.interface';
 
 export interface Antwort {

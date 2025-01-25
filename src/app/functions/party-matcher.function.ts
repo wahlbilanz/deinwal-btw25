@@ -37,7 +37,7 @@ function findMatch(nutzer: number | null | undefined, fraktion: DeinwalErgebnis)
   };
 }
 
-export function computeUebereinstimmungen(
+export function berechneUebereinstimmungen(
   nutzer: number | null,
   fraktionsErgebnisse: DeinwalFragenErgebnis,
 ): { [key: string]: Match } {
@@ -60,7 +60,7 @@ export function partyMatcher(
   }
   return {
     abstimmungs_id: antwort.abstimmungs_id,
-    partyMatches: computeUebereinstimmungen(antwort.antwort, fraktionsErgebnisse),
+    partyMatches: berechneUebereinstimmungen(antwort.antwort, fraktionsErgebnisse),
     antwort: antwort.antwort,
   };
 }

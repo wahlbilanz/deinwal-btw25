@@ -10,7 +10,6 @@ import { MemoizePipe } from '../../pipes/memoize.pipe';
   selector: 'wal-auswertung-tabelle',
   imports: [KeyValuePipe, AngularLineawesomeModule, AuswertungAccordionItemComponent, MemoizePipe],
   templateUrl: './auswertung-tabelle.component.html',
-  styleUrl: './auswertung-tabelle.component.css',
 })
 export class AuswertungTabelleComponent {
   private dataService = inject(DataService);

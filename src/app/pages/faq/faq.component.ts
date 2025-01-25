@@ -1,21 +1,13 @@
 import { Component, effect, ElementRef, inject, viewChildren } from '@angular/core';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
-import { SafeHtml } from '@angular/platform-browser';
 import { AntwortenService } from '../../state/antworten.service';
-import { getDeinwalAlternativen } from '../../functions/alternativen.function';
 import { AsyncPipe } from '@angular/common';
-
-interface FaqItem {
-  question: string;
-  answer: SafeHtml;
-  hidden: boolean;
-}
+import { deinwalAlternativen } from '../../consts/alternativen.const';
 
 @Component({
   selector: 'wal-faq',
   imports: [AngularLineawesomeModule, AsyncPipe],
   templateUrl: './faq.component.html',
-  styleUrl: './faq.component.css',
 })
 export class FaqComponent {
   private hash = (s: string): number =>
@@ -25,7 +17,7 @@ export class FaqComponent {
     }, 0);
 
   private antwortenService = inject(AntwortenService);
-  public readonly alternativen = getDeinwalAlternativen();
+  public readonly alternativen = deinwalAlternativen;
   public readonly hasAntworten$ = this.antwortenService.hasAntworten();
 
   public questions = viewChildren<ElementRef>('question');

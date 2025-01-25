@@ -10,7 +10,6 @@ import { Match } from '../../interfaces/match.interface';
   selector: 'wal-quiz-uebereinstimmungs-vorschau',
   imports: [KeyValuePipe, FraktionBadgeComponent],
   templateUrl: './quiz-uebereinstimmungs-vorschau.component.html',
-  styleUrl: './quiz-uebereinstimmungs-vorschau.component.css',
 })
 export class QuizUebereinstimmungsVorschauComponent {
   public antwort = input.required<Antwort | undefined | null>();
