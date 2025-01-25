@@ -1,35 +1,39 @@
 [
   {
-    "abstimmungs_id": "020-120-02",
-    "kategorie": "Politik",
-    "stichwort": "Straßenbahnlinie",
-    "hintergrund": "Hintergrundinformationen zur Frage",
-    "frage": "Soll die Stadt eine neue Stra\u00dfenbahnlinie bauen?",
+    "abstimmungs_id": "020-155-02",
+    "kategorie": "Gesellschaft1",
+    "stichwort": "Cannabis legalisieren",
+    "hintergrund": "",
+    "frage": "Sollte der Besitz, Konsum und Anbau kleiner Mengen Cannabis legalisiert werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Information 1 mit langem text...",
+        "text": "Es wurde am 23.Februar 2024 abgestimmt, ab 1.April 2024 tritt das Gesetz in Kraft", 
         "link": "https://example.com/info1"
       },
       {
-        "text": "Information 2",
-        "link": "https://example.com/info2"
+        "text": "Gesetzentwurf",
+        "link": "https://dserver.bundestag.de/btd/20/087/2008704.pdf"
+      },
+      {
+        "text": "Bundesregierung: FAQ zur Legalisierung von Cannabis ",
+        "link": "https://www.bundesregierung.de/breg-de/aktuelles/cannabis-legalisierung-2213640"
       }
     ]
   },
   {
-    "abstimmungs_id": "020-120-03",
-    "kategorie": "Politik",
-    "stichwort": "Schlittschuhlinie",
-    "hintergrund": "Andere hintergrundinformationen zur Frage",
-    "frage": "Soll die Stadt eine alte Stra\u00dfenbahnlinie für den Schlittschuhverkehr freigeben?",
+    "abstimmungs_id": "020-182-01",
+    "kategorie": "Gesellschaft1",
+    "stichwort": "Abtreibungskliniken",
+    "hintergrund": "",
+    "frage": "Sollte der Protest gegen Abtreibungen im Umkreis von 100m um Abtreibungskliniken herum verboten werden, damit Schwangere und Mitarbeiter besser geschützt werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Information 44",
+        "text": "Kernpunkte des Antrags: <br> Schutz von Schwangeren vor Belästigungen.<br> Schutz von Mitarbeitern von Beratungsstellen und Abtreibungseinrichtungen vor Belästigungen.<br>",
         "link": "https://example.com/info44"
       },
       {
-        "text": "Information 43",
-        "link": "https://example.com/info43"
+        "text": "Informationen vom Bundestag",
+        "link": "https://www.bundestag.de/services/suche?suchbegriff=Gehsteigbel%C3%A4stigungen"
       }
     ]
   },
