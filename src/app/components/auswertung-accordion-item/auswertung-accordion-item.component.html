@@ -6,13 +6,13 @@
       class="w-5 h-5 text-gray-500 transition group-open:rotate-90"
       icon="angle-right"
     ></la-icon>
-    <wal-antwort-icon [antwort]="result()?.antwort"></wal-antwort-icon>
+    <wal-antwort-icon [antwort]="antwort().antwort"></wal-antwort-icon>
     <span>{{ abstimmung()?.stichwort }}</span>
   </summary>
 
   <article class="px-12 pb-4">
     <wal-auswertung-accordion-details
-      [abstimmungsErgebnis]="result()"
+      [antwort]="antwort()"
       [abstimmung]="abstimmung()"
     ></wal-auswertung-accordion-details>
   </article>

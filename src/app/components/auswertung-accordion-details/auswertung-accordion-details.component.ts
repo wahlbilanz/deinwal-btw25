@@ -1,10 +1,10 @@
 import { Component, input } from '@angular/core';
 import { KeyValuePipe } from '@angular/common';
-import { QuestionMatch } from '../../interfaces/match.interface';
 import { Abstimmungsergebnis, DeinwalFrage } from '../../interfaces/data.interface';
 import { AntwortIconComponent } from '../antwort-icon/antwort-icon.component';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
 import { FraktionBadgeComponent } from '../fraktion-badge/fraktion-badge.component';
+import { Antwort } from '../../interfaces/antworten.interface';
 
 @Component({
   selector: 'wal-auswertung-accordion-details',
@@ -12,7 +12,7 @@ import { FraktionBadgeComponent } from '../fraktion-badge/fraktion-badge.compone
   templateUrl: './auswertung-accordion-details.component.html',
 })
 export class AuswertungAccordionDetailsComponent {
-  public abstimmungsErgebnis = input.required<QuestionMatch>();
+  public antwort = input.required<Antwort>();
   public abstimmung = input.required<DeinwalFrage | undefined>();
 
   public barsize(value: number | undefined, gesamt: number | undefined): number {

@@ -1,8 +1,8 @@
 import { Component, computed, inject, input } from '@angular/core';
-import { PartyMatchAcc } from '../../interfaces/match.interface';
 import { DecimalPipe } from '@angular/common';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
 import { DataService } from '../../data/data.sevice';
+import { PartyMatchAcc } from '../../interfaces/antworten.interface';
 
 @Component({
   selector: 'wal-auswertung-a11y',

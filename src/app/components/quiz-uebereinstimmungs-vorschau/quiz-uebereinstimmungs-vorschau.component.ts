@@ -1,10 +1,9 @@
 import { Component, computed, input } from '@angular/core';
-import { Antwort } from '../../interfaces/antworten.interface';
+import { Antwort, Match } from '../../interfaces/antworten.interface';
 import { KeyValuePipe } from '@angular/common';
 import { AGREEMENT } from '../../enums/agreement.enum';
 import { FraktionBadgeComponent } from '../fraktion-badge/fraktion-badge.component';
 import { generateMap } from '../../functions/data-massage.function';
-import { Match } from '../../interfaces/match.interface';
 
 @Component({
   selector: 'wal-quiz-uebereinstimmungs-vorschau',

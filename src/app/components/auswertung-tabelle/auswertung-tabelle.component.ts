@@ -1,10 +1,10 @@
 import { Component, computed, inject, input } from '@angular/core';
-import { QuestionMatchMap } from '../../interfaces/match.interface';
 import { DataService } from '../../data/data.sevice';
 import { KeyValuePipe } from '@angular/common';
 import { AngularLineawesomeModule } from 'angular-line-awesome';
 import { AuswertungAccordionItemComponent } from '../auswertung-accordion-item/auswertung-accordion-item.component';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
+import { AntwortenMap } from '../../interfaces/antworten.interface';
 
 @Component({
   selector: 'wal-auswertung-tabelle',
@@ -14,11 +14,11 @@ import { MemoizePipe } from '../../pipes/memoize.pipe';
 export class AuswertungTabelleComponent {
   private dataService = inject(DataService);
 
-  public partyMatch = input.required<QuestionMatchMap>();
+  public partyMatch = input.required<AntwortenMap>();
   public fragenResolverFn = this.dataService.getAbstimmungsResolverFn();
 
   public partyMatchTable = computed(() => {
-    const categorisedPartyMatchMap: { [group: string]: QuestionMatchMap } = {};
+    const categorisedPartyMatchMap: { [group: string]: AntwortenMap } = {};
     const matches = this.partyMatch();
     for (const abstimmungs_id of Object.keys(matches)) {
       const abstimmung = matches[abstimmungs_id];

@@ -1,12 +1,12 @@
 import { Component, computed, inject } from '@angular/core';
 import { AntwortenService } from '../../state/antworten.service';
 import { AuswertungBalkendiagramComponent } from '../../components/auswertung-balkendiagram/auswertung-balkendiagram.component';
-import { PartyMatchAcc } from '../../interfaces/match.interface';
 import { AuswertungA11yComponent } from '../../components/auswertung-a11y/auswertung-a11y.component';
 import { AuswertungTabelleComponent } from '../../components/auswertung-tabelle/auswertung-tabelle.component';
 import { NgClass } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { DataService } from '../../data/data.sevice';
+import { PartyMatchAcc } from '../../interfaces/antworten.interface';
 
 @Component({
   selector: 'wal-auswertung',
@@ -32,7 +32,7 @@ export class AuswertungComponent {
     const numAbstimmungen = Object.entries(matches).length;
     const fraktionsMatches: { [fraktion: string]: PartyMatchAcc } = {};
     for (const match of Object.values(matches)) {
-      for (const [fraktion, m] of Object.entries(match.partyMatches)) {
+      for (const [fraktion, m] of Object.entries(match.uebereinstimmungen)) {
         if (!fraktionsMatches[fraktion]) {
           fraktionsMatches[fraktion] = { party: fraktion, match: 0 };
         }

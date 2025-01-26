@@ -8,9 +8,8 @@ import {
   DeinwalFragenErgebnisse,
   DeinwalFraktionenMap,
 } from '../interfaces/data.interface';
-import { Antwort } from '../interfaces/antworten.interface';
+import { Antwort, AntwortenMap } from '../interfaces/antworten.interface';
 import { generateDeinwalFragenErgebnisse, generateMap } from '../functions/data-massage.function';
-import { QuestionMatchMap } from '../interfaces/match.interface';
 import { partyMatcher } from '../functions/party-matcher.function';
 
 @Injectable({
@@ -74,7 +73,7 @@ export class DataService {
     return this.ergebnisse[abstimmungs_id];
   }
 
-  public matchAntworten(antworten: Antwort[] | undefined): QuestionMatchMap {
+  public matchAntworten(antworten: Antwort[] | undefined): AntwortenMap {
     if (!antworten?.length) {
       return {};
     }

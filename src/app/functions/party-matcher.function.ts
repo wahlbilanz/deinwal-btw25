@@ -1,6 +1,5 @@
 import { DeinwalErgebnis, DeinwalFragenErgebnis } from '../interfaces/data.interface';
-import { Antwort } from '../interfaces/antworten.interface';
-import { Match, QuestionMatch } from '../interfaces/match.interface';
+import { Antwort, Match } from '../interfaces/antworten.interface';
 import { generateMap } from './data-massage.function';
 import { computeAgreement } from './aggrement.function';
 import { partyDecision } from './party-decision.function';
@@ -41,6 +40,9 @@ export function berechneUebereinstimmungen(
   nutzer: number | null,
   fraktionsErgebnisse: DeinwalFragenErgebnis,
 ): { [key: string]: Match } {
+  if (!fraktionsErgebnisse) {
+    return {};
+  }
   return generateMap(
     Object.entries(fraktionsErgebnisse).map(([fraktion, ergebnis]) => [
       fraktion,
@@ -52,15 +54,19 @@ export function berechneUebereinstimmungen(
 export function partyMatcher(
   antwort: Antwort,
   fraktionsErgebnisse: DeinwalFragenErgebnis,
-): QuestionMatch {
+): Antwort {
   if (!fraktionsErgebnisse) {
     console.error(`missing fraktionsergebnmisse fuer abstimmung ${antwort.abstimmungs_id}... :/`);
 
-    return { abstimmungs_id: antwort.abstimmungs_id, partyMatches: {}, antwort: antwort.antwort };
+    return {
+      abstimmungs_id: antwort.abstimmungs_id,
+      uebereinstimmungen: {},
+      antwort: antwort.antwort,
+    };
   }
   return {
     abstimmungs_id: antwort.abstimmungs_id,
-    partyMatches: berechneUebereinstimmungen(antwort.antwort, fraktionsErgebnisse),
+    uebereinstimmungen: berechneUebereinstimmungen(antwort.antwort, fraktionsErgebnisse),
     antwort: antwort.antwort,
   };
 }
