@@ -1,5 +1,56 @@
 {
-  "020-120-02": {
+  "00-00-00bildungsonder": {
+    "AfD": {
+      "abstimmungs_id": "00-00-00bildungsonder",
+      "fraktion": "AfD",
+      "ja": 0,
+      "nein": 66,
+      "enthalten": 0
+    },
+    "Die Linke": {
+      "abstimmungs_id": "00-00-00bildungsonder",
+      "fraktion": "Die Linke",
+      "ja": 33,
+      "nein": 0,
+      "enthalten": 0
+    },
+    "CDU/CSU": {
+      "abstimmungs_id": "00-00-00bildungsonder",
+      "fraktion": "CDU/CSU",
+      "ja": 0,
+      "nein": 166,
+      "enthalten": 0
+    },
+    "B\u00fcndnis 90/Die Gr\u00fcnen": {
+      "abstimmungs_id": "00-00-00bildungsonder",
+      "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+      "ja": 0,
+      "nein": 112,
+      "enthalten": 1
+    },
+    "SPD": {
+      "abstimmungs_id": "00-00-00bildungsonder",
+      "fraktion": "SPD",
+      "ja": 0,
+      "nein": 200,
+      "enthalten": 0
+    },
+    "FDP": {
+      "abstimmungs_id": "00-00-00bildungsonder",
+      "fraktion": "FDP",
+      "ja": 0,
+      "nein": 85,
+      "enthalten": 0
+    },
+    "Fraktionslos": {
+      "abstimmungs_id": "00-00-00bildungsonder",
+      "fraktion": "Fraktionslos",
+      "ja": 0,
+      "nein": 4,
+      "enthalten": 1
+    }
+  }, 
+  "020-120-02":{
     "AfD": {
       "abstimmungs_id": "020-120-02",
       "fraktion": "AfD",
