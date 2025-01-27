@@ -7,4 +7,8 @@ export const deinwalAlternativen: { name: string; link: string }[] = [
     name: 'WahlSwiper',
     link: 'https://www.voteswiper.org/de',
   },
+  {
+    name: 'CHES WahlQuiz',
+    link: 'https://www.wahlquiz.de/ches/',
+  },
 ].sort(() => Math.random() - 0.5);
