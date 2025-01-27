@@ -1018,5 +1018,158 @@
             "nein": 0,
             "enthalten": 0
         }
+    },
+    "00-00-00bildungdeutsch": {
+        "AfD": {
+            "abstimmungs_id": "00-00-00bildungdeutsch",
+            "fraktion": "AfD",
+            "ja": 72,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "00-00-00bildungdeutsch",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 0,
+            "nein": 111,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "00-00-00bildungdeutsch",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 188,
+            "enthalten": 1
+        },
+        "Die Linke": {
+            "abstimmungs_id": "00-00-00bildungdeutsch",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 35,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "00-00-00bildungdeutsch",
+            "fraktion": "FDP",
+            "ja": 0,
+            "nein": 86,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "00-00-00bildungdeutsch",
+            "fraktion": "SPD",
+            "ja": 0,
+            "nein": 191,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "00-00-00bildungdeutsch",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 35,
+            "enthalten": 0
+        }
+    },
+    "00-00-00bildungfusion": {
+        "AfD": {
+            "abstimmungs_id": "00-00-00bildungfusion",
+            "fraktion": "AfD",
+            "ja": 72,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "00-00-00bildungfusion",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 0,
+            "nein": 111,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "00-00-00bildungfusion",
+            "fraktion": "CDU/CSU",
+            "ja": 188,
+            "nein": 0,
+            "enthalten": 1
+        },
+        "Die Linke": {
+            "abstimmungs_id": "00-00-00bildungfusion",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 35,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "00-00-00bildungfusion",
+            "fraktion": "FDP",
+            "ja": 0,
+            "nein": 86,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "00-00-00bildungfusion",
+            "fraktion": "SPD",
+            "ja": 0,
+            "nein": 191,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "00-00-00bildungfusion",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 35,
+            "enthalten": 0
+        }
+    },
+    "020-000-00": {
+        "AfD": {
+            "abstimmungs_id": "020-000-00",
+            "fraktion": "AfD",
+            "ja":72,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-000-00",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 0,
+            "nein": 111,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-000-00",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 188,
+            "enthalten": 1
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-000-00",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 25,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-000-00",
+            "fraktion": "FDP",
+            "ja": 0,
+            "nein": 86,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-000-00",
+            "fraktion": "SPD",
+            "ja": 0,
+            "nein": 191,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-000-00",
+            "fraktion": "Die Linke",
+            "ja": 35,
+            "nein": 0,
+            "enthalten": 0
+        }
     }
 }
