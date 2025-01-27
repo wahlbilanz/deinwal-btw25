@@ -19,9 +19,9 @@
     <article class="px-12 pb-4 transition">
       <ul class="list-disc list-outside">
         @for (info of f.weiterfuehrende_informationen; track $index) {
-        <li class="">
+        <li class="my-2">
           @if (info.link) {
-          <a href="{{info.link}}" target="_blank" class="text-blue-500 hover:underline"
+          <a href="{{info.link}}" target="_blank" class="underline decoration-2 decoration-primary"
             >{{info.text || info.link}}</a
           >
           } @else { {{info.text}} }

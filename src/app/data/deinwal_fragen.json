@@ -7,12 +7,15 @@
     "frage": "Sollte der Besitz, Konsum und Anbau kleiner Mengen Cannabis legalisiert werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Es wurde am 23.Februar 2024 abgestimmt, ab 1.April 2024 tritt das Gesetz in Kraft", 
-        "link": "https://example.com/info1"
+        "text": "Datum der Abstimmung: 23. Februar 2024"
       },
       {
-        "text": "Gesetzentwurf",
-        "link": "https://dserver.bundestag.de/btd/20/087/2008704.pdf"
+        "text": "Abstimmung: Cannabisgesetz (GesEntwurf BReg) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-155-02"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=904"
       },
       {
         "text": "Bundesregierung: FAQ zur Legalisierung von Cannabis ",
@@ -28,8 +31,15 @@
     "frage": "Sollte der Protest gegen Abtreibungen im Umkreis von 100m um Abtreibungskliniken herum verboten werden, damit Schwangere und Mitarbeiter besser geschützt werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Kernpunkte des Antrags: <br> Schutz von Schwangeren vor Belästigungen.<br> Schutz von Mitarbeitern von Beratungsstellen und Abtreibungseinrichtungen vor Belästigungen.<br>",
-        "link": "https://example.com/info44"
+        "text": "Datum der Abstimmung: 5. Juli 2024"
+      },
+      {
+        "text": "Abstimmung: Änderung des Schwangerschaftskonfliktgesetzes auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-182-01"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=925"
       },
       {
         "text": "Informationen vom Bundestag",
@@ -45,12 +55,18 @@
     "frage": "Sollte daher eine allgemeine Impfpflicht eingeführt werden, die für fast alle Volljährigen gilt?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Die Impfquote lag damals bei etwa 76 %. Die Coronavariante hieß Omikron. Für Mitarbeiter von Pflegeeinrichtungen galt bereits eine Impfpflicht.",
-        "link": ""
+        "text": "Datum der Abstimmung: 7. April 2022"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Die Impfquote lag damals bei etwa 76 %. Die Coronavariante hieß Omikron. Für Mitarbeiter von Pflegeeinrichtungen galt bereits eine Impfpflicht."
+      },
+      {
+        "text": "Abstimmung: Impfpflicht gegen SARS-CoV-2 (Gruppe Baehrens/Janecek u.a.) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-028-02"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=767"
       }
     ],
     "kommentar": "todo: mehr weiterfuehrende Infos, Links"
@@ -63,12 +79,15 @@
     "frage": "Sollte Sterbehilfe erlaubt sein?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Debatte im Bundestag",
-        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=864"
+        "text": "Datum der Abstimmung: 6. Juli 2023"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Suizidhilfe (GE Helling-Plahr/ Künast u.a ) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-115-02"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=863"
       }
     ],
     "kommentar": "todo: mehr weiterfuehrende Infos, Links"
@@ -81,7 +100,14 @@
     "frage": "Sollten Einbürgerungen zukünftig schon nach 5 statt 8 Jahren Aufenthalt in Deutschland möglich sein und mehrfache Staatsbürgerschaften erleichtert werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Abstimmung im Bundestag",
+        "text": "Datum der Abstimmung: 19. Januar 2024"
+      },
+      {
+        "text": "Abstimmung: Modernisierung des Staatsangehörigkeitsrechts (GesEntw BReg) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-148-01"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
         "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=893"
       }
     ]
@@ -94,11 +120,18 @@
     "frage": "Sollten manche Gerichtsverfahren auch per Videokonferenz abgehalten werden können?",
     "weiterfuehrende_informationen": [
       {
+        "text": "Datum der Abstimmung: 17. November 2023"
+      },
+      {
         "text": "Dieses Gesetz gilt nur für Zivil- und Fachgerichtsverfahren, nicht für Strafprozesse. Es sollen damit Kosten gesenkt und Verfahren vereinfacht werden.",
         "link": ""
       },
       {
-        "text": "Abstimmung im Bundestag",
+        "text": "Abstimmung: Videokonferenztechnik in der Zivilgerichtsbarkeit auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-138-01"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
         "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=881"
       }
     ]
@@ -111,12 +144,19 @@
     "frage": "Sollte auf den Autobahnen eine allgemeine Höchstgeschwindigkeit von 130 km/h gelten?",
     "weiterfuehrende_informationen": [
       {
+        "text": "Datum der Abstimmung: 17. Oktober 2019"
+      },
+      {
         "text": "2019 regierten CDU, SPD und CSU in einer Koalition.",
         "link": ""
       },
       {
-        "text": "Debatte im Bundestag",
-        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=612#debatte"
+        "text": "Abstimmung: Verkehrspolitik auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/019-118-02"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=622"
       }
     ]
   },
@@ -125,15 +165,22 @@
     "kategorie": "Verteidigung",
     "stichwort": "100 Mrd. Bundeswehr",
     "hintergrund": "Vor dem Hintergund des Angriffskrieges von Russland auf die Ukraine soll 2022 die Verteidigungsfähigkeit der Bundeswehr gestärkt werden",
-    "frage": "Sollte ein schuldenfinanziertes Sondervermögen in Höhe von 100 Milliarden Euro für die Bundeswehr eingerichtet werden?",  
+    "frage": "Sollte ein schuldenfinanziertes Sondervermögen in Höhe von 100 Milliarden Euro für die Bundeswehr eingerichtet werden?",
     "weiterfuehrende_informationen": [
+      {
+        "text": "Datum der Abstimmung: 3. Juni 2022"
+      },
       {
         "text": "Das Sondervermögen solle die Finanzierung von Großvorhaben zur Stärkung der Bundeswehr und der Bündnisfähigkeit gewährleisten.",
         "link": "https://dserver.bundestag.de/btd/20/014/2001409.pdf"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Sondervermögen Bundeswehr (Gesetzentwurf ) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-042-06"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=784"
       }
     ]
   },
@@ -145,12 +192,15 @@
     "frage": "Sollten der Ukraine Taurus Marschflugkörper geliefert werden? ",
     "weiterfuehrende_informationen": [
       {
-        "text": "Antrag",
-        "link": "https://dserver.bundestag.de/btd/20/091/2009143.pdf"
+        "text": "Datum der Abstimmung: 14. März 2024"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Ablehnung von Lieferung des Taurus-Marschflugkörpers (Beschlussempfehlung) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-157-01"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=906"
       }
     ]
   },
@@ -162,12 +212,15 @@
     "frage": "Sollte Deutschland die Ukraine umfassend humanitär und militärisch unterstützen?",
     "weiterfuehrende_informationen": [
       {
-        "text": "",
-        "link": ""
+        "text": "Datum der Abstimmung: 28. April 2022"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Umfassende Unterstützung für die Ukraine (Antrag) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-031-01"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=771"
       }
     ]
   },
@@ -179,7 +232,7 @@
     "frage": "Sollte in Wissenschaft und Kultur das Gendern verboten werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Mit Gendern ist gemeint, dass u.a. Anreden und Berufsbezeichnungen Geschlechtsneutral formuliert werden.", 
+        "text": "Mit Gendern ist gemeint, dass u.a. Anreden und Berufsbezeichnungen Geschlechtsneutral formuliert werden.",
         "link": ""
       },
       {
@@ -247,12 +300,23 @@
     "frage": "Sollte eine einmalige Vermögensabgabe von Superreichen erhoben werden?",
     "weiterfuehrende_informationen": [
       {
+        "text": "Datum der Abstimmung: 10. November 2022"
+      },
+      {
         "text": "Mit den Einnahmen sollen die durch die Corona- und Energiekrise entstandenen finanziellen Belastungen der Bevölkerung abgemildert werden",
         "link": "https://dserver.bundestag.de/btd/20/043/2004307.pdf"
       },
       {
         "text": "Vermögensverteilung in Deutschland",
         "link": "https://de.wikipedia.org/wiki/Verm%C3%B6gensverteilung_in_Deutschland"
+      },
+      {
+        "text": "Abstimmung: Vermögensabgabe für Multimillionäre und Milliardäre auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-066-05"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=813"
       }
     ]
   },
@@ -260,16 +324,19 @@
     "abstimmungs_id": "020-122-02",
     "kategorie": "Steuern und Sozialausgaben",
     "stichwort": "Gastronomiesteuersenkung",
-    "hintergrund": "In der Coronakrise wurde der Mehrwertsteuersatz für Restaurants von 19% auf 7% gekürzt.", 
+    "hintergrund": "In der Coronakrise wurde der Mehrwertsteuersatz für Restaurants von 19% auf 7% gekürzt.",
     "frage": "Sollte dieser Steuervorteil dauerhaft beibehalten werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Debatte und Abstimmung im Bundestag",
-        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=871"
+        "text": "Datum der Abstimmung: 21. September 2023"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Umsatzsteuergesetz auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-122-02"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=871"
       }
     ]
   },
@@ -281,12 +348,15 @@
     "frage": "Sollten die Bundesländer verpflichtet werden, mindestens 2% ihrer Fläche für Windenergieanlagen bereitzustellen?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Debatte und Abstimmung im Bundestag",
-        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=788"
+        "text": "Datum der Abstimmung: 7. Juli 2022"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Windenergie an Land (Gesetzentwurf) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-047-03"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=788"
       }
     ]
   },
@@ -298,12 +368,15 @@
     "frage": "Sollten ab 2024 neue Heizungen in Gebäuden mit mindestens 6 Wohneinheiten auch erneuerbare Energiequellen nutzen müssen?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Abstimmung und Debatte im Bundestag",
-        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=868"
+        "text": "Datum der Abstimmung: 8. September 2023"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Gesetzentwurf Gebäudeenergiegesetz auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-120-01"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=868"
       }
     ]
   },
@@ -311,16 +384,19 @@
     "abstimmungs_id": "020-116-01",
     "kategorie": "Energie",
     "stichwort": "LNG ausbauen",
-    "hintergrund": "Die Versorgung mit Gas und Energie aus Russland ist seit 2022 stark reduziert. Mit LNG Terminals kann Flüssiggas mit Schiffen aus anderen Ländern importiert werden.",  
+    "hintergrund": "Die Versorgung mit Gas und Energie aus Russland ist seit 2022 stark reduziert. Mit LNG Terminals kann Flüssiggas mit Schiffen aus anderen Ländern importiert werden.",
     "frage": "Sollte der Ausbau der Infrastruktur fuer Flüssiggas (LNG) beschleunigt werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Abstimmung und Debatte im Bundestag",
-        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=867"
+        "text": "Datum der Abstimmung: 7. Juli 2023"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: LNG-Beschleunigungsgesetz auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-116-01"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=867"
       }
     ]
   },
@@ -332,12 +408,15 @@
     "frage": "Sollten stillgelegte Atomkraftwerke schnellstmöglich wieder ans Netz gebracht werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Abstimmung und Debatte im Bundestag",
-        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=877"
+        "text": "Datum der Abstimmung: 10. November 2023"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Änderung des Atomgesetzes (Antrag AfD) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-135-02"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=877"
       }
     ]
   },
@@ -349,12 +428,19 @@
     "frage": "Sollte das Wirtschafts- und Handelsabkommen mit Kanada (CETA) von Deutschland unterschrieben werden?",
     "weiterfuehrende_informationen": [
       {
+        "text": "Datum der Abstimmung: 1. Dezember 2022"
+      },
+      {
         "text": "Das umfassende Wirtschafts- und Handelsabkommen (CETA) zwischen der EU und Kanada wurde 2016 unterzeichnet, aber seine vollständige Umsetzung erfordert die Zustimmung des deutschen Bundestags.",
         "link": ""
       },
       {
-        "text": "CETA führt zu gemeinsamen Standards und Abbau von Zöllen",
-        "link": "Nachteile?"
+        "text": "Abstimmung: Transatlantisches Wirtschafts- und Handelsabkommen (CETA) auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-073-01"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=824"
       }
     ]
   },
@@ -366,12 +452,15 @@
     "frage": "Sollten wir das LkSG aufheben?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Abstimmung und Debatte im Bundestag",
-        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=926"
+        "text": "Datum der Abstimmung: 17. Oktober 2024"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Entwurf zur Aufhebung des Lieferkettengesetzes auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-194-01"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=926"
       }
     ]
   },
@@ -383,12 +472,15 @@
     "frage": "Sollen diese Anpassungen, die unter anderem den Einkommensteuertarif und den Kinderfreibetrag betreffen, beschlossen werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Abstimmung und Debatte im Bundestag",
-        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=812"
+        "text": "Datum der Abstimmung: 10. November 2022"
       },
       {
-        "text": "",
-        "link": ""
+        "text": "Abstimmung: Inflationsausgleich auf wahlbilanz.de",
+        "link": "https://wahlbilanz.de/abstimmungen/020-066-04"
+      },
+      {
+        "text": "Abstimmung auf bundestag.de",
+        "link": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=812"
       }
     ]
   }
