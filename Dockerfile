@@ -1,14 +1,12 @@
-FROM node:20 AS donator
+FROM node:20-alpine AS donator
 COPY . /data
 WORKDIR /data
 RUN node --version && npm ci --force
 RUN npm run lint
 RUN npm run build
-RUN pwd
-RUN ls -alh
-RUN find dist
 
-FROM nginx
-ADD nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=donator /data/dist/deinwal-btw25 /usr/share/nginx/html
-RUN find /usr/share/nginx/html
+FROM node:20-alpine
+RUN mkdir /app
+WORKDIR /app
+COPY --from=donator /data/dist/deinwal-btw25 /app
+CMD node server/server.mjs
