@@ -33,6 +33,8 @@
   </div>
 </div>
 
+@if (partyDetailMatch() ; as partyDetailMatch){
 <div class="rounded shadow-lg px-6 py-6 my-6 bg-white">
-  <wal-auswertung-tabelle [partyMatch]="partyDetailMatch()"></wal-auswertung-tabelle>
+  <wal-auswertung-tabelle [partyMatch]="partyDetailMatch"></wal-auswertung-tabelle>
 </div>
+}

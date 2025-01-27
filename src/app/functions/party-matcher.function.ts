@@ -1,11 +1,11 @@
 import { DeinwalErgebnis, DeinwalFragenErgebnis } from '../interfaces/data.interface';
-import { Antwort, Match } from '../interfaces/antworten.interface';
+import { Antwort, Uebereinstimmung } from '../interfaces/antworten.interface';
 import { generateMap } from './data-massage.function';
 import { computeAgreement } from './aggrement.function';
 import { partyDecision } from './party-decision.function';
 
-function findMatch(nutzer: number | null | undefined, fraktion: DeinwalErgebnis): Match {
-  const match: Partial<Match> = {
+function findMatch(nutzer: number | null | undefined, fraktion: DeinwalErgebnis): Uebereinstimmung {
+  const match: Partial<Uebereinstimmung> = {
     agreement: computeAgreement(partyDecision(fraktion), nutzer),
     fraktionsEntscheidung: fraktion,
   };
@@ -39,7 +39,7 @@ function findMatch(nutzer: number | null | undefined, fraktion: DeinwalErgebnis)
 export function berechneUebereinstimmungen(
   nutzer: number | null,
   fraktionsErgebnisse: DeinwalFragenErgebnis,
-): { [key: string]: Match } {
+): { [key: string]: Uebereinstimmung } {
   if (!fraktionsErgebnisse) {
     return {};
   }

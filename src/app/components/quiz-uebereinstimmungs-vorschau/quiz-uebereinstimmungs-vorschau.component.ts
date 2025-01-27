@@ -1,5 +1,5 @@
 import { Component, computed, input } from '@angular/core';
-import { Antwort, Match } from '../../interfaces/antworten.interface';
+import { Antwort, Uebereinstimmung } from '../../interfaces/antworten.interface';
 import { KeyValuePipe } from '@angular/common';
 import { AGREEMENT } from '../../enums/agreement.enum';
 import { FraktionBadgeComponent } from '../fraktion-badge/fraktion-badge.component';
@@ -12,7 +12,7 @@ import { generateMap } from '../../functions/data-massage.function';
 })
 export class QuizUebereinstimmungsVorschauComponent {
   public antwort = input.required<Antwort | undefined | null>();
-  public uebereinstimmungen = computed<{ [p: string]: Match }>(() => {
+  public uebereinstimmungen = computed<{ [p: string]: Uebereinstimmung }>(() => {
     const a = this.antwort();
     if (!a?.uebereinstimmungen) {
       return {};

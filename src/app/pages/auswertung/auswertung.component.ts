@@ -5,7 +5,6 @@ import { AuswertungA11yComponent } from '../../components/auswertung-a11y/auswer
 import { AuswertungTabelleComponent } from '../../components/auswertung-tabelle/auswertung-tabelle.component';
 import { NgClass } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { DataService } from '../../data/data.sevice';
 import { PartyMatchAcc } from '../../interfaces/antworten.interface';
 
 @Component({
@@ -19,16 +18,15 @@ import { PartyMatchAcc } from '../../interfaces/antworten.interface';
   templateUrl: './auswertung.component.html',
 })
 export class AuswertungComponent {
-  private datenService = inject(DataService);
   private antwortenService = inject(AntwortenService);
 
   public balkenTab = toSignal(this.antwortenService.balkenDiagramm$);
-  public antworten = toSignal(this.antwortenService.selectAntworten());
-  public partyDetailMatch = computed(() => {
-    return this.datenService.matchAntworten(this.antworten());
-  });
+  public partyDetailMatch = toSignal(this.antwortenService.selectAntworten());
   public partyMatch = computed(() => {
     const matches = this.partyDetailMatch();
+    if (!matches) {
+      return [];
+    }
     const numAbstimmungen = Object.entries(matches).length;
     const fraktionsMatches: { [fraktion: string]: PartyMatchAcc } = {};
     for (const match of Object.values(matches)) {

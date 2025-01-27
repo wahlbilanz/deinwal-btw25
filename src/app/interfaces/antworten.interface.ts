@@ -6,7 +6,7 @@ export interface PartyMatchAcc {
   match: number;
 }
 
-export interface Match {
+export interface Uebereinstimmung {
   agreement?: AGREEMENT | undefined;
   fraktionsEntscheidung?: Abstimmungsergebnis;
   uebereinstimmung: number;
@@ -15,7 +15,7 @@ export interface Match {
 export interface Antwort {
   abstimmungs_id: string;
   antwort: number | null;
-  uebereinstimmungen: { [key: string]: Match };
+  uebereinstimmungen: { [key: string]: Uebereinstimmung };
 }
 
 export type AntwortenMap = { [abstimmungs_id: string]: Antwort };

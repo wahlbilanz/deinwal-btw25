@@ -8,9 +8,7 @@ import {
   DeinwalFragenErgebnisse,
   DeinwalFraktionenMap,
 } from '../interfaces/data.interface';
-import { Antwort, AntwortenMap } from '../interfaces/antworten.interface';
-import { generateDeinwalFragenErgebnisse, generateMap } from '../functions/data-massage.function';
-import { partyMatcher } from '../functions/party-matcher.function';
+import { generateDeinwalFragenErgebnisse } from '../functions/data-massage.function';
 
 @Injectable({
   providedIn: 'root',
@@ -69,22 +67,7 @@ export class DataService {
       a.find(abst => abst.abstimmungs_id === abstimmungs_id);
   }
 
-  public getErgebnisseOfAbstimmung(abstimmungs_id: string): DeinwalFragenErgebnis {
+  public getErgebnisse(abstimmungs_id: string): DeinwalFragenErgebnis {
     return this.ergebnisse[abstimmungs_id];
-  }
-
-  public matchAntworten(antworten: Antwort[] | undefined): AntwortenMap {
-    if (!antworten?.length) {
-      return {};
-    }
-
-    return generateMap(
-      antworten
-        .filter(antwort => !!antwort)
-        .map(antwort => [
-          antwort.abstimmungs_id,
-          partyMatcher(antwort, this.getErgebnisseOfAbstimmung(antwort.abstimmungs_id)),
-        ]),
-    );
   }
 }

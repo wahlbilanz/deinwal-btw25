@@ -2,11 +2,12 @@ import { inject, Injectable } from '@angular/core';
 import {
   deleteEntities,
   selectAllEntities,
+  selectEntitiesCount,
   selectEntity,
   upsertEntities,
   withEntities,
 } from '@ngneat/elf-entities';
-import { Antwort } from '../interfaces/antworten.interface';
+import { Antwort, AntwortenMap } from '../interfaces/antworten.interface';
 import { createStore, select, setProp, withProps } from '@ngneat/elf';
 import { map, Observable } from 'rxjs';
 import { localStorageStrategy, persistState } from '@ngneat/elf-persist-state';
@@ -14,6 +15,7 @@ import { StateProps } from '../interfaces/state-properties.interface';
 import { DeinwalFragenErgebnis } from '../interfaces/data.interface';
 import { berechneUebereinstimmungen } from '../functions/party-matcher.function';
 import { DataService } from '../data/data.sevice';
+import { generateMap } from '../functions/data-massage.function';
 
 @Injectable({
   providedIn: 'root',
@@ -46,7 +48,10 @@ export class AntwortenService {
   }
 
   public hasAntworten(): Observable<boolean> {
-    return this.selectAntworten().pipe(map(antworten => antworten.length > 0));
+    return this.antwortenStore.pipe(
+      selectEntitiesCount(),
+      map(count => count > 0),
+    );
   }
 
   public updateAntwort(abstimmungs_id: string, antwort: number | null): void {
@@ -54,7 +59,7 @@ export class AntwortenService {
       this.antwortenStore.update(deleteEntities(abstimmungs_id));
     } else {
       const fraktionsergebnisste: DeinwalFragenErgebnis =
-        this.dataService.getErgebnisseOfAbstimmung(abstimmungs_id);
+        this.dataService.getErgebnisse(abstimmungs_id);
       const a: Antwort = {
         abstimmungs_id,
         antwort,
@@ -68,7 +73,10 @@ export class AntwortenService {
     return this.antwortenStore.pipe(selectEntity(id));
   }
 
-  public selectAntworten(): Observable<Antwort[]> {
-    return this.antwortenStore.pipe(selectAllEntities());
+  public selectAntworten(): Observable<AntwortenMap> {
+    return this.antwortenStore.pipe(
+      selectAllEntities(),
+      map(antworten => generateMap(antworten.map(a => [a.abstimmungs_id, a]))),
+    );
   }
 }
