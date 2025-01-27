@@ -967,5 +967,56 @@
             "nein": 35,
             "enthalten": 0
         }
+    },
+    "00-00-00bildungsonder": {
+        "AfD": {
+            "abstimmungs_id": "00-00-00bildungsonder",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 72,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "00-00-00bildungsonder",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 0,
+            "nein": 111,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "00-00-00bildungsonder",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 188,
+            "enthalten": 1
+        },
+        "Die Linke": {
+            "abstimmungs_id": "00-00-00bildungsonder",
+            "fraktion": "Die Linke",
+            "ja": 35,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "00-00-00bildungsonder",
+            "fraktion": "FDP",
+            "ja": 0,
+            "nein": 86,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "00-00-00bildungsonder",
+            "fraktion": "SPD",
+            "ja": 0,
+            "nein": 191,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "00-00-00bildungsonder",
+            "fraktion": "Die Linke",
+            "ja": 35,
+            "nein": 0,
+            "enthalten": 0
+        }
     }
 }
