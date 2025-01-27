@@ -1,5 +1,6 @@
 import {
   DeinwalErgebnis,
+  DeinwalFrage,
   DeinwalFragenErgebnis,
   DeinwalFragenErgebnisse,
 } from '../interfaces/data.interface';
@@ -38,9 +39,9 @@ export function generateDeinwalFragenErgebnis(
   input: DeinwalFragenErgebnisInput,
 ): DeinwalFragenErgebnis {
   return generateMap(
-    Object.entries(input).map(
-      ([party, vote]) => [party, generateDeinwalErgebnis(vote)] as [string, DeinwalErgebnis],
-    ),
+    Object.entries(input)
+      .filter(([party]) => party.toLowerCase() !== 'fraktionslos')
+      .map(([party, vote]) => [party, generateDeinwalErgebnis(vote)] as [string, DeinwalErgebnis]),
   );
 }
 
@@ -56,4 +57,30 @@ export function generateDeinwalFragenErgebnisse(
         ],
     ),
   );
+}
+
+export function filterDeinwalFragen(
+  fragen: DeinwalFrage[],
+  ergebnisse: DeinwalFragenErgebnisse,
+): DeinwalFrage[] {
+  const fragenMitErgebnissen = fragen.filter(frage => !!ergebnisse[frage.abstimmungs_id]);
+  if (fragenMitErgebnissen.length !== fragen.length) {
+    console.error(
+      'uups...? hab',
+      fragen.length,
+      'fragen aber nur',
+      fragenMitErgebnissen.length,
+      'antworten dazu...?',
+    );
+  }
+  if (Object.keys(ergebnisse).length !== fragenMitErgebnissen.length) {
+    console.error(
+      'uups...? hab',
+      Object.keys(ergebnisse).length,
+      'ergebnisse aber nur',
+      fragenMitErgebnissen.length,
+      'antworten dazu...?',
+    );
+  }
+  return fragenMitErgebnissen;
 }

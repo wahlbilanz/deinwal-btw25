@@ -8,16 +8,19 @@ import {
   DeinwalFragenErgebnisse,
   DeinwalFraktionenMap,
 } from '../interfaces/data.interface';
-import { generateDeinwalFragenErgebnisse } from '../functions/data-massage.function';
+import {
+  filterDeinwalFragen,
+  generateDeinwalFragenErgebnisse,
+} from '../functions/data-massage.function';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
   // proper typing for the data
-  private readonly fragen: DeinwalFrage[] = fragen;
   private readonly ergebnisse: DeinwalFragenErgebnisse =
     generateDeinwalFragenErgebnisse(ergebnisse);
+  private readonly fragen: DeinwalFrage[] = filterDeinwalFragen(fragen, this.ergebnisse);
   private readonly fraktionen: DeinwalFraktionenMap = fraktionen;
 
   private readonly kategorien: string[] = Array.from(

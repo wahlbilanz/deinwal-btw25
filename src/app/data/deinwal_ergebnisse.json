@@ -1,220 +1,971 @@
 {
-  "00-00-00bildungsonder": {
-    "AfD": {
-      "abstimmungs_id": "00-00-00bildungsonder",
-      "fraktion": "AfD",
-      "ja": 0,
-      "nein": 66,
-      "enthalten": 0
+    "020-155-02": {
+        "AfD": {
+            "abstimmungs_id": "020-155-02",
+            "fraktion": "AfD",
+            "ja": 1,
+            "nein": 53,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-155-02",
+            "fraktion": "BSW",
+            "ja": 5,
+            "nein": 1,
+            "enthalten": 1
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-155-02",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 113,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-155-02",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 167,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-155-02",
+            "fraktion": "Die Linke",
+            "ja": 23,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-155-02",
+            "fraktion": "FDP",
+            "ja": 82,
+            "nein": 1,
+            "enthalten": 2
+        },
+        "SPD": {
+            "abstimmungs_id": "020-155-02",
+            "fraktion": "SPD",
+            "ja": 178,
+            "nein": 4,
+            "enthalten": 0
+        }
     },
-    "Die Linke": {
-      "abstimmungs_id": "00-00-00bildungsonder",
-      "fraktion": "Die Linke",
-      "ja": 33,
-      "nein": 0,
-      "enthalten": 0
+    "020-182-01": {
+        "AfD": {
+            "abstimmungs_id": "020-182-01",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 49,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-182-01",
+            "fraktion": "BSW",
+            "ja": 5,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-182-01",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 106,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-182-01",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 115,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-182-01",
+            "fraktion": "Die Linke",
+            "ja": 20,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-182-01",
+            "fraktion": "FDP",
+            "ja": 71,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-182-01",
+            "fraktion": "SPD",
+            "ja": 178,
+            "nein": 0,
+            "enthalten": 0
+        }
     },
-    "CDU/CSU": {
-      "abstimmungs_id": "00-00-00bildungsonder",
-      "fraktion": "CDU/CSU",
-      "ja": 0,
-      "nein": 166,
-      "enthalten": 0
+    "020-028-02": {
+        "AfD": {
+            "abstimmungs_id": "020-028-02",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 76,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-028-02",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 102,
+            "nein": 6,
+            "enthalten": 3
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-028-02",
+            "fraktion": "CDU/CSU",
+            "ja": 3,
+            "nein": 176,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-028-02",
+            "fraktion": "Die Linke",
+            "ja": 7,
+            "nein": 29,
+            "enthalten": 1
+        },
+        "FDP": {
+            "abstimmungs_id": "020-028-02",
+            "fraktion": "FDP",
+            "ja": 5,
+            "nein": 79,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-028-02",
+            "fraktion": "SPD",
+            "ja": 179,
+            "nein": 9,
+            "enthalten": 5
+        },
+        "BSW": {
+            "abstimmungs_id": "020-028-02",
+            "fraktion": "Die Linke",
+            "ja": 7,
+            "nein": 29,
+            "enthalten": 1
+        }
     },
-    "B\u00fcndnis 90/Die Gr\u00fcnen": {
-      "abstimmungs_id": "00-00-00bildungsonder",
-      "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
-      "ja": 0,
-      "nein": 112,
-      "enthalten": 1
+    "020-115-02": {
+        "AfD": {
+            "abstimmungs_id": "020-115-02",
+            "fraktion": "AfD",
+            "ja": 7,
+            "nein": 63,
+            "enthalten": 1
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-115-02",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 67,
+            "nein": 35,
+            "enthalten": 7
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-115-02",
+            "fraktion": "CDU/CSU",
+            "ja": 3,
+            "nein": 180,
+            "enthalten": 2
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-115-02",
+            "fraktion": "Die Linke",
+            "ja": 28,
+            "nein": 7,
+            "enthalten": 2
+        },
+        "FDP": {
+            "abstimmungs_id": "020-115-02",
+            "fraktion": "FDP",
+            "ja": 53,
+            "nein": 27,
+            "enthalten": 1
+        },
+        "SPD": {
+            "abstimmungs_id": "020-115-02",
+            "fraktion": "SPD",
+            "ja": 126,
+            "nein": 61,
+            "enthalten": 6
+        },
+        "BSW": {
+            "abstimmungs_id": "020-115-02",
+            "fraktion": "Die Linke",
+            "ja": 28,
+            "nein": 7,
+            "enthalten": 2
+        }
     },
-    "SPD": {
-      "abstimmungs_id": "00-00-00bildungsonder",
-      "fraktion": "SPD",
-      "ja": 0,
-      "nein": 200,
-      "enthalten": 0
+    "020-148-01": {
+        "AfD": {
+            "abstimmungs_id": "020-148-01",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 62,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-148-01",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 110,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-148-01",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 167,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-148-01",
+            "fraktion": "FDP",
+            "ja": 76,
+            "nein": 2,
+            "enthalten": 6
+        },
+        "SPD": {
+            "abstimmungs_id": "020-148-01",
+            "fraktion": "SPD",
+            "ja": 184,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-148-01",
+            "fraktion": "Die Linke",
+            "ja": 5,
+            "nein": 0,
+            "enthalten": 17
+        },
+        "BSW": {
+            "abstimmungs_id": "020-148-01",
+            "fraktion": "BSW",
+            "ja": 7,
+            "nein": 0,
+            "enthalten": 0
+        }
     },
-    "FDP": {
-      "abstimmungs_id": "00-00-00bildungsonder",
-      "fraktion": "FDP",
-      "ja": 0,
-      "nein": 85,
-      "enthalten": 0
+    "020-138-01": {
+        "AfD": {
+            "abstimmungs_id": "020-138-01",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 43,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-138-01",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 101,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-138-01",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 96,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-138-01",
+            "fraktion": "Die Linke",
+            "ja": 8,
+            "nein": 4,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-138-01",
+            "fraktion": "FDP",
+            "ja": 80,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-138-01",
+            "fraktion": "SPD",
+            "ja": 168,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-138-01",
+            "fraktion": "Die Linke",
+            "ja": 8,
+            "nein": 4,
+            "enthalten": 0
+        }
     },
-    "Fraktionslos": {
-      "abstimmungs_id": "00-00-00bildungsonder",
-      "fraktion": "Fraktionslos",
-      "ja": 0,
-      "nein": 4,
-      "enthalten": 1
+    "019-118-02": {
+        "AfD": {
+            "abstimmungs_id": "019-118-02",
+            "fraktion": "AfD",
+            "ja": 86,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "019-118-02",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 0,
+            "nein": 62,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "019-118-02",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 59,
+            "enthalten": 2
+        },
+        "FDP": {
+            "abstimmungs_id": "019-118-02",
+            "fraktion": "FDP",
+            "ja": 74,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "019-118-02",
+            "fraktion": "CDU/CSU",
+            "ja": 216,
+            "nein": 2,
+            "enthalten": 2
+        },
+        "SPD": {
+            "abstimmungs_id": "019-118-02",
+            "fraktion": "SPD",
+            "ja": 122,
+            "nein": 2,
+            "enthalten": 3
+        },
+        "BSW": {
+            "abstimmungs_id": "019-118-02",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 59,
+            "enthalten": 2
+        }
+    },
+    "020-042-06": {
+        "AfD": {
+            "abstimmungs_id": "020-042-06",
+            "fraktion": "AfD",
+            "ja": 33,
+            "nein": 35,
+            "enthalten": 6
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-042-06",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 106,
+            "nein": 4,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-042-06",
+            "fraktion": "CDU/CSU",
+            "ja": 173,
+            "nein": 1,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-042-06",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 31,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-042-06",
+            "fraktion": "FDP",
+            "ja": 88,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-042-06",
+            "fraktion": "SPD",
+            "ja": 187,
+            "nein": 9,
+            "enthalten": 1
+        },
+        "BSW": {
+            "abstimmungs_id": "020-042-06",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 31,
+            "enthalten": 0
+        }
+    },
+    "020-157-01": {
+        "AfD": {
+            "abstimmungs_id": "020-157-01",
+            "fraktion": "AfD",
+            "ja": 65,
+            "nein": 1,
+            "enthalten": 1
+        },
+        "BSW": {
+            "abstimmungs_id": "020-157-01",
+            "fraktion": "BSW",
+            "ja": 7,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-157-01",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 107,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-157-01",
+            "fraktion": "CDU/CSU",
+            "ja": 3,
+            "nein": 183,
+            "enthalten": 3
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-157-01",
+            "fraktion": "Die Linke",
+            "ja": 27,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-157-01",
+            "fraktion": "FDP",
+            "ja": 84,
+            "nein": 2,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-157-01",
+            "fraktion": "SPD",
+            "ja": 199,
+            "nein": 0,
+            "enthalten": 0
+        }
+    },
+    "020-031-01": {
+        "AfD": {
+            "abstimmungs_id": "020-031-01",
+            "fraktion": "AfD",
+            "ja": 4,
+            "nein": 66,
+            "enthalten": 3
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-031-01",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 112,
+            "nein": 0,
+            "enthalten": 2
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-031-01",
+            "fraktion": "CDU/CSU",
+            "ja": 185,
+            "nein": 1,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-031-01",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 32,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-031-01",
+            "fraktion": "FDP",
+            "ja": 91,
+            "nein": 0,
+            "enthalten": 1
+        },
+        "SPD": {
+            "abstimmungs_id": "020-031-01",
+            "fraktion": "SPD",
+            "ja": 193,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-031-01",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 32,
+            "enthalten": 0
+        }
+    },
+    "020-066-05": {
+        "AfD": {
+            "abstimmungs_id": "020-066-05",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 71,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-066-05",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 0,
+            "nein": 110,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-066-05",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 189,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-066-05",
+            "fraktion": "Die Linke",
+            "ja": 35,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-066-05",
+            "fraktion": "FDP",
+            "ja": 0,
+            "nein": 89,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-066-05",
+            "fraktion": "SPD",
+            "ja": 0,
+            "nein": 187,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-066-05",
+            "fraktion": "Die Linke",
+            "ja": 35,
+            "nein": 0,
+            "enthalten": 0
+        }
+    },
+    "020-122-02": {
+        "AfD": {
+            "abstimmungs_id": "020-122-02",
+            "fraktion": "AfD",
+            "ja": 68,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-122-02",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 0,
+            "nein": 102,
+            "enthalten": 1
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-122-02",
+            "fraktion": "CDU/CSU",
+            "ja": 179,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-122-02",
+            "fraktion": "Die Linke",
+            "ja": 32,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-122-02",
+            "fraktion": "FDP",
+            "ja": 1,
+            "nein": 80,
+            "enthalten": 3
+        },
+        "SPD": {
+            "abstimmungs_id": "020-122-02",
+            "fraktion": "SPD",
+            "ja": 0,
+            "nein": 185,
+            "enthalten": 1
+        },
+        "BSW": {
+            "abstimmungs_id": "020-122-02",
+            "fraktion": "Die Linke",
+            "ja": 32,
+            "nein": 0,
+            "enthalten": 0
+        }
+    },
+    "020-047-03": {
+        "AfD": {
+            "abstimmungs_id": "020-047-03",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 69,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-047-03",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 110,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-047-03",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 183,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-047-03",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 0,
+            "enthalten": 29
+        },
+        "FDP": {
+            "abstimmungs_id": "020-047-03",
+            "fraktion": "FDP",
+            "ja": 82,
+            "nein": 0,
+            "enthalten": 2
+        },
+        "SPD": {
+            "abstimmungs_id": "020-047-03",
+            "fraktion": "SPD",
+            "ja": 186,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-047-03",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 0,
+            "enthalten": 29
+        }
+    },
+    "020-120-01": {
+        "AfD": {
+            "abstimmungs_id": "020-120-01",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 67,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-120-01",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 112,
+            "nein": 0,
+            "enthalten": 1
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-120-01",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 171,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-120-01",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 33,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-120-01",
+            "fraktion": "FDP",
+            "ja": 82,
+            "nein": 0,
+            "enthalten": 4
+        },
+        "SPD": {
+            "abstimmungs_id": "020-120-01",
+            "fraktion": "SPD",
+            "ja": 202,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-120-01",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 33,
+            "enthalten": 0
+        }
+    },
+    "020-116-01": {
+        "AfD": {
+            "abstimmungs_id": "020-116-01",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 72,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-116-01",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 99,
+            "nein": 7,
+            "enthalten": 3
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-116-01",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 186,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-116-01",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 30,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-116-01",
+            "fraktion": "FDP",
+            "ja": 81,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-116-01",
+            "fraktion": "SPD",
+            "ja": 189,
+            "nein": 3,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-116-01",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 30,
+            "enthalten": 0
+        }
+    },
+    "020-135-02": {
+        "AfD": {
+            "abstimmungs_id": "020-135-02",
+            "fraktion": "AfD",
+            "ja": 63,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-135-02",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 0,
+            "nein": 107,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-135-02",
+            "fraktion": "CDU/CSU",
+            "ja": 0,
+            "nein": 149,
+            "enthalten": 1
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-135-02",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 31,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-135-02",
+            "fraktion": "FDP",
+            "ja": 0,
+            "nein": 77,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-135-02",
+            "fraktion": "SPD",
+            "ja": 0,
+            "nein": 183,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-135-02",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 31,
+            "enthalten": 0
+        }
+    },
+    "020-073-01": {
+        "AfD": {
+            "abstimmungs_id": "020-073-01",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 70,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-073-01",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 100,
+            "nein": 3,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-073-01",
+            "fraktion": "CDU/CSU",
+            "ja": 185,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-073-01",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 35,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-073-01",
+            "fraktion": "FDP",
+            "ja": 87,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-073-01",
+            "fraktion": "SPD",
+            "ja": 185,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-073-01",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 35,
+            "enthalten": 0
+        }
+    },
+    "020-194-01": {
+        "AfD": {
+            "abstimmungs_id": "020-194-01",
+            "fraktion": "AfD",
+            "ja": 61,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-194-01",
+            "fraktion": "BSW",
+            "ja": 0,
+            "nein": 10,
+            "enthalten": 0
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-194-01",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 0,
+            "nein": 109,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-194-01",
+            "fraktion": "CDU/CSU",
+            "ja": 182,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-194-01",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 25,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-194-01",
+            "fraktion": "FDP",
+            "ja": 0,
+            "nein": 86,
+            "enthalten": 1
+        },
+        "SPD": {
+            "abstimmungs_id": "020-194-01",
+            "fraktion": "SPD",
+            "ja": 0,
+            "nein": 181,
+            "enthalten": 0
+        }
+    },
+    "020-066-04": {
+        "AfD": {
+            "abstimmungs_id": "020-066-04",
+            "fraktion": "AfD",
+            "ja": 0,
+            "nein": 0,
+            "enthalten": 72
+        },
+        "B\u00fcndnis 90/Die Gr\u00fcnen": {
+            "abstimmungs_id": "020-066-04",
+            "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
+            "ja": 111,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "CDU/CSU": {
+            "abstimmungs_id": "020-066-04",
+            "fraktion": "CDU/CSU",
+            "ja": 188,
+            "nein": 0,
+            "enthalten": 1
+        },
+        "Die Linke": {
+            "abstimmungs_id": "020-066-04",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 35,
+            "enthalten": 0
+        },
+        "FDP": {
+            "abstimmungs_id": "020-066-04",
+            "fraktion": "FDP",
+            "ja": 86,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "SPD": {
+            "abstimmungs_id": "020-066-04",
+            "fraktion": "SPD",
+            "ja": 191,
+            "nein": 0,
+            "enthalten": 0
+        },
+        "BSW": {
+            "abstimmungs_id": "020-066-04",
+            "fraktion": "Die Linke",
+            "ja": 0,
+            "nein": 35,
+            "enthalten": 0
+        }
     }
-  }, 
-  "020-120-02":{
-    "AfD": {
-      "abstimmungs_id": "020-120-02",
-      "fraktion": "AfD",
-      "ja": 66,
-      "nein": 0,
-      "enthalten": 0
-    },
-    "Die Linke": {
-      "abstimmungs_id": "020-120-02",
-      "fraktion": "Die Linke",
-      "ja": 0,
-      "nein": 33,
-      "enthalten": 0
-    },
-    "CDU/CSU": {
-      "abstimmungs_id": "020-120-02",
-      "fraktion": "CDU/CSU",
-      "ja": 166,
-      "nein": 0,
-      "enthalten": 0
-    },
-    "B\u00fcndnis 90/Die Gr\u00fcnen": {
-      "abstimmungs_id": "020-120-02",
-      "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
-      "ja": 112,
-      "nein": 0,
-      "enthalten": 1
-    },
-    "SPD": {
-      "abstimmungs_id": "020-120-02",
-      "fraktion": "SPD",
-      "ja": 200,
-      "nein": 0,
-      "enthalten": 0
-    },
-    "FDP": {
-      "abstimmungs_id": "020-120-02",
-      "fraktion": "FDP",
-      "ja": 84,
-      "nein": 1,
-      "enthalten": 0
-    },
-    "Fraktionslos": {
-      "abstimmungs_id": "020-120-02",
-      "fraktion": "Fraktionslos",
-      "ja": 4,
-      "nein": 0,
-      "enthalten": 1
-    }
-  },
-  "020-120-03": {
-    "CDU/CSU": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "CDU/CSU",
-      "ja": 173,
-      "nein": 0,
-      "enthalten": 0
-    },
-    "AfD": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "AfD",
-      "ja": 0,
-      "nein": 55,
-      "enthalten": 0
-    },
-    "Die Linke": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "Die Linke",
-      "ja": 15,
-      "nein": 1,
-      "enthalten": 0
-    },
-    "B\u00fcndnis 90/Die Gr\u00fcnen": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
-      "ja": 107,
-      "nein": 1,
-      "enthalten": 0
-    },
-    "SPD": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "SPD",
-      "ja": 183,
-      "nein": 0,
-      "enthalten": 0
-    },
-    "Fraktionslos": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "Fraktionslos",
-      "ja": 1,
-      "nein": 5,
-      "enthalten": 0
-    },
-    "FDP": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "FDP",
-      "ja": 88,
-      "nein": 0,
-      "enthalten": 0
-    },
-    "BSW": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "BSW",
-      "ja": 0,
-      "nein": 0,
-      "enthalten": 7
-    }
-  },
-  "020-195-08": {
-    "CDU/CSU": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "CDU/CSU",
-      "ja": 173,
-      "nein": 0,
-      "enthalten": 0
-    },
-    "AfD": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "AfD",
-      "ja": 0,
-      "nein": 55,
-      "enthalten": 0
-    },
-    "Die Linke": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "Die Linke",
-      "ja": 15,
-      "nein": 1,
-      "enthalten": 0
-    },
-    "B\u00fcndnis 90/Die Gr\u00fcnen": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
-      "ja": 107,
-      "nein": 1,
-      "enthalten": 0
-    },
-    "SPD": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "SPD",
-      "ja": 183,
-      "nein": 0,
-      "enthalten": 0
-    },
-    "Fraktionslos": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "Fraktionslos",
-      "ja": 1,
-      "nein": 5,
-      "enthalten": 0
-    },
-    "FDP": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "FDP",
-      "ja": 88,
-      "nein": 0,
-      "enthalten": 0
-    },
-    "BSW": {
-      "abstimmungs_id": "020-195-08",
-      "fraktion": "BSW",
-      "ja": 0,
-      "nein": 0,
-      "enthalten": 7
-    }
-  }
 }
