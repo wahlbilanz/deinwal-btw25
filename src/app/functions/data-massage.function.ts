@@ -84,3 +84,32 @@ export function filterDeinwalFragen(
   }
   return fragenMitErgebnissen;
 }
+
+export function getKategorien(fragen: DeinwalFrage[]): string[] {
+  const expectedKategorien = [
+    'Gesellschaft 1',
+    'Gesellschaft 2',
+    'Verteidigung',
+    'Bildung',
+    'Steuern und Sozialausgaben',
+    'Energie',
+    'Wirtschaft',
+  ];
+  const foundKategorien = Array.from(new Set(fragen.map(frage => frage.kategorie))).sort();
+  if (expectedKategorien.length !== foundKategorien.length) {
+    console.error(
+      'expectedKategorien.length !== foundKategorien.length',
+      expectedKategorien.length,
+      foundKategorien.length,
+    );
+  }
+  for (const kategorie of expectedKategorien) {
+    if (!foundKategorien.find(k => k === kategorie))
+      console.error(
+        `kategorie ${kategorie} nicht gefunden...!?`,
+        expectedKategorien,
+        foundKategorien,
+      );
+  }
+  return expectedKategorien.filter(k => foundKategorien.includes(k));
+}

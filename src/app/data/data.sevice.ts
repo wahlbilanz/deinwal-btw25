@@ -11,6 +11,7 @@ import {
 import {
   filterDeinwalFragen,
   generateDeinwalFragenErgebnisse,
+  getKategorien,
 } from '../functions/data-massage.function';
 
 @Injectable({
@@ -22,10 +23,7 @@ export class DataService {
     generateDeinwalFragenErgebnisse(ergebnisse);
   private readonly fragen: DeinwalFrage[] = filterDeinwalFragen(fragen, this.ergebnisse);
   private readonly fraktionen: DeinwalFraktionenMap = fraktionen;
-
-  private readonly kategorien: string[] = Array.from(
-    new Set(this.fragen.map(frage => frage.kategorie)),
-  ).sort();
+  private readonly kategorien: string[] = getKategorien(this.fragen);
 
   public getFragen(kategorie: string): DeinwalFrage[] {
     return this.fragen.filter(frage => frage.kategorie === kategorie);

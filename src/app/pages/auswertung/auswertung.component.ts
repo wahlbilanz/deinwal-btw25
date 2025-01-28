@@ -1,20 +1,13 @@
 import { Component, computed, inject } from '@angular/core';
 import { AntwortenService } from '../../state/antworten.service';
 import { AuswertungBalkendiagramComponent } from '../../components/auswertung-balkendiagram/auswertung-balkendiagram.component';
-import { AuswertungA11yComponent } from '../../components/auswertung-a11y/auswertung-a11y.component';
 import { AuswertungTabelleComponent } from '../../components/auswertung-tabelle/auswertung-tabelle.component';
-import { NgClass } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { PartyMatchAcc } from '../../interfaces/antworten.interface';
 
 @Component({
   selector: 'wal-auswertung',
-  imports: [
-    AuswertungBalkendiagramComponent,
-    AuswertungA11yComponent,
-    AuswertungTabelleComponent,
-    NgClass,
-  ],
+  imports: [AuswertungBalkendiagramComponent, AuswertungTabelleComponent],
   templateUrl: './auswertung.component.html',
 })
 export class AuswertungComponent {
