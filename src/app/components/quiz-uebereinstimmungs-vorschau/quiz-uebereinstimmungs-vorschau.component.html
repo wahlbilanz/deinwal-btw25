@@ -1,7 +1,7 @@
 @if (antwort(); as a) {
 <div class="flex items-center justify-end">
   Stimmten wie du:
-  <ul class="ml-1 flex gap-1">
+  <ul class="ml-1 flex flex-wrap gap-1">
     @for (uebereinstimmung of uebereinstimmungen() | keyvalue ; track uebereinstimmung.key) {
     <li class="inline">
       <wal-fraktion-badge [fraktion]="uebereinstimmung.key"></wal-fraktion-badge>
