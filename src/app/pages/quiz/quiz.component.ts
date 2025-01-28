@@ -49,6 +49,12 @@ export class QuizComponent {
     const kategorie = this.kategorie();
     return kategorie ? this.dataService.naechsteKategorie(kategorie) : null;
   });
+  public fortschritt = computed(() => {
+    const kategorie = this.kategorie();
+    const kategorien = this.dataService.getAlleKategorien();
+    const pos = kategorien.findIndex(k => k === kategorie);
+    return (100 * (pos + 1)) / (kategorien.length + 1);
+  });
 
   public setAntwort(fragen_id: string, antwort: number | null): void {
     this.antwortenService.updateAntwort(fragen_id, antwort);

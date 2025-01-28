@@ -1,4 +1,4 @@
-<div class="p-4 bg-white shadow-lg rounded">
+<div class="p-4 bg-white shadow-lg rounded-t-md">
   <div class="mb-4 flex justify-end">
     <a
       [routerLink]="['/quiz', kategorie()]"
@@ -73,3 +73,13 @@
     }
   </div>
 </div>
+@if (fortschritt(); as progress) {
+<div class="bg-stone-100 rounded-b-md text-xs">
+  <div
+    class="bg-stone-200 text-gray-500 flex align-middle justify-center rounded-bl-md"
+    [style.width.%]="progress"
+  >
+    {{progress}}%
+  </div>
+</div>
+}
