@@ -309,50 +309,50 @@
         "AfD": {
             "abstimmungs_id": "019-118-02",
             "fraktion": "AfD",
-            "ja": 86,
-            "nein": 0,
+            "ja": 0,
+            "nein": 86,
             "enthalten": 0
         },
         "B\u00fcndnis 90/Die Gr\u00fcnen": {
             "abstimmungs_id": "019-118-02",
             "fraktion": "B\u00fcndnis 90/Die Gr\u00fcnen",
-            "ja": 0,
-            "nein": 62,
+            "ja": 62,
+            "nein": 0,
             "enthalten": 0
         },
         "Die Linke": {
             "abstimmungs_id": "019-118-02",
             "fraktion": "Die Linke",
-            "ja": 0,
-            "nein": 59,
+            "ja": 59,
+            "nein": 0,
             "enthalten": 2
         },
         "FDP": {
             "abstimmungs_id": "019-118-02",
             "fraktion": "FDP",
-            "ja": 74,
-            "nein": 0,
+            "ja": 0,
+            "nein": 74,
             "enthalten": 0
         },
         "CDU/CSU": {
             "abstimmungs_id": "019-118-02",
             "fraktion": "CDU/CSU",
-            "ja": 216,
-            "nein": 2,
+            "ja": 2,
+            "nein": 216,
             "enthalten": 2
         },
         "SPD": {
             "abstimmungs_id": "019-118-02",
             "fraktion": "SPD",
-            "ja": 122,
-            "nein": 2,
+            "ja": 2,
+            "nein": 122,
             "enthalten": 3
         },
         "BSW": {
             "abstimmungs_id": "019-118-02",
             "fraktion": "Die Linke",
-            "ja": 0,
-            "nein": 59,
+            "ja": 59,
+            "nein": 0,
             "enthalten": 2
         }
     },
