@@ -1,6 +1,9 @@
 @if (antwort(); as a) {
-<div class="flex items-center justify-end">
-  Stimmten wie du:
+
+<div
+  class="inline-flex items-center justify-end max-w-full bg-stone-100 p-2 border-1 border-stone-200"
+>
+  Stimmten wie&nbsp;du:
   <ul class="ml-1 flex flex-wrap gap-1">
     @for (uebereinstimmung of uebereinstimmungen() | keyvalue ; track uebereinstimmung.key) {
     <li class="inline">
