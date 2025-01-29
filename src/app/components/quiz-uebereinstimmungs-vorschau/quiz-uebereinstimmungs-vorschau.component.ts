@@ -1,13 +1,13 @@
 import { Component, computed, input } from '@angular/core';
 import { Antwort, Uebereinstimmung } from '../../interfaces/antworten.interface';
-import { KeyValuePipe } from '@angular/common';
+import { KeyValuePipe, NgClass } from '@angular/common';
 import { AGREEMENT } from '../../enums/agreement.enum';
 import { FraktionBadgeComponent } from '../fraktion-badge/fraktion-badge.component';
 import { generateMap } from '../../functions/data-massage.function';
 
 @Component({
   selector: 'wal-quiz-uebereinstimmungs-vorschau',
-  imports: [KeyValuePipe, FraktionBadgeComponent],
+  imports: [KeyValuePipe, FraktionBadgeComponent, NgClass],
   templateUrl: './quiz-uebereinstimmungs-vorschau.component.html',
 })
 export class QuizUebereinstimmungsVorschauComponent {

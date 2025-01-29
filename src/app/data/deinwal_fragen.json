@@ -4,7 +4,7 @@
     "kategorie": "Gesellschaft 1",
     "stichwort": "Cannabis",
     "hintergrund": "",
-    "frage": "Sollte der Besitz, Konsum und Anbau kleiner Mengen Cannabis legalisiert werden?",
+    "frage": "Sollten kleine Mengen Cannabis legalisiert werden?",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 23. Februar 2024"
@@ -28,7 +28,7 @@
     "kategorie": "Gesellschaft 1",
     "stichwort": "Abtreibungskliniken",
     "hintergrund": "",
-    "frage": "Sollte der Protest gegen Abtreibungen im Umkreis von 100m um Abtreibungskliniken herum verboten werden, damit Schwangere und Mitarbeiter besser geschützt werden?",
+    "frage": "Sollten Proteste gegen Abtreibungen im Umkreis von 100 m um Abtreibungskliniken verboten werden, um Schwangere und Mitarbeitende  zu schützen?",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 5. Juli 2024"
@@ -51,14 +51,14 @@
     "abstimmungs_id": "020-028-02",
     "kategorie": "Gesellschaft 1",
     "stichwort": "Impfpflicht",
-    "hintergrund": "Sehr ansteckende Coronavarianten steigerten im Jahr 2022 die Angst vor einer Überlastung des Gesundheitssystems, da die Impfquote mit ca. 75% noch nicht hoch genug war um die Verbreitung komplett einzudämmen.",
-    "frage": "Sollte daher eine allgemeine Impfpflicht eingeführt werden, die für fast alle Volljährigen gilt?",
+    "hintergrund": "Im Februar 2022 lag die Impfquote bei ca. 75%, was jedoch nicht ausreicht um die Verbreitung von Corona komplett einzudämmen. Die aufkommende Variante Omikron steigerte die Angst vor einer Überlastung des Gesundheitssystems.",
+    "frage": "Sollte eine allgemeine Impfpflicht für fast alle Volljährige eingeführt werden?",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 7. April 2022"
       },
       {
-        "text": "Die Impfquote lag damals bei etwa 76 %. Die Coronavariante hieß Omikron. Für Mitarbeiter von Pflegeeinrichtungen galt bereits eine Impfpflicht."
+        "text": "Bei Antragsstellung hatten 76% der Bevölkerung mindestens eine Impfung gegen COVID-19 erhalten. 74,6 Prozent der Bevölkerung wurden bereits zweifach geimpft. Für Mitarbeitende von Pflegeeinrichtungen galt bereits eine Impfpflicht."
       },
       {
         "text": "Abstimmung: Impfpflicht gegen SARS-CoV-2 (Gruppe Baehrens/Janecek u.a.) auf wahlbilanz.de",
@@ -97,7 +97,7 @@
     "kategorie": "Gesellschaft 2",
     "stichwort": "Einbürgerung vereinfachen",
     "hintergrund": "",
-    "frage": "Sollten Einbürgerungen zukünftig schon nach 5 statt 8 Jahren Aufenthalt in Deutschland möglich sein und mehrfache Staatsbürgerschaften erleichtert werden?",
+    "frage": "Sollten Einbürgerungen zukünftig schon nach 5 statt 8 Jahren Aufenthalt in Deutschland möglich sein sowie mehrfache Staatsbürgerschaften erleichtert werden?",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 19. Januar 2024"
@@ -123,8 +123,7 @@
         "text": "Datum der Abstimmung: 17. November 2023"
       },
       {
-        "text": "Dieses Gesetz gilt nur für Zivil- und Fachgerichtsverfahren, nicht für Strafprozesse. Es sollen damit Kosten gesenkt und Verfahren vereinfacht werden.",
-        "link": ""
+        "text": "Dieses Gesetz gilt nur für Zivil- und Fachgerichtsverfahren, nicht für Strafprozesse. Richter sollen Onlineverfahren nicht mehr nur gestatten sondern auch anordnen können. Es sollen damit Kosten gesenkt und Verfahren vereinfacht werden."
       },
       {
         "text": "Abstimmung: Videokonferenztechnik in der Zivilgerichtsbarkeit auf wahlbilanz.de",
@@ -141,7 +140,7 @@
     "kategorie": "Gesellschaft 2",
     "stichwort": "Tempolimit 130",
     "hintergrund": "Diese Abstimmung fand 2019 im vorherigen Bundestag statt.",
-    "frage": "Sollte auf den Autobahnen eine allgemeine Höchstgeschwindigkeit von 130 km/h gelten?",
+    "frage": "Sollte auf Autobahnen eine allgemeine Höchstgeschwindigkeit von 130 km/h gelten?",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 17. Oktober 2019"
@@ -171,8 +170,7 @@
         "text": "Datum der Abstimmung: 3. Juni 2022"
       },
       {
-        "text": "Das Sondervermögen solle die Finanzierung von Großvorhaben zur Stärkung der Bundeswehr und der Bündnisfähigkeit gewährleisten.",
-        "link": "https://dserver.bundestag.de/btd/20/014/2001409.pdf"
+        "text": "Das Sondervermögen solle die Finanzierung von Großvorhaben zur Stärkung der Bundeswehr und der Bündnisfähigkeit gewährleisten."
       },
       {
         "text": "Abstimmung: Sondervermögen Bundeswehr (Gesetzentwurf ) auf wahlbilanz.de",
@@ -229,14 +227,18 @@
     "kategorie": "Bildung",
     "stichwort": "Gendern Verbieten",
     "hintergrund": "",
-    "frage": "Sollte in Wissenschaft und Kultur das Gendern verboten werden?",
+    "frage": "Sollte Gendern in Wissenschaft und Kultur verboten werden?",
     "weiterfuehrende_informationen": [
       {
         "text": "Mit Gendern ist gemeint, dass u.a. Anreden und Berufsbezeichnungen Geschlechtsneutral formuliert werden.",
         "link": ""
       },
       {
-        "text": "Antrag der AfD",
+        "text": "Plenardebatte",
+        "link": "https://www.bundestag.de/dokumente/textarchiv/2023/kw42-de-genderideologie-971378"
+      },
+      {
+        "text": "Gesetzesantrag",
         "link": "https://dserver.bundestag.de/btd/20/088/2008862.pdf"
       }
     ]
@@ -246,15 +248,11 @@
     "kategorie": "Bildung",
     "stichwort": "100 Mrd. Bildung",
     "hintergrund": "",
-    "frage": "Sollte ein Sondervermögen von 100 Milliarden Euro allein für die Bildung erstellt werden?",
+    "frage": "Sollte ein schuldenfinanziertes Sondervermögen in Höhe von 100 Milliarden Euro für Bildung eingerichtet werden?",
     "weiterfuehrende_informationen": [
       {
         "text": "Debatte im Bundestag",
         "link": "https://www.bundestag.de/dokumente/textarchiv/2023/kw39-de-ausbildungsoffensive-967380"
-      },
-      {
-        "text": "",
-        "link": ""
       }
     ]
   },
@@ -263,15 +261,11 @@
     "kategorie": "Bildung",
     "stichwort": "Deutschunterricht trennen",
     "hintergrund": "",
-    "frage": "Sollten Kinder ohne ausreichende Deutschkenntnisse vom Deutschunterricht in der Schule ausgeschlossen werden und stattdessen in Volkshochschulen unterrichtet werden?",
+    "frage": "Sollten Kinder ihren Deutschunterricht in einer Volkshochschule statt in der normalen Schule absolvieren, wenn sie nicht über ausreichende Deutschkenntnisse verfügen?",
     "weiterfuehrende_informationen": [
       {
         "text": "Bericht von Bundestag.de",
         "link": "https://www.bundestag.de/dokumente/textarchiv/2024/kw08-de-deutschkenntnisse-kinder-988652"
-      },
-      {
-        "text": "",
-        "link": ""
       }
     ]
   },
@@ -285,10 +279,6 @@
       {
         "text": "Informationen vom Bundestag",
         "link": "https://www.bundestag.de/dokumente/textarchiv/2024/kw08-de-fusionsforschung-988602"
-      },
-      {
-        "text": "",
-        "link": ""
       }
     ]
   },
@@ -384,7 +374,7 @@
     "abstimmungs_id": "020-116-01",
     "kategorie": "Energie",
     "stichwort": "LNG ausbauen",
-    "hintergrund": "Die Versorgung mit Gas und Energie aus Russland ist seit 2022 stark reduziert. Mit LNG Terminals kann Flüssiggas mit Schiffen aus anderen Ländern importiert werden.",
+    "hintergrund": "Die Versorgung mit Gas und Öl aus Russland ist seit 2022 stark reduziert. Mit LNG Terminals kann Flüssiggas mit Schiffen aus anderen Ländern importiert werden.",
     "frage": "Sollte der Ausbau der Infrastruktur fuer Flüssiggas (LNG) beschleunigt werden?",
     "weiterfuehrende_informationen": [
       {
@@ -449,7 +439,7 @@
     "kategorie": "Wirtschaft",
     "stichwort": "Lieferkettengesetz abschaffen",
     "hintergrund": "Das deutsche Lieferkettensorgfaltspflichtengesetz (LkSG) verpflichtet größere Unternehmen, Menschenrechte und Umweltstandards in ihren Lieferketten zu beachten.",
-    "frage": "Sollten wir das LkSG aufheben?",
+    "frage": "Sollten das Lieferkettensorgfaltspflichtengesetz aufgehoben werden?",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 17. Oktober 2024"
@@ -468,8 +458,8 @@
     "abstimmungs_id": "020-066-04",
     "kategorie": "Wirtschaft",
     "stichwort": "Inflationsausgleich",
-    "hintergrund": "Aufgrund der hohen Inflation sollen verschiedene steuerliche Regelungen angepasst werden, um die Bürger*innen finanziell zu entlasten.",
-    "frage": "Sollen diese Anpassungen, die unter anderem den Einkommensteuertarif und den Kinderfreibetrag betreffen, beschlossen werden?",
+    "hintergrund": "Aufgrund der hohen Inflation sollen verschiedene steuerliche Regelungen angepasst werden, um die Bevölkerung finanziell zu entlasten. Dies betrifft vor allem Anpassungen des Einkommensteuertarif und des Kinderfreibetrags.",
+    "frage": "Soll dieser Inflationsausgleich beschlossen werden?",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 10. November 2022"

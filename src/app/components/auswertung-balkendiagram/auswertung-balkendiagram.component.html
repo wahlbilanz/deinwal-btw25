@@ -5,7 +5,7 @@
   @for (match of partyMatchSorted(); track match.party) {
   <div class="relative h-7 mt-3">
     <div
-      class="absolute shadow-sm shadow-black h-7"
+      class="absolute shadow-sm shadow-neutral-700 h-7 transition-all"
       [style.background-color]="match.party | memoize: partyColorFn"
       [style.width]="match.match * 100 + '%'"
     ></div>

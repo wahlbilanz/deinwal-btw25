@@ -10,11 +10,10 @@
     [aenderbar]="true"
   ></wal-antwort-icon>
 </p>
-<h3 class="mt-2">Ergebnisse der Fraktionen</h3>
-<table class="border-spacing-1 border-separate">
+<table class="border-spacing-1 border-separate mt-4">
   @for (party of antwort().uebereinstimmungen | keyvalue; track party.key) {
   <tr>
-    <th class="font-normal text-xs my-1 align-middle">
+    <th class="font-normal text-xs my-1 align-baseline">
       <wal-fraktion-badge [fraktion]="party.key"></wal-fraktion-badge>
     </th>
     <td class="w-full align-middle">

@@ -1,6 +1,6 @@
 <details class="group">
   <summary
-    class="flex items-baseline justify-between px-4 py-3 font-medium marker:content-none hover:cursor-pointer"
+    class="flex items-baseline justify-between px-4 py-3 font-medium marker:content-none hover:cursor-pointer flex-wrap gap-4 bg-neutral-100"
   >
     <span class="flex items-baseline gap-3">
       <la-icon
@@ -8,9 +8,9 @@
         icon="angle-right"
       ></la-icon>
       <wal-antwort-icon [antwort]="antwort().antwort"></wal-antwort-icon>
-      <span>{{ abstimmung()?.stichwort }}</span>
+      <span class="whitespace-nowrap">{{ abstimmung()?.stichwort }}</span>
     </span>
-    <span class="hidden sm:inline-block">
+    <span class="ml-auto">
       <ul class="ml-1 flex flex-wrap gap-1">
         @for (uebereinstimmung of uebereinstimmungen() | keyvalue ; track uebereinstimmung.key) {
         <li class="inline">
@@ -21,7 +21,7 @@
     </span>
   </summary>
 
-  <article class="px-12 pb-4">
+  <article class="px-12 py-4">
     <wal-auswertung-accordion-details
       [antwort]="antwort()"
       [abstimmung]="abstimmung()"
