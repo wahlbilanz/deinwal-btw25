@@ -11,4 +11,8 @@ export const deinwalAlternativen: { name: string; link: string }[] = [
     name: 'CHES WahlQuiz',
     link: 'https://www.wahlquiz.de/ches/',
   },
+  {
+    name: 'Real-O-Mat',
+    link: 'https://real-o-mat.de/',
+  },
 ].sort(() => Math.random() - 0.5);
