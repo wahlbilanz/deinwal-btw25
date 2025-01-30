@@ -7,13 +7,13 @@ import {
 import express from 'express';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { morganMiddleware } from './server/morgan';
 
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
 const browserDistFolder = resolve(serverDistFolder, '../browser');
 
 const app = express();
 const angularApp = new AngularNodeAppEngine();
-
 /**
  * Example Express Rest API endpoints can be defined here.
  * Uncomment and define endpoints as necessary.
@@ -25,6 +25,8 @@ const angularApp = new AngularNodeAppEngine();
  * });
  * ```
  */
+
+app.use(morganMiddleware);
 
 /**
  * Serve static files from /browser
@@ -43,7 +45,9 @@ app.use(
 app.use('/**', (req, res, next) => {
   angularApp
     .handle(req)
-    .then(response => (response ? writeResponseToNodeResponse(response, res) : next()))
+    .then(response => {
+      return response ? writeResponseToNodeResponse(response, res) : next();
+    })
     .catch(next);
 });
 
