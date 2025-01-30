@@ -95,7 +95,7 @@
   {
     "abstimmungs_id": "020-148-01",
     "kategorie": "Gesellschaft 2",
-    "stichwort": "Einbürgerung vereinfachen",
+    "stichwort": "Einbürgerung",
     "hintergrund": "",
     "frage": "Sollten Einbürgerungen zukünftig schon nach 5 statt 8 Jahren Aufenthalt in Deutschland möglich sein sowie mehrfache Staatsbürgerschaften erleichtert werden?",
     "weiterfuehrende_informationen": [
@@ -185,7 +185,7 @@
   {
     "abstimmungs_id": "020-157-01",
     "kategorie": "Verteidigung",
-    "stichwort": "Marschflugkörper Ukraine",
+    "stichwort": "Marschflugkörper",
     "hintergrund": "Taurus Marschflugkörper fliegen mehr als 500 km weit und damit könnten auch Ziele weit innerhalb Russlands getroffen werden.",
     "frage": "Sollten der Ukraine Taurus Marschflugkörper geliefert werden? ",
     "weiterfuehrende_informationen": [
@@ -259,7 +259,7 @@
   {
     "abstimmungs_id": "00-00-00bildungdeutsch",
     "kategorie": "Bildung",
-    "stichwort": "Deutschunterricht trennen",
+    "stichwort": "Deutschunterricht",
     "hintergrund": "",
     "frage": "Sollten Kinder ihren Deutschunterricht in einer Volkshochschule statt in der normalen Schule absolvieren, wenn sie nicht über ausreichende Deutschkenntnisse verfügen?",
     "weiterfuehrende_informationen": [
@@ -313,7 +313,7 @@
   {
     "abstimmungs_id": "020-122-02",
     "kategorie": "Steuern und Sozialausgaben",
-    "stichwort": "Gastronomiesteuersenkung",
+    "stichwort": "Gastronomiesteuer",
     "hintergrund": "In der Coronakrise wurde der Mehrwertsteuersatz für Restaurants von 19% auf 7% gekürzt.",
     "frage": "Sollte dieser Steuervorteil dauerhaft beibehalten werden?",
     "weiterfuehrende_informationen": [
@@ -333,7 +333,7 @@
   {
     "abstimmungs_id": "020-047-03",
     "kategorie": "Energie",
-    "stichwort": "Windenergieausbau",
+    "stichwort": "Windenergie",
     "hintergrund": "Deutschland strebt eine schnellere und größere Ausweitung der Windenergie an Land an, um Klimaziele zu erreichen.",
     "frage": "Sollten die Bundesländer verpflichtet werden, mindestens 2% ihrer Fläche für Windenergieanlagen bereitzustellen?",
     "weiterfuehrende_informationen": [
@@ -373,7 +373,7 @@
   {
     "abstimmungs_id": "020-116-01",
     "kategorie": "Energie",
-    "stichwort": "LNG ausbauen",
+    "stichwort": "Flüssiggas",
     "hintergrund": "Die Versorgung mit Gas und Öl aus Russland ist seit 2022 stark reduziert. Mit LNG Terminals kann Flüssiggas mit Schiffen aus anderen Ländern importiert werden.",
     "frage": "Sollte der Ausbau der Infrastruktur fuer Flüssiggas (LNG) beschleunigt werden?",
     "weiterfuehrende_informationen": [
@@ -393,7 +393,7 @@
   {
     "abstimmungs_id": "020-135-02",
     "kategorie": "Energie",
-    "stichwort": "Atomkraft ausbauen",
+    "stichwort": "Atomkraft",
     "hintergrund": "",
     "frage": "Sollten stillgelegte Atomkraftwerke schnellstmöglich wieder ans Netz gebracht werden?",
     "weiterfuehrende_informationen": [
@@ -413,7 +413,7 @@
   {
     "abstimmungs_id": "020-073-01",
     "kategorie": "Wirtschaft",
-    "stichwort": "CETA Handelsabkommen",
+    "stichwort": "CETA",
     "hintergrund": "",
     "frage": "Sollte das Wirtschafts- und Handelsabkommen mit Kanada (CETA) von Deutschland unterschrieben werden?",
     "weiterfuehrende_informationen": [
@@ -437,7 +437,7 @@
   {
     "abstimmungs_id": "020-194-01",
     "kategorie": "Wirtschaft",
-    "stichwort": "Lieferkettengesetz abschaffen",
+    "stichwort": "Lieferkettengesetz",
     "hintergrund": "Das deutsche Lieferkettensorgfaltspflichtengesetz (LkSG) verpflichtet größere Unternehmen, Menschenrechte und Umweltstandards in ihren Lieferketten zu beachten.",
     "frage": "Sollten das Lieferkettensorgfaltspflichtengesetz aufgehoben werden?",
     "weiterfuehrende_informationen": [
