@@ -23,7 +23,6 @@ export class AuswertungTabelleComponent {
     for (const abstimmungs_id of Object.keys(matches)) {
       const abstimmung = matches[abstimmungs_id];
       const kategorie = this.dataService.getKategorie(abstimmungs_id);
-      console.log(abstimmung, kategorie);
       if (!kategorie) {
         continue;
       }
@@ -32,7 +31,6 @@ export class AuswertungTabelleComponent {
       }
       categorisedPartyMatchMap[kategorie][abstimmungs_id] = abstimmung;
     }
-    console.log(categorisedPartyMatchMap);
     return categorisedPartyMatchMap;
   });
 }

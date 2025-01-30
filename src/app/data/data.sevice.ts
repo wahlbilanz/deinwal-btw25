@@ -14,8 +14,6 @@ import {
   getKategorien,
 } from '../functions/data-massage.function';
 
-console.log(ergebnisse);
-
 @Injectable({
   providedIn: 'root',
 })
