@@ -11,6 +11,7 @@ import {
   lasBars,
   lasChartBar,
   lasCircle,
+  lasEdit,
   lasHamburger,
   lasPuzzlePiece,
   lasTag,
@@ -49,6 +50,7 @@ export class AppComponent {
       lasHamburger,
       lasBars,
       lasTimesCircle,
+      lasEdit,
     ]);
   }
 

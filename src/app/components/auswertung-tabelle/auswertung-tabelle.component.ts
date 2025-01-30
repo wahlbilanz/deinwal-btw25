@@ -5,10 +5,17 @@ import { AngularLineawesomeModule } from 'angular-line-awesome';
 import { AuswertungAccordionItemComponent } from '../auswertung-accordion-item/auswertung-accordion-item.component';
 import { MemoizePipe } from '../../pipes/memoize.pipe';
 import { AntwortenMap } from '../../interfaces/antworten.interface';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'wal-auswertung-tabelle',
-  imports: [KeyValuePipe, AngularLineawesomeModule, AuswertungAccordionItemComponent, MemoizePipe],
+  imports: [
+    KeyValuePipe,
+    AngularLineawesomeModule,
+    AuswertungAccordionItemComponent,
+    MemoizePipe,
+    RouterLink,
+  ],
   templateUrl: './auswertung-tabelle.component.html',
 })
 export class AuswertungTabelleComponent {

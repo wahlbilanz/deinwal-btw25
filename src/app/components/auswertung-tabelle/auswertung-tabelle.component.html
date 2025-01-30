@@ -2,7 +2,11 @@
 
 @for ( kategorie of partyMatchTable() | keyvalue; track kategorie.key) {
 <div class="sm:p-6 pt-2 sm:border-l-4 sm:border-l-neutral-200 my-6">
-  <h2>{{kategorie.key}}</h2>
+  <h2>
+    <a [routerLink]="['/quiz',kategorie.key]">
+      {{kategorie.key}} <la-icon icon="edit"></la-icon>
+    </a>
+  </h2>
   <ul class="mt-6 divide-y divide-gray-200 shadow shadow-sm rounded-xs">
     @for (abstimmung of kategorie.value | keyvalue; track abstimmung.key) {
     <li>
