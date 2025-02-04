@@ -51,7 +51,7 @@
     "abstimmungs_id": "020-028-02",
     "kategorie": "Gesellschaft 1",
     "stichwort": "Impfpflicht",
-    "hintergrund": "Im Februar 2022 lag die Impfquote bei ca. 75%, was jedoch nicht ausreicht um die Verbreitung von Corona komplett einzudämmen. Die aufkommende Variante Omikron steigerte die Angst vor einer Überlastung des Gesundheitssystems.",
+    "hintergrund": "Im Februar 2022 lag die Impfquote bei ca. 75%, was jedoch nicht ausreicht, um die Verbreitung von Corona komplett einzudämmen. Die aufkommende Variante Omikron steigerte die Angst vor einer Überlastung des Gesundheitssystems.",
     "frage": "Sollte eine allgemeine Impfpflicht für fast alle Volljährige eingeführt werden?",
     "weiterfuehrende_informationen": [
       {
@@ -82,7 +82,7 @@
         "text": "Datum der Abstimmung: 6. Juli 2023"
       },
       {
-        "text": "Abstimmung: Suizidhilfe (GE Helling-Plahr/ Künast u.a ) auf wahlbilanz.de",
+        "text": "Abstimmung: Suizidhilfe (GE Helling-Plahr / Künast u.a ) auf wahlbilanz.de",
         "link": "https://wahlbilanz.de/abstimmungen/020-115-02"
       },
       {
@@ -123,7 +123,7 @@
         "text": "Datum der Abstimmung: 17. November 2023"
       },
       {
-        "text": "Dieses Gesetz gilt nur für Zivil- und Fachgerichtsverfahren, nicht für Strafprozesse. Richter sollen Onlineverfahren nicht mehr nur gestatten sondern auch anordnen können. Es sollen damit Kosten gesenkt und Verfahren vereinfacht werden."
+        "text": "Dieses Gesetz gilt nur für Zivil- und Fachgerichtsverfahren, nicht für Strafprozesse. Richter sollen Onlineverfahren nicht mehr nur gestatten, sondern auch anordnen können. Es sollen damit Kosten gesenkt und Verfahren vereinfacht werden."
       },
       {
         "text": "Abstimmung: Videokonferenztechnik in der Zivilgerichtsbarkeit auf wahlbilanz.de",
@@ -173,7 +173,7 @@
         "text": "Das Sondervermögen solle die Finanzierung von Großvorhaben zur Stärkung der Bundeswehr und der Bündnisfähigkeit gewährleisten."
       },
       {
-        "text": "Abstimmung: Sondervermögen Bundeswehr (Gesetzentwurf ) auf wahlbilanz.de",
+        "text": "Abstimmung: Sondervermögen Bundeswehr (Gesetzentwurf) auf wahlbilanz.de",
         "link": "https://wahlbilanz.de/abstimmungen/020-042-06"
       },
       {
@@ -186,8 +186,8 @@
     "abstimmungs_id": "020-157-01",
     "kategorie": "Verteidigung",
     "stichwort": "Marschflugkörper",
-    "hintergrund": "Taurus Marschflugkörper fliegen mehr als 500 km weit und damit könnten auch Ziele weit innerhalb Russlands getroffen werden.",
-    "frage": "Sollten der Ukraine Taurus Marschflugkörper geliefert werden? ",
+    "hintergrund": "Taurus-Marschflugkörper fliegen mehr als 500 km weit und könnten damit auch Ziele weit innerhalb Russlands treffen.",
+    "frage": "Sollten der Ukraine Taurus-Marschflugkörper geliefert werden? ",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 14. März 2024"
@@ -225,12 +225,12 @@
   {
     "abstimmungs_id": "020-000-00",
     "kategorie": "Bildung",
-    "stichwort": "Gendern Verbieten",
+    "stichwort": "Gendern verbieten",
     "hintergrund": "",
     "frage": "Sollte Gendern in Wissenschaft und Kultur verboten werden?",
     "weiterfuehrende_informationen": [
       {
-        "text": "Mit Gendern ist gemeint, dass u.a. Anreden und Berufsbezeichnungen Geschlechtsneutral formuliert werden.",
+        "text": "Mit Gendern ist gemeint, dass u.a. Anreden und Berufsbezeichnungen geschlechtsneutral formuliert werden.",
         "link": ""
       },
       {
@@ -314,7 +314,7 @@
     "abstimmungs_id": "020-122-02",
     "kategorie": "Steuern und Sozialausgaben",
     "stichwort": "Gastronomiesteuer",
-    "hintergrund": "In der Coronakrise wurde der Mehrwertsteuersatz für Restaurants von 19% auf 7% gekürzt.",
+    "hintergrund": "In der Coronakrise wurde der Mehrwertsteuersatz für Restaurants von 19 % auf 7 % gekürzt.",
     "frage": "Sollte dieser Steuervorteil dauerhaft beibehalten werden?",
     "weiterfuehrende_informationen": [
       {
@@ -335,7 +335,7 @@
     "kategorie": "Energie",
     "stichwort": "Windenergie",
     "hintergrund": "Deutschland strebt eine schnellere und größere Ausweitung der Windenergie an Land an, um Klimaziele zu erreichen.",
-    "frage": "Sollten die Bundesländer verpflichtet werden, mindestens 2% ihrer Fläche für Windenergieanlagen bereitzustellen?",
+    "frage": "Sollten die Bundesländer verpflichtet werden, mindestens 2 % ihrer Fläche für Windenergieanlagen bereitzustellen?",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 7. Juli 2022"
@@ -374,8 +374,8 @@
     "abstimmungs_id": "020-116-01",
     "kategorie": "Energie",
     "stichwort": "Flüssiggas",
-    "hintergrund": "Die Versorgung mit Gas und Öl aus Russland ist seit 2022 stark reduziert. Mit LNG Terminals kann Flüssiggas mit Schiffen aus anderen Ländern importiert werden.",
-    "frage": "Sollte der Ausbau der Infrastruktur fuer Flüssiggas (LNG) beschleunigt werden?",
+    "hintergrund": "Die Versorgung mit Gas und Öl aus Russland ist seit 2022 stark reduziert. Mit LNG-Terminals kann Flüssiggas per Schiff aus anderen Ländern importiert werden.",
+    "frage": "Sollte der Ausbau der Infrastruktur für Flüssiggas (LNG) beschleunigt werden?",
     "weiterfuehrende_informationen": [
       {
         "text": "Datum der Abstimmung: 7. Juli 2023"
@@ -421,7 +421,7 @@
         "text": "Datum der Abstimmung: 1. Dezember 2022"
       },
       {
-        "text": "Das umfassende Wirtschafts- und Handelsabkommen (CETA) zwischen der EU und Kanada wurde 2016 unterzeichnet, aber seine vollständige Umsetzung erfordert die Zustimmung des deutschen Bundestags.",
+        "text": "Das umfassende Wirtschafts- und Handelsabkommen (CETA) zwischen der EU und Kanada wurde 2016 unterzeichnet, aber seine vollständige Umsetzung erfordert die Zustimmung des Deutschen Bundestags.",
         "link": ""
       },
       {
